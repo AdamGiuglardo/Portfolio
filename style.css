@@ -400,6 +400,15 @@ nav a:hover::after {
   opacity: 0.8;
 }
 
+.about-bubble p {
+  margin-bottom: 18px;
+}
+
+.about-bubble p:last-child {
+  margin-bottom: 0;
+}
+
+
 
 /* ==========================
    PROJETS - VERSION PRO

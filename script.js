@@ -228,3 +228,53 @@ modals.forEach(modal => {
     if (e.target === modal) closeModal(modal);
   });
 });
+
+/* ===========================
+   "QUALITÉS HUMAINES" : carte explicative au clic
+   =========================== */
+const qualityStoryEl = document.getElementById("qualityStory");
+const qualityStoryTitleEl = document.getElementById("qualityStoryTitle");
+const qualityStoryBodyEl = document.getElementById("qualityStoryBody");
+const qualityStoryCloseBtn = document.getElementById("qualityStoryClose");
+
+const qualityStories = {
+  "Assiduité":
+    "Je l’ai développée en me fixant une routine (cours, devoirs, projets) et en respectant des échéances, même quand la motivation baisse. Le fait de livrer régulièrement du travail m’a appris la constance.",
+  "Organisation":
+    "Je l’ai acquise en planifiant mes tâches (to-do, priorités, découpage en étapes) et en gardant mes fichiers/projets propres. Sur des projets plus longs, ça m’a permis d’éviter le stress de dernière minute.",
+  "Patience":
+    "Je l’ai renforcée en résolvant des problèmes techniques : tester, comprendre l’erreur, recommencer, chercher une solution. Ça m’a appris à rester calme et à avancer étape par étape.",
+  "Efficacité":
+    "Je l’ai travaillée en cherchant des méthodes simples : automatiser ce qui peut l’être, réutiliser des composants, et aller à l’essentiel. Avec le temps, j’ai appris à produire plus vite sans sacrifier la qualité.",
+  "Esprit d’équipe":
+    "Je l’ai acquise en travaillant en groupe (répartition des tâches, communication, entraide). J’ai appris à écouter, à proposer des solutions, et à m’adapter pour atteindre un objectif commun.",
+  "Prévenance":
+    "Je l’ai développée en portant attention aux détails (soin du rendu, vérifications, anticipation des erreurs) et en me mettant à la place des autres (utilisateur/équipe) pour améliorer l’expérience et la qualité finale."
+};
+
+function showQualityStory(title) {
+  if (!qualityStoryEl || !qualityStoryTitleEl || !qualityStoryBodyEl) return;
+
+  qualityStoryTitleEl.textContent = title || "Qualité";
+  qualityStoryBodyEl.textContent =
+    qualityStories[title] || "Je l’ai acquise grâce à mes expériences (projets, cours, travail en groupe) et en cherchant à progresser régulièrement.";
+
+  qualityStoryEl.classList.add("is-visible");
+
+}
+
+function hideQualityStory() {
+  if (!qualityStoryEl) return;
+  qualityStoryEl.classList.remove("is-visible");
+}
+
+if (qualityStoryCloseBtn) {
+  qualityStoryCloseBtn.addEventListener("click", hideQualityStory);
+}
+
+document.querySelectorAll(".human-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const title = card.querySelector(".human-title")?.textContent?.trim();
+    showQualityStory(title);
+  });
+});

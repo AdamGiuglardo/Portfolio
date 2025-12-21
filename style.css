@@ -1056,3 +1056,66 @@ nav a:hover::after {
   font-size: 1.3rem;
   margin-bottom: 8px;
 }
+
+/* ===========================
+   CARTE "QUALITÉ HUMAINE" (clic)
+   =========================== */
+.quality-story{
+  display:none;
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+  backdrop-filter: blur(10px);
+}
+
+.quality-story.is-visible{
+  display:block;
+  animation: pop .22s ease;
+}
+
+.quality-story-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.quality-story-kicker{
+  font-size: 12px;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+.quality-story-title{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.quality-story-body{
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.quality-story-close{
+  border: none;
+  background: rgba(0,0,0,0.06);
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.human-card{
+  cursor: pointer;
+}
+
+.human-card:focus-within,
+.human-card:hover{
+  transform: translateY(-2px);
+}

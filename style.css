@@ -436,13 +436,19 @@ nav a:hover::after {
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.2);
   animation: pop .25s ease;
+
+  max-height: 90vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .modal-content img {
   width: 100%;
   border-radius: 12px;
   margin-top: 12px;
+  display: block;
 }
+
 
 .modal-close {
   float: right;

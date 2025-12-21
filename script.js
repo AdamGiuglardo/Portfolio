@@ -190,26 +190,41 @@ filterButtons.forEach(btn => {
   });
 });
 
-// MODALES
 const modals = document.querySelectorAll(".modal");
 const modalTriggers = document.querySelectorAll(".project-pro-card");
+
+function openModal(modal) {
+  modal.style.display = "flex";
+
+  document.body.style.overflow = "hidden";
+
+  const content = modal.querySelector(".modal-content");
+  if (content) content.scrollTop = 0;
+}
+
+function closeModal(modal) {
+  modal.style.display = "none";
+
+  document.body.style.overflow = "";
+}
 
 modalTriggers.forEach(card => {
   card.addEventListener("click", () => {
     const modalId = card.dataset.modal;
-    document.getElementById(modalId).style.display = "flex";
+    const modal = document.getElementById(modalId);
+    if (modal) openModal(modal);
   });
 });
 
 document.querySelectorAll(".modal-close").forEach(btn => {
   btn.addEventListener("click", () => {
-    btn.parentElement.parentElement.style.display = "none";
+    const modal = btn.closest(".modal");
+    if (modal) closeModal(modal);
   });
 });
 
-// Clique extérieur pour fermer modal
 modals.forEach(modal => {
   modal.addEventListener("click", e => {
-    if (e.target === modal) modal.style.display = "none";
+    if (e.target === modal) closeModal(modal);
   });
 });

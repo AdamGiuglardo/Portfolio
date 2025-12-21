@@ -1,3 +1,12 @@
+/*
+  Notes rapides :
+  - :root contient des variables CSS (ex: --primary) réutilisées partout
+  - display: grid / flex : servent à aligner proprement les blocs
+  - backdrop-filter : ajoute un flou derrière un élément (effet verre)
+  - repeat(auto-fit, minmax(...)) : grille responsive (le nombre de colonnes s'adapte)
+  - max-height + overflow-y:auto : permet de scroller à l'intérieur d'un bloc (ex: modale)
+*/
+
 /* ===========================
    VARIABLES GLOBALES
 =========================== */
@@ -207,7 +216,7 @@ nav a:hover::after {
 
 
 /* ===========================
-   PROJECTS (servira aussi à expériences)
+   PROJECTS (servira aussi Ã  expÃ©riences)
 =========================== */
 .projects-grid {
   display: grid;
@@ -229,7 +238,7 @@ nav a:hover::after {
 }
 
 /* ===========================
-   PROJETS - STYLE AMÉLIORÉ
+   PROJETS - STYLE AMÃ‰LIORÃ‰
 =========================== */
 .projects-wrapper {
   display: grid;
@@ -311,7 +320,7 @@ nav a:hover::after {
   position: relative;
 }
 
-/* Petit accent moderne (barre bleue à gauche) */
+/* Petit accent moderne (barre bleue Ã  gauche) */
 .about-bubble::before {
   content: "";
   position: absolute;
@@ -582,7 +591,7 @@ nav a:hover::after {
 
 
 /* ===========================
-   COMPÉTENCES
+   COMPÃ‰TENCES
 =========================== */
 .wrapper {
   max-width: 1100px;
@@ -702,7 +711,7 @@ nav a:hover::after {
   transition: width 0.4s ease;
 }
 
-/* Sous-compétences (accordéon) */
+/* Sous-compÃ©tences (accordÃ©on) */
 .subskills {
   margin-top: 16px;
   border-top: 1px solid var(--border-soft);
@@ -720,7 +729,7 @@ nav a:hover::after {
   border-radius: 14px;         /* arrondi plus propre */
   margin-bottom: 12px;
   background: white;
-  overflow: visible !important; /* empêche la coupure du texte */
+  overflow: visible !important; /* empÃªche la coupure du texte */
   transition: 0.25s;
 }
 
@@ -748,7 +757,7 @@ nav a:hover::after {
   background: var(--primary);
   color: white;
   
-  border-bottom-left-radius: 0 !important;  /* évite débordement visuel */
+  border-bottom-left-radius: 0 !important;  /* Ã©vite dÃ©bordement visuel */
   border-bottom-right-radius: 0 !important;
 }
 
@@ -768,7 +777,7 @@ nav a:hover::after {
   border-radius: 0 0 14px 14px !important; /* arrondi bas */
 }
 
-/* Nouveau système anti-coupure */
+/* Nouveau systÃ¨me anti-coupure */
 .subskill-body {
   display: grid;
   grid-template-rows: 0fr;
@@ -788,7 +797,7 @@ nav a:hover::after {
 }
 
 
-/* Responsive compétences */
+/* Responsive compÃ©tences */
 @media (max-width: 800px) {
   .tech-layout {
     grid-template-columns: 1fr;
@@ -796,7 +805,7 @@ nav a:hover::after {
 }
 
 /* ===========================
-   COMPÉTENCES HUMAINES
+   COMPÃ‰TENCES HUMAINES
 =========================== */
 .human-section-title {
   font-size: 1.4rem;
@@ -1058,7 +1067,7 @@ nav a:hover::after {
 }
 
 /* ===========================
-   CARTE "QUALITÉ HUMAINE" (clic)
+   CARTE "QUALITÃ‰ HUMAINE" (clic)
    =========================== */
 .quality-story{
   display:none;

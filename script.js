@@ -56,7 +56,7 @@ if (btnTech && btnHum && secTech && secHum) {
   // Quand on clique sur "Compétences techniques"
   btnTech.onclick = () => {
     // Les classes "active" servent à :
-    // - styliser le bouton actif
+    // - styliser le bouton activer
     // - afficher la section active (en CSS .comp-section.active { display:block; })
     btnTech.classList.add("active");
     btnHum.classList.remove("active");

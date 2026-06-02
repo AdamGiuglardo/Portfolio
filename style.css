@@ -421,6 +421,35 @@ nav a:hover::after {
 }
 
 /* ==========================
+   PROJET MIS EN ÉVIDENCE
+========================== */
+.project-featured {
+  position: relative;
+  border: 2px solid var(--primary);
+  background: #ffffff; /* Fait ressortir la carte un peu plus brillante que le gris par défaut */
+  overflow: hidden; /* Permet de couper proprement les bords du ruban en diagonale */
+}
+
+.project-featured:hover {
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.25);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 18px;
+  right: -32px;
+  background: var(--primary);
+  color: #fff;
+  padding: 6px 40px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* ==========================
    MODALES
 ========================== */
 .modal {

@@ -18,7 +18,7 @@ document.addEventListener("keydown", (event) => {
     menu.focus();
   }
 });
-window.matchMedia("(min-width: 701px)").addEventListener("change", (event) => {
+window.matchMedia("(min-width: 901px)").addEventListener("change", (event) => {
   if (event.matches) closeMenu();
 });
 

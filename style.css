@@ -727,7 +727,7 @@ footer svg {
   .contact-grid > div:first-child {
     grid-column: 1/-1;
   }
-  .contact-grid #cv {
+  .contact-grid .contact-cv {
     justify-self: end;
   }
   .timeline article {
@@ -896,7 +896,7 @@ footer svg {
   .contact-grid > div:first-child {
     grid-column: auto;
   }
-  .contact-grid #cv {
+  .contact-grid .contact-cv {
     justify-self: start;
   }
   .contact-links {
@@ -945,7 +945,9 @@ footer svg {
 
 /* Keep the full original navigation comfortable on smaller screens. */
 @media (max-width: 900px) {
-  .header-inner { height: 74px; }
+  .header-inner {
+    height: 74px;
+  }
   .menu-toggle {
     display: flex;
     gap: 12px;
@@ -980,5 +982,147 @@ footer svg {
   nav a {
     padding: 14px 0;
     justify-content: space-between;
+  }
+}
+
+/* Motion stays purposeful: reveal the reading order and acknowledge interaction. */
+.site-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #829c54;
+  transform: scaleX(var(--reading-progress, 0));
+  transform-origin: left;
+  pointer-events: none;
+}
+.hero h1 span {
+  animation-name: title-reveal;
+  animation-duration: 1.1s;
+}
+.hero-description {
+  animation: enter 0.9s 0.25s var(--ease) both;
+}
+.hero-actions {
+  animation: enter 0.9s 0.4s var(--ease) both;
+}
+.availability {
+  animation: enter 0.9s 0.55s var(--ease) both;
+}
+.portrait img {
+  transition:
+    transform 0.65s var(--ease),
+    box-shadow 0.65s var(--ease);
+}
+.project-number {
+  transition:
+    transform 0.35s var(--ease),
+    color 0.35s;
+}
+.project-open:hover .project-number {
+  transform: translateX(4px);
+  color: var(--ink);
+}
+.filters button {
+  transition:
+    transform 0.2s var(--ease),
+    background 0.25s;
+}
+.filters button:active,
+.button:active {
+  transform: scale(0.96);
+}
+.reveal {
+  transform: translateY(32px);
+  transition-duration: 0.85s;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal:focus-within {
+  opacity: 1;
+  transform: none;
+}
+.project-dialog[open] {
+  animation: dialog-reveal 0.4s var(--ease);
+}
+.project-dialog[open]::backdrop {
+  animation: backdrop-reveal 0.3s ease-out;
+}
+.cv-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cv-section h2 {
+  font-size: clamp(28px, 3.2vw, 42px);
+}
+.cv-section > div > p:last-child {
+  margin-top: 16px;
+  font-size: 14px;
+}
+.cv-section .button {
+  flex-shrink: 0;
+}
+@keyframes title-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    clip-path: inset(0);
+  }
+}
+@keyframes dialog-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes backdrop-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .portrait:hover img {
+    transform: translateY(-7px) rotate(-1deg);
+    box-shadow: 0 18px 32px #183c301a;
+  }
+}
+@media (max-width: 900px) {
+  nav.open {
+    animation: enter 0.25s var(--ease);
+  }
+  nav.open a {
+    animation: enter 0.35s var(--ease) both;
+    animation-delay: calc(var(--nav-index, 0) * 35ms);
+  }
+}
+@media (max-width: 700px) {
+  .cv-section {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .portrait:hover img,
+  .project-open:hover .project-number {
+    transform: none;
   }
 }

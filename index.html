@@ -10,8 +10,8 @@
     <meta name="theme-color" content="#183c30" />
     <title>Adam Giuglardo — Réseaux & Télécommunications</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css?v=4" />
-    <script src="script.js?v=4" defer></script>
+    <link rel="stylesheet" href="style.css?v=5" />
+    <script src="script.js?v=5" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
@@ -24,9 +24,9 @@
         </button>
         <nav id="nav" aria-label="Navigation principale">
           <a href="#apropos">À propos de moi</a>
-          <a href="#formation">Formation</a>
-          <a href="#competences">Compétences</a>
           <a href="#projets">Projets</a>
+          <a href="#competences">Compétences</a>
+          <a href="#formation">Formation</a>
           <a href="#divers">Divers</a>
           <a href="#cv">C.V</a>
           <a href="#contact">Contact</a>
@@ -559,6 +559,32 @@
           </article>
         </div>
       </section>
+      <section class="section container cv-section" id="cv">
+        <div>
+          <p class="section-label">C.V</p>
+          <h2>Mon parcours en un document.</h2>
+          <p>
+            Formation, compétences et expériences : retrouvez mon CV au format
+            PDF.
+          </p>
+        </div>
+        <a
+          class="button button-dark"
+          href="assets/cv.pdf"
+          target="_blank"
+          rel="noopener"
+          >Consulter mon CV
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M5 19 19 5M5 5h14v14" />
+          </svg>
+        </a>
+      </section>
       <section class="contact" id="contact">
         <div class="container">
           <p class="section-label">Parlons ensemble</p>
@@ -596,7 +622,7 @@
                   <path d="M5 19 19 5M5 5h14v14" /></svg
               ></a>
             </div>
-            <div id="cv">
+            <div class="contact-cv">
               <a
                 class="button button-lime"
                 href="assets/cv.pdf"

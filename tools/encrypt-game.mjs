@@ -10,7 +10,9 @@ input.once('line', async password => {
   input.close();
   try {
     if (password.length < 10) throw new Error('Utiliser un code d’au moins 10 caractères.');
-    const plaintext = await readFile(new URL('../.private/game.html', import.meta.url));
+    const game = await readFile(new URL('../.private/game.html', import.meta.url), 'utf8');
+    const addon = await readFile(new URL('../.private/arcade-addon.js', import.meta.url), 'utf8');
+    const plaintext = Buffer.from(game.replace('/* ARCADE_ADDON */', addon));
     const salt = randomBytes(16);
     const iv = randomBytes(12);
     const iterations = 600000;

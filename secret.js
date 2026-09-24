@@ -5,12 +5,13 @@
   const field = document.querySelector('#access-code');
   const feedback = document.querySelector('#code-feedback');
   const submit = document.querySelector('#unlock-game');
-  const toggle = document.querySelector('#toggle-code');
   const shell = document.querySelector('#game-shell');
   const portfolio = [document.querySelector('.site-header'), document.querySelector('#main'), document.querySelector('.skip-link')];
   let generation = 0;
   let savedScroll = 0;
   let frame;
+  let failedAttempts = 0;
+  let lockedUntil = 0;
   const bytes = value => Uint8Array.from(atob(value), char => char.charCodeAt(0));
 
   trigger.addEventListener('click', () => {
@@ -26,24 +27,18 @@
     generation++;
     form.reset();
     field.type = 'password';
-    toggle.textContent = 'Afficher';
-    toggle.setAttribute('aria-label', 'Afficher le code');
-    toggle.setAttribute('aria-pressed', 'false');
     submit.disabled = false;
     submit.textContent = 'Débloquer le jeu →';
     document.body.classList.remove('dialog-open');
   });
-  toggle.addEventListener('click', () => {
-    const show = field.type === 'password';
-    field.type = show ? 'text' : 'password';
-    toggle.textContent = show ? 'Masquer' : 'Afficher';
-    toggle.setAttribute('aria-label', show ? 'Masquer le code' : 'Afficher le code');
-    toggle.setAttribute('aria-pressed', String(show));
-  });
-
   form.addEventListener('submit', async event => {
     event.preventDefault();
     if (submit.disabled) return;
+    if (Date.now() < lockedUntil) {
+      feedback.className = 'error';
+      feedback.textContent = 'Trop de tentatives. Réessaie dans quelques secondes.';
+      return;
+    }
     const attempt = ++generation;
     submit.disabled = true;
     submit.textContent = 'Déchiffrement…';
@@ -53,7 +48,7 @@
       if (!globalThis.crypto?.subtle) throw new Error('HTTPS est nécessaire pour ouvrir le jeu.');
       const material = await crypto.subtle.importKey('raw', new TextEncoder().encode(field.value), 'PBKDF2', false, ['deriveKey']);
       field.value = '';
-      const response = await fetch('assets/mission-reseau.enc.json', { cache: 'no-cache' });
+      const response = await fetch('assets/mission-reseau.enc.json?v=2', { cache: 'no-store' });
       if (!response.ok) throw new Error('Le jeu est indisponible. Réessaie dans un instant.');
       const encrypted = await response.json();
       if (encrypted.version !== 1 || encrypted.iterations !== 600000 || encrypted.algorithm !== 'AES-GCM') throw new Error('Version du jeu non reconnue. Actualise la page.');
@@ -77,9 +72,9 @@
     } catch (error) {
       if (attempt !== generation || !gate.open) return;
       feedback.className = 'error';
-      feedback.textContent = error.name === 'OperationError'
-        ? 'Ce code ne déverrouille pas le jeu. Réessaie.'
-        : error instanceof TypeError ? 'Connexion interrompue. Réessaie dans un instant.' : error.message;
+      failedAttempts += 1;
+      if (failedAttempts >= 5) { lockedUntil = Date.now() + 30000; failedAttempts = 0; }
+      feedback.textContent = error.name === 'OperationError' ? 'Code refusé.' : 'Impossible d’ouvrir le passage secret pour le moment.';
       field.value = '';
       field.focus();
     } finally {

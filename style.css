@@ -1126,3 +1126,30 @@ footer svg {
     transform: none;
   }
 }
+
+.code-tab { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--ink); border-radius: 5px; padding: 7px 12px; background: transparent; font-size: 13px; white-space: nowrap; transition: background .25s, transform .25s; }
+.code-tab:hover { background: var(--lime); transform: translateY(-2px); }
+.code-gate { width: min(510px, calc(100% - 32px)); padding: 42px; background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 16px; max-height: 90dvh; }
+.code-gate::backdrop { background: #0b1220bb; backdrop-filter: blur(9px); }
+.code-gate[open] { animation: dialog-reveal .4s var(--ease); }
+.gate-close { display: block; margin: -24px -20px 12px auto; background: transparent; font-size: 28px; padding: 4px 12px; }
+.code-gate h2 { font-size: 42px; margin-bottom: 18px; }
+.code-gate > p:not(.section-label) { font-size: 14px; }
+#code-form { margin-top: 26px; }
+#code-form label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.code-input-wrap { display: flex; border: 1px solid #86947e; border-radius: 6px; overflow: hidden; }
+.code-input-wrap:focus-within { outline: 2px solid #618235; outline-offset: 3px; }
+#access-code { min-width: 0; width: 100%; background: transparent; border: 0; padding: 14px; font: 16px monospace; color: var(--ink); outline: none; }
+#toggle-code { padding: 10px; background: transparent; font-size: 12px; }
+#code-feedback { min-height: 46px; font-size: 13px; padding-block: 10px; }
+#code-feedback.error { color: #a23232; }
+#unlock-game { width: 100%; }
+#unlock-game:disabled { opacity: .65; cursor: wait; }
+.code-gate .gate-note { margin-top: 18px; font-size: 11px !important; }
+body.secret-world { overflow: hidden; background: #0b1220; }
+#game-shell { position: fixed; inset: 0; z-index: 100; background: #0b1220; }
+#game-shell iframe { display: block; width: 100%; height: 100%; border: 0; }
+@media (min-width: 901px) { nav { gap: clamp(12px, 1.7vw, 27px); } }
+@media (min-width: 901px) and (max-width: 1100px) { .header-inner .brand span { display: none; } }
+@media (max-width: 900px) { nav { max-height: calc(100dvh - 74px); overflow-y: auto; } .code-tab { justify-content: space-between; margin-top: 10px; padding: 12px; } }
+@media (max-width: 500px) { .code-gate { padding: 30px 24px; } .gate-close { margin: -14px -10px 10px auto; } .code-gate h2 { font-size: 34px; } }

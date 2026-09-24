@@ -10,8 +10,9 @@
     <meta name="theme-color" content="#183c30" />
     <title>Adam Giuglardo — Réseaux & Télécommunications</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css?v=5" />
-    <script src="script.js?v=5" defer></script>
+    <link rel="stylesheet" href="style.css?v=6" />
+    <script src="script.js?v=6" defer></script>
+    <script src="secret.js?v=1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
@@ -30,6 +31,7 @@
           <a href="#divers">Divers</a>
           <a href="#cv">C.V</a>
           <a href="#contact">Contact</a>
+          <button class="code-tab" id="open-code" type="button" aria-haspopup="dialog" aria-controls="code-gate">Code <span aria-hidden="true">↗</span></button>
         </nav>
       </div>
     </header>
@@ -925,5 +927,19 @@
         </div>
       </div>
     </dialog>
+    <dialog id="code-gate" class="code-gate" aria-labelledby="code-title">
+      <button class="gate-close" type="button" aria-label="Fermer la saisie du code">×</button>
+      <p class="section-label">Le portfolio a un autre niveau</p>
+      <h2 id="code-title">À toi de jouer.</h2>
+      <p>Un code. Un autre univers. Entre le code d’accès pour découvrir le mini-jeu Mission Réseau.</p>
+      <form id="code-form">
+        <label for="access-code">Code d’accès</label>
+        <div class="code-input-wrap"><input id="access-code" name="access-code" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" required maxlength="128" aria-describedby="code-feedback"><button id="toggle-code" type="button" aria-label="Afficher le code" aria-pressed="false">Afficher</button></div>
+        <p id="code-feedback" role="status" aria-live="polite"></p>
+        <button class="button button-dark" id="unlock-game" type="submit">Débloquer le jeu <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="gate-note">Le code n’est ni enregistré ni envoyé à un serveur.</p>
+    </dialog>
+    <div id="game-shell" hidden></div>
   </body>
 </html>

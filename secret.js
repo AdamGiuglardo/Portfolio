@@ -48,16 +48,19 @@
       if (!globalThis.crypto?.subtle) throw new Error('HTTPS est nécessaire pour ouvrir le jeu.');
       const material = await crypto.subtle.importKey('raw', new TextEncoder().encode(field.value), 'PBKDF2', false, ['deriveKey']);
       field.value = '';
-      const response = await fetch('assets/mission-reseau.enc.json?v=2', { cache: 'no-store' });
+      const response = await fetch('assets/mission-reseau.enc.json?v=4', { cache: 'no-store' });
       if (!response.ok) throw new Error('Le jeu est indisponible. Réessaie dans un instant.');
       const encrypted = await response.json();
       if (encrypted.version !== 1 || encrypted.iterations !== 600000 || encrypted.algorithm !== 'AES-GCM') throw new Error('Version du jeu non reconnue. Actualise la page.');
       const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: bytes(encrypted.salt), iterations: encrypted.iterations, hash: 'SHA-256' }, material, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
       const plaintext = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: bytes(encrypted.iv), tagLength: 128 }, key, bytes(encrypted.ciphertext));
-      if (attempt !== generation || !gate.open) return;
+      if (attempt !== generation || !gate.open) {
+        new Uint8Array(plaintext).fill(0);
+        return;
+      }
       savedScroll = scrollY;
       frame = document.createElement('iframe');
-      frame.title = 'Mission Réseau — mini-jeu du portfolio';
+      frame.title = 'Arcade Lab — cinq jeux du portfolio';
       // No same-origin privilege, navigation, popups, storage or network access.
       frame.setAttribute('sandbox', 'allow-scripts');
       frame.srcdoc = new TextDecoder().decode(plaintext);
@@ -67,7 +70,7 @@
       shell.replaceChildren(frame);
       shell.hidden = false;
       document.body.classList.add('secret-world');
-      document.title = 'Mission Réseau — Adam Giuglardo';
+      document.title = 'Arcade Lab — Adam Giuglardo';
       frame.addEventListener('load', () => frame.focus(), { once: true });
     } catch (error) {
       if (attempt !== generation || !gate.open) return;
@@ -94,7 +97,8 @@
     document.body.classList.remove('secret-world');
     document.title = 'Adam Giuglardo — Réseaux & Télécommunications';
     scrollTo({ top: savedScroll, behavior: 'instant' });
-    trigger.focus({ preventScroll: true });
+    const returnTarget = trigger.getClientRects().length ? trigger : document.querySelector('.menu-toggle');
+    returnTarget.focus({ preventScroll: true });
     queueReadingPosition();
   });
 })();

@@ -3,6 +3,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { randomBytes, pbkdf2Sync, createCipheriv } from 'node:crypto';
 import { createInterface } from 'node:readline';
+import { Script } from 'node:vm';
 
 const input = createInterface({ input: process.stdin, terminal: false });
 process.stderr.write('Code de chiffrement attendu sur stdin (non enregistré).\n');
@@ -11,8 +12,15 @@ input.once('line', async password => {
   try {
     if (password.length < 10) throw new Error('Utiliser un code d’au moins 10 caractères.');
     const game = await readFile(new URL('../.private/game.html', import.meta.url), 'utf8');
-    const addon = await readFile(new URL('../.private/arcade-addon.js', import.meta.url), 'utf8');
-    const plaintext = Buffer.from(game.replace('/* ARCADE_ADDON */', addon));
+    const files = ['fight-game.js', 'quest-game.js', 'action-games.js', 'arcade-hub.js'];
+    const modules = await Promise.all(files.map(file => readFile(new URL(`../.private/${file}`, import.meta.url), 'utf8')));
+    const marker = '/* ARCADE_ADDON */';
+    if (game.split(marker).length !== 2) throw new Error('Le point d’intégration de l’arcade est absent ou dupliqué.');
+    const document = game.replace(marker, () => modules.join('\n'));
+    const scripts = [...document.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+    if (scripts.length !== 1) throw new Error('Document de jeu incomplet.');
+    new Script(scripts[0][1]); // Validate the entire bundle before encrypting it.
+    const plaintext = Buffer.from(document);
     const salt = randomBytes(16);
     const iv = randomBytes(12);
     const iterations = 600000;

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visite animée — Adam Giuglardo</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;width:1280px;height:720px;overflow:hidden;background:#08090c;color:#f4f5f7;font-family:Arial,Helvetica,sans-serif}
+    body{background:radial-gradient(ellipse at 85% 0%,#ff9b4a13,transparent 50%),#08090c}
+    .stage-header{position:absolute;inset:0 36px auto;height:70px;display:flex;align-items:center;justify-content:space-between}
+    .stage-brand{display:flex;align-items:center;gap:16px;font-size:11px;letter-spacing:3px;color:#a2a6ad}.stage-brand strong{font-size:28px;letter-spacing:-2px;color:#ff9b4a}.chapter{font-size:11px;letter-spacing:2px;color:#ffad68}.chapter span{color:#707784;margin-left:18px}
+    .browser{position:absolute;left:36px;top:72px;width:1208px;height:505px;border:1px solid #ffffff28;border-radius:16px;overflow:hidden;background:#0a0b0d;box-shadow:0 24px 80px #0008}
+    .browser-bar{height:30px;display:flex;align-items:center;padding:0 14px;gap:6px;border-bottom:1px solid #ffffff12;background:#14161a;color:#89909b;font:10px monospace}
+    .browser-bar i{width:6px;height:6px;background:#60656d;border-radius:50%}.browser-bar i:first-child{background:#ff9b4a}.browser-bar span{margin-left:17px}.browser-bar b{margin-left:auto;font-weight:normal;color:#666d77}
+    iframe{width:100%;height:473px;display:block;border:0;background:#08090b}
+    .caption{position:absolute;left:177px;right:44px;top:605px;min-height:77px;display:grid;align-content:center;gap:9px;padding-left:22px;border-left:2px solid #ff9b4a}
+    .caption-label{color:#ffad68;font-size:11px;text-transform:uppercase;letter-spacing:2px}.caption-copy{margin:0;color:#e6e8ed;font-size:20px;line-height:1.35;letter-spacing:-.3px}
+    .progress-track{position:absolute;left:36px;right:36px;bottom:15px;height:2px;background:#ffffff15}.progress-track div{width:0;height:100%;background:#ff9b4a;box-shadow:0 0 16px #ff9b4a88;transition:width .8s ease}
+    .mascot{position:absolute;left:0;top:0;width:84px;height:118px;z-index:10;transform:translate(68px,573px);transform-origin:bottom center;filter:drop-shadow(0 8px 12px #0006);pointer-events:none}
+    .mascot svg{width:100%;height:100%;overflow:visible}.mascot .eye{transform-origin:center;transform-box:fill-box;animation:blink 4.6s infinite}.mascot .antenna{animation:signal 2s infinite}.mascot .arm{transform-box:fill-box;transform-origin:50% 8%}.mascot .leg{transform-box:fill-box;transform-origin:50% 0}.mascot.walking .left-arm{animation:arm .25s infinite alternate}.mascot.walking .right-arm{animation:arm .25s infinite alternate-reverse}.mascot.walking .left-leg{animation:leg .25s infinite alternate}.mascot.walking .right-leg{animation:leg .25s infinite alternate-reverse}.mascot.pointing .right-arm{transform:rotate(-105deg)}.mascot.waving .right-arm{animation:wave .3s infinite alternate}
+    .click-ring{position:absolute;width:52px;height:52px;border:2px solid #ffb367;border-radius:50%;z-index:9;opacity:0;pointer-events:none;box-shadow:0 0 30px #ff9b4a44}.click-ring:after{content:"";position:absolute;inset:19px;background:#ffad68;border-radius:50%}
+    .intro{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;justify-content:center;padding:0 95px;background:radial-gradient(ellipse at 85% 70%,#ff9b4a24,transparent 55%),#08090c;transition:opacity .7s,transform .7s;overflow:hidden}.intro:after{content:"";position:absolute;right:110px;top:145px;width:320px;height:320px;border:1px solid #ff9b4a32;border-radius:50%;box-shadow:0 0 0 50px #ff9b4a05,0 0 0 100px #ff9b4a03}.intro .kicker{font-size:12px;letter-spacing:4px;color:#ffad68;margin:0 0 30px}.intro h1{margin:0;font-size:78px;line-height:1;letter-spacing:-5px;max-width:710px;background:linear-gradient(#fff,#919aa7);background-clip:text;color:transparent}.intro .name{font-size:21px;color:#bcc2cb;margin:26px 0 0}.intro .tags{font-size:12px;letter-spacing:1px;color:#858e9b;margin-top:38px}.intro.hidden{opacity:0;pointer-events:none;transform:scale(1.025)}
+    .cv-preview{position:absolute;inset:72px 36px 143px;z-index:5;display:none;align-items:center;justify-content:center;background:#101216ef;backdrop-filter:blur(8px);border-radius:16px}.cv-preview img{max-width:96%;height:95%;object-fit:contain;border-radius:3px;box-shadow:0 16px 50px #000b}.cv-preview.visible{display:flex;animation:arrive .5s both}
+    @keyframes blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.1)}}@keyframes signal{50%{opacity:.5;filter:drop-shadow(0 0 5px #ff9b4a)}}@keyframes arm{from{transform:rotate(-25deg)}to{transform:rotate(30deg)}}@keyframes leg{from{transform:rotate(20deg)}to{transform:rotate(-22deg)}}@keyframes wave{from{transform:rotate(-120deg)}to{transform:rotate(-150deg)}}@keyframes arrive{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="stage-header"><div class="stage-brand"><strong>AG.</strong><span>LE PORTFOLIO EN MOUVEMENT</span></div><div class="chapter" id="chapter">LA VISITE<span>01 / 28</span></div></header>
+  <div class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>adamgiuglardo.github.io / Portfolio</span><b>PARCOURIR · COMPRENDRE · DÉCOUVRIR</b></div><iframe id="portfolio" title="Portfolio d’Adam Giuglardo" src="/?tour-capture"></iframe></div>
+  <div class="cv-preview" id="cv-preview"><img src="/.tour-render/cv.png" alt="CV d’Adam Giuglardo"></div>
+  <div class="caption"><span class="caption-label" id="caption-label">LE GUIDE ARRIVE</span><p class="caption-copy" id="caption-copy">Un petit robot, pour découvrir chaque partie du portfolio.</p></div>
+  <div class="progress-track"><div id="progress"></div></div>
+  <div class="intro" id="intro"><p class="kicker">ADAM GIUGLARDO · LA VISITE ANIMÉE</p><h1>Un petit guide.<br>Un grand tour.</h1><p class="name">Réseaux &amp; Télécommunications</p><p class="tags">5 PROJETS &nbsp; / &nbsp; 10 COMPÉTENCES &nbsp; / &nbsp; 1 PARCOURS</p></div>
+  <div class="click-ring" id="click-ring"></div>
+  <div class="mascot waving" id="mascot" aria-hidden="true">
+    <svg viewBox="0 0 84 118" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="42" cy="113" rx="29" ry="4" fill="#000" opacity=".25"/>
+      <g class="left-leg leg"><path d="M29 88v17" stroke="#c6cbd3" stroke-width="8" stroke-linecap="round"/><rect x="16" y="104" width="22" height="8" rx="4" fill="#f1f3f6"/></g>
+      <g class="right-leg leg"><path d="M55 88v17" stroke="#c6cbd3" stroke-width="8" stroke-linecap="round"/><rect x="47" y="104" width="22" height="8" rx="4" fill="#f1f3f6"/></g>
+      <path d="M42 16V8" stroke="#b5bdc9" stroke-width="3"/><circle class="antenna" cx="42" cy="6" r="4" fill="#ff9b4a"/>
+      <g class="left-arm arm"><path d="M19 67 10 82" stroke="#d8dde4" stroke-width="7" stroke-linecap="round"/><circle cx="9" cy="84" r="5" fill="#ffad68"/></g>
+      <g class="right-arm arm"><path d="M65 67 74 82" stroke="#d8dde4" stroke-width="7" stroke-linecap="round"/><circle cx="75" cy="84" r="5" fill="#ffad68"/></g>
+      <rect x="20" y="57" width="44" height="39" rx="13" fill="#ff9b4a"/><path d="M28 63h28" stroke="#ffd3ae" stroke-width="2" stroke-linecap="round"/>
+      <text x="42" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="13" fill="#1c2026">AG.</text>
+      <rect x="10" y="18" width="64" height="44" rx="16" fill="#e9edf3"/><rect x="16" y="24" width="52" height="30" rx="11" fill="#192029"/>
+      <rect class="eye" x="27" y="32" width="6" height="10" rx="3" fill="#ffb16b"/><rect class="eye" x="51" y="32" width="6" height="10" rx="3" fill="#ffb16b"/><path d="M37 45q5 4 10 0" fill="none" stroke="#aab5c4" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <script>
+    const mascot=document.getElementById('mascot');
+    let position={x:900,y:305,scale:2.3};
+    mascot.style.transform=`translate(${position.x}px,${position.y}px) scale(${position.scale})`;
+    window.tour={
+      start(){
+        [...document.querySelector('#intro').children].forEach((el,index)=>el.animate([{opacity:0,transform:'translateY(22px)'},{opacity:1,transform:'none'}],{duration:800,delay:index*95,easing:'cubic-bezier(.2,.7,.2,1)',fill:'backwards'}));
+        mascot.animate([{opacity:0,transform:'translate(900px,360px) scale(1.9)'},{opacity:1,transform:'translate(900px,305px) scale(2.3)'}],{duration:900,easing:'cubic-bezier(.2,.7,.2,1)'});
+      },
+      async move(x,y,duration=650,scale=1){
+        const from={...position};
+        mascot.classList.remove('waving','pointing');mascot.classList.add('walking');
+        const mid={x:(from.x+x)/2,y:Math.min(from.y,y)-30};
+        const animation=mascot.animate([
+          {transform:`translate(${from.x}px,${from.y}px) scale(${from.scale})`},
+          {transform:`translate(${mid.x}px,${mid.y}px) scale(${(from.scale+scale)/2}) rotate(${x>from.x?5:-5}deg)`,offset:.5},
+          {transform:`translate(${x}px,${y}px) scale(${scale})`}
+        ],{duration,easing:'cubic-bezier(.35,0,.2,1)',fill:'forwards'});
+        await animation.finished;position={x,y,scale};mascot.style.transform=`translate(${x}px,${y}px) scale(${scale})`;animation.cancel();mascot.classList.remove('walking');
+      },
+      home(){return this.move(68,573,600)},
+      click(x,y){
+        const ring=document.getElementById('click-ring');ring.style.left=(x-26)+'px';ring.style.top=(y-26)+'px';
+        ring.animate([{opacity:1,transform:'scale(.25)'},{opacity:0,transform:'scale(1.7)'}],{duration:650,easing:'ease-out'});
+        mascot.classList.add('pointing');setTimeout(()=>mascot.classList.remove('pointing'),500);
+      },
+      scene(chapter,label,copy,index,total){
+        document.getElementById('chapter').innerHTML=chapter+'<span>'+String(index).padStart(2,'0')+' / '+total+'</span>';
+        document.getElementById('caption-label').textContent=label;document.getElementById('caption-copy').textContent=copy;
+        document.querySelector('.caption').animate([{opacity:0,transform:'translateY(10px)'},{opacity:1,transform:'none'}],{duration:350});
+        document.getElementById('progress').style.width=(index/total*100)+'%';
+      },
+      reveal(){document.getElementById('intro').classList.add('hidden')},
+      finish(){const intro=document.getElementById('intro');intro.querySelector('.kicker').textContent='LA VISITE EST FINIE. À TOI DE CONTINUER.';intro.querySelector('h1').innerHTML='On construit<br>la suite ?';intro.querySelector('.name').textContent='Adam Giuglardo · Réseaux & Télécommunications';intro.querySelector('.tags').textContent='PROJETS · ALTERNANCE · CONTACT';intro.classList.remove('hidden');mascot.classList.add('waving')},
+      cv(show){document.getElementById('cv-preview').classList.toggle('visible',show)}
+    };
+  </script>
+</body>
+</html>

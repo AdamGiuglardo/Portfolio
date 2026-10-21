@@ -1,0 +1,191 @@
+{
+  "title": "Le portfolio en mouvement — Adam Giuglardo",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "duration": 122.458,
+  "scenes": [
+    {
+      "start": 0,
+      "chapter": "BIENVENUE",
+      "title": "Un petit guide. Un grand tour.",
+      "text": "Découvrons le portfolio d’Adam Giuglardo, étape par étape."
+    },
+    {
+      "start": 3.342,
+      "chapter": "À PROPOS DE MOI",
+      "title": "Comprendre. Connecter. Sécuriser.",
+      "text": "Un parcours en Réseaux & Télécommunications, construit projet après projet."
+    },
+    {
+      "start": 5.745,
+      "chapter": "PROJETS",
+      "title": "Projet intégratif SAE 2.04",
+      "text": "Une infrastructure d’entreprise : routage, services et administration réseau."
+    },
+    {
+      "start": 11.611,
+      "chapter": "PROJETS",
+      "title": "Infrastructure réseau",
+      "text": "Du Wi-Fi, de l’adressage et des services sur de vrais équipements."
+    },
+    {
+      "start": 17.445,
+      "chapter": "PROJETS",
+      "title": "Portfolio",
+      "text": "Le site que tu explores : mon parcours, mes compétences et mes réalisations."
+    },
+    {
+      "start": 23.143,
+      "chapter": "PROJETS",
+      "title": "Analyse de signaux",
+      "text": "Observer les signaux, mesurer leurs propriétés et interpréter les résultats."
+    },
+    {
+      "start": 28.846,
+      "chapter": "PROJETS",
+      "title": "Téléphonie sur IP",
+      "text": "Faire communiquer des postes SIP, DECT et analogiques grâce à un IPBX."
+    },
+    {
+      "start": 34.467,
+      "chapter": "COMPÉTENCES",
+      "title": "Installation d’équipements",
+      "text": "Switchs Cisco, routeurs et points d’accès : apprendre à connecter les équipements."
+    },
+    {
+      "start": 38.629,
+      "chapter": "COMPÉTENCES",
+      "title": "Virtualisation",
+      "text": "VMware et VirtualBox pour déployer des serveurs et simuler des architectures."
+    },
+    {
+      "start": 42.761,
+      "chapter": "COMPÉTENCES",
+      "title": "Services réseau",
+      "text": "DNS, DHCP, Active Directory et SSH : les services au cœur du réseau."
+    },
+    {
+      "start": 46.927,
+      "chapter": "COMPÉTENCES",
+      "title": "Développement Web",
+      "text": "Créer des interfaces web pour présenter des informations et des projets."
+    },
+    {
+      "start": 51.093,
+      "chapter": "COMPÉTENCES",
+      "title": "Bash & Linux",
+      "text": "Administrer Linux et automatiser les tâches avec des scripts Bash."
+    },
+    {
+      "start": 55.263,
+      "chapter": "COMPÉTENCES",
+      "title": "Python",
+      "text": "Développer des scripts et traiter des données avec Python."
+    },
+    {
+      "start": 59.428,
+      "chapter": "COMPÉTENCES",
+      "title": "Bases de données",
+      "text": "Organiser les données et travailler avec les bases de données."
+    },
+    {
+      "start": 63.595,
+      "chapter": "COMPÉTENCES",
+      "title": "GBF",
+      "text": "Générer des signaux pour les observer et les comparer."
+    },
+    {
+      "start": 67.76,
+      "chapter": "COMPÉTENCES",
+      "title": "Oscilloscope",
+      "text": "Mesurer l’amplitude, la période et le bruit à l’oscilloscope."
+    },
+    {
+      "start": 71.927,
+      "chapter": "COMPÉTENCES",
+      "title": "Téléphonie sur IP (VoIP)",
+      "text": "Configurer et tester des communications téléphoniques sur IP."
+    },
+    {
+      "start": 76.093,
+      "chapter": "FORMATION",
+      "title": "Un parcours tourné vers le numérique",
+      "text": "Le BUT Réseaux & Télécommunications, à l’IUT Clermont Auvergne."
+    },
+    {
+      "start": 80.227,
+      "chapter": "QUALITÉS PERSONNELLES",
+      "title": "Assiduité",
+      "text": "Des routines et des échéances pour avancer avec constance."
+    },
+    {
+      "start": 83.826,
+      "chapter": "QUALITÉS PERSONNELLES",
+      "title": "Organisation",
+      "text": "Planifier, découper les étapes et garder ses projets organisés."
+    },
+    {
+      "start": 87.443,
+      "chapter": "QUALITÉS PERSONNELLES",
+      "title": "Patience",
+      "text": "Tester, comprendre l’erreur et chercher une solution, étape par étape."
+    },
+    {
+      "start": 91.027,
+      "chapter": "QUALITÉS PERSONNELLES",
+      "title": "Efficacité",
+      "text": "Choisir des méthodes simples et automatiser ce qui peut l’être."
+    },
+    {
+      "start": 94.643,
+      "chapter": "QUALITÉS PERSONNELLES",
+      "title": "Esprit d’équipe",
+      "text": "Écouter, communiquer et avancer ensemble vers un objectif commun."
+    },
+    {
+      "start": 98.244,
+      "chapter": "QUALITÉS PERSONNELLES",
+      "title": "Prévenance",
+      "text": "Soigner les détails et anticiper les besoins des autres."
+    },
+    {
+      "start": 101.858,
+      "chapter": "LANGUES",
+      "title": "Échanger dans plusieurs langues",
+      "text": "Français, anglais, italien, arabe et espagnol : cinq langues présentées sur le site."
+    },
+    {
+      "start": 104.424,
+      "chapter": "DIVERS",
+      "title": "Et en dehors des réseaux ?",
+      "text": "Veille technologique, travail en équipe, jeux vidéo, musique et podcasts."
+    },
+    {
+      "start": 108.457,
+      "chapter": "C.V",
+      "title": "Tout mon parcours, dans un document",
+      "text": "Le CV est consultable et téléchargeable directement depuis le portfolio."
+    },
+    {
+      "start": 112.128,
+      "chapter": "CODE",
+      "title": "Le portfolio a un autre niveau",
+      "text": "Un code d’accès ouvre l’arcade du portfolio et ses cinq jeux."
+    },
+    {
+      "start": 115.555,
+      "chapter": "CONTACT",
+      "title": "Construisons la suite",
+      "text": "Une alternance, un projet ou un échange : les coordonnées sont à portée de clic."
+    },
+    {
+      "start": 118.823,
+      "chapter": "À TOI DE JOUER",
+      "title": "La visite continue avec toi",
+      "text": "Explore les projets, ouvre les compétences et prenons contact."
+    }
+  ],
+  "source": "Local portfolio HTML and assets; original vector mascot and motion composition",
+  "audio": "Silent; French text is built into the picture"
+}

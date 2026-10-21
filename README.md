@@ -35,3 +35,18 @@ L’arcade est préparée dans `.private/game.html`, `.private/arcade-hub.js`, `
 L’arcade contient Mission Réseau (cinq défis), Pixel Fight (duel en manches), Packet Quest (aventure), Neon Runner (course) et Orbit Defender (tir spatial). Vérifier le départ, les commandes clavier/tactiles, Pause/Reprendre, le retour à l’arcade et le retour au portfolio. Les scores restent en mémoire pendant la visite ; ils ne sont pas enregistrés sur un serveur.
 
 Le chiffrement masque le contenu sans fournir une authentification côté serveur : GitHub Pages sert des fichiers statiques. Un fichier chiffré téléchargé peut faire l’objet de tentatives hors ligne, indépendamment du blocage local du formulaire.
+
+## Visite animée
+
+Le bouton « Visite animée » de l’accueil ouvre une vidéo MP4 avec lecteur natif, lecture en ligne sur téléphone et descriptions françaises facultatives. La vidéo reste en pause tant que le visiteur ne la lance pas; elle se met en pause à la fermeture du lecteur.
+
+La composition et le petit robot vectoriel sont définis dans `tools/tour-stage.html`. `tools/render-portfolio-tour.mjs` enregistre le vrai site avec Playwright : les cinq projets, les dix compétences techniques et les six qualités personnelles sont ouverts successivement. Le parcours, les langues, les centres d’intérêt, le CV, le formulaire Code vide et le contact complètent la visite.
+
+Pour la régénérer sur macOS avec Google Chrome et FFmpeg installés :
+
+```sh
+npx playwright install ffmpeg
+npm run tour:render
+```
+
+Le rendu écrit `assets/portfolio-tour.mp4`, sa couverture JPEG, les descriptions `.vtt` et le découpage `portfolio-tour-scenes.json`. Les prises brutes et le CV rasterisé restent dans `.tour-render/`, ignoré par Git. Un extrait de contrôle peut être produit avec `node tools/render-portfolio-tour.mjs --sample`.

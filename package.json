@@ -8,7 +8,8 @@
     "predev": "node tools/link-dev-assets.mjs",
     "dev": "vite --config vite.config.js",
     "build": "vite build --config vite.config.js && node tools/publish-pages.mjs",
-    "check": "vite build --config vite.config.js && node --check script.js && node --check tools/publish-pages.mjs"
+    "check": "vite build --config vite.config.js && node --check script.js && node --check tools/publish-pages.mjs && node --check tools/render-portfolio-tour.mjs",
+    "tour:render": "npm run build && node tools/render-portfolio-tour.mjs"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "playwright": "^1.64.1",
     "vite": "^8.3.5"
   }
 }

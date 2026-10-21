@@ -87,3 +87,31 @@ addEventListener("resize", queueReadingPosition);
 addEventListener("load", queueReadingPosition);
 document.addEventListener("toggle", queueReadingPosition, true);
 updateReadingPosition();
+
+const tourDialog = document.querySelector("#portfolio-tour-dialog");
+const tourVideo = document.querySelector("#portfolio-tour");
+let tourOpener;
+document.querySelectorAll("[data-open-tour]").forEach((button) => {
+  button.addEventListener("click", () => {
+    tourOpener = button;
+    closeMenu();
+    tourDialog.showModal();
+    document.body.classList.add("dialog-open");
+    document.querySelector("#tour-play-note").hidden = true;
+    if (tourVideo.ended) tourVideo.currentTime = 0;
+    tourVideo.play().catch(() => {
+      document.querySelector("#tour-play-note").hidden = false;
+    });
+  });
+});
+tourDialog?.querySelector(".tour-close").addEventListener("click", () => tourDialog.close());
+tourDialog?.addEventListener("close", () => {
+  tourVideo.pause();
+  document.body.classList.remove("dialog-open");
+  tourOpener?.focus({ preventScroll: true });
+});
+tourDialog?.addEventListener("click", (event) => {
+  if (event.target !== tourDialog) return;
+  const rect = tourDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) tourDialog.close();
+});

@@ -8,8 +8,9 @@
     "predev": "node tools/link-dev-assets.mjs",
     "dev": "vite --config vite.config.js",
     "build": "vite build --config vite.config.js && node tools/publish-pages.mjs",
-    "check": "vite build --config vite.config.js && node --check script.js && node --check tools/publish-pages.mjs && node --check tools/render-portfolio-tour.mjs",
-    "tour:render": "npm run build && node tools/render-portfolio-tour.mjs"
+    "check": "vite build --config vite.config.js && node --check script.js && node --check tools/publish-pages.mjs && node --check tools/render-portfolio-tour.mjs && node --check tools/add-tour-sfx.mjs",
+    "tour:render": "npm run build && node tools/render-portfolio-tour.mjs",
+    "tour:sfx": "node tools/add-tour-sfx.mjs"
   },
   "repository": {
     "type": "git",

@@ -187,5 +187,639 @@
     }
   ],
   "source": "Local portfolio HTML and assets; original vector mascot and motion composition",
-  "audio": "Silent; French text is built into the picture"
+  "audio": "Original synthesized stereo sound effects: robot steps, airy moves, UI clicks, opening pops, paper and short chimes. AAC, 48 kHz.",
+  "soundEffects": {
+    "timingSource": "Chapter cues and recorded action offsets",
+    "events": [
+      {
+        "time": 0.15,
+        "type": "boot"
+      },
+      {
+        "time": 3.362,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 5.765,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 6.3950000000000005,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 6.995,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 7.045,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 7.395,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 11.251000000000001,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 12.261000000000001,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 12.861,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 12.911000000000001,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 13.261000000000001,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 17.085,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 18.095,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 18.695,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 18.745,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 19.095,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 22.783,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 23.793,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 24.393,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 24.443,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 24.793,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 28.486,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 29.496,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 30.096,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 30.146,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 30.496,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 34.107,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 34.487,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 35.117,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 35.717,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 35.766999999999996,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 36.667,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 38.489,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 39.278999999999996,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 39.879,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 39.928999999999995,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 40.829,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 42.621,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 43.411,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 44.011,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 44.061,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 44.961000000000006,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 46.787,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 47.577,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 48.177,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 48.227,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 49.127,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 50.953,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 51.743,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 52.343,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 52.393,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 53.293000000000006,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 55.123,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 55.913,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 56.513,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 56.562999999999995,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 57.463,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 59.288,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 60.077999999999996,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 60.678,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 60.727999999999994,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 61.628,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 63.455,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 64.245,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 64.845,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 64.895,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 65.795,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 67.62,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 68.41000000000001,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 69.01,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 69.06,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 69.96000000000001,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 71.787,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 72.57700000000001,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 73.177,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 73.227,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 74.12700000000001,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 75.953,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 76.113,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 80.247,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 80.87700000000001,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 81.477,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 81.527,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 82.427,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 83.68599999999999,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 84.476,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 85.076,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 85.12599999999999,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 86.026,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 87.303,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 88.093,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 88.693,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 88.743,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 89.643,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 90.887,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 91.677,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 92.277,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 92.327,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 93.227,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 94.503,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 95.293,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 95.893,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 95.943,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 96.843,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 98.104,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 98.894,
+        "type": "move",
+        "pan": -0.15
+      },
+      {
+        "time": 99.494,
+        "type": "click",
+        "pan": -0.1
+      },
+      {
+        "time": 99.544,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 100.444,
+        "type": "move",
+        "pan": -0.25
+      },
+      {
+        "time": 101.718,
+        "type": "click",
+        "pan": 0.15
+      },
+      {
+        "time": 101.878,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 104.444,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 108.47699999999999,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 109.17699999999999,
+        "type": "click",
+        "pan": 0.25
+      },
+      {
+        "time": 109.217,
+        "type": "paper",
+        "pan": 0
+      },
+      {
+        "time": 112.148,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 112.148,
+        "type": "move",
+        "pan": 0.3
+      },
+      {
+        "time": 112.748,
+        "type": "click",
+        "pan": 0.3
+      },
+      {
+        "time": 112.798,
+        "type": "pop",
+        "pan": 0
+      },
+      {
+        "time": 113.078,
+        "type": "move",
+        "pan": -0.2
+      },
+      {
+        "time": 115.20500000000001,
+        "type": "click",
+        "pan": 0.2
+      },
+      {
+        "time": 115.575,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 118.84299999999999,
+        "type": "section",
+        "pan": 0
+      },
+      {
+        "time": 118.84299999999999,
+        "type": "move",
+        "pan": 0.3
+      },
+      {
+        "time": 119.67299999999999,
+        "type": "finish",
+        "pan": 0
+      }
+    ]
+  }
 }

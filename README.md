@@ -50,3 +50,5 @@ npm run tour:render
 ```
 
 Le rendu écrit `assets/portfolio-tour.mp4`, sa couverture JPEG, les descriptions `.vtt` et le découpage `portfolio-tour-scenes.json`. Les prises brutes et le CV rasterisé restent dans `.tour-render/`, ignoré par Git. Un extrait de contrôle peut être produit avec `node tools/render-portfolio-tour.mjs --sample`.
+
+Les bruitages originaux sont synthétisés par `tools/add-tour-sfx.mjs` : pas du robot, déplacements, clics, ouvertures, papier et petits carillons. Le rendu enregistre les instants des actions et ajoute automatiquement une piste AAC stéréo. `npm run tour:sfx` permet de recréer uniquement le son du film existant, en conservant sa piste vidéo sans réencodage.

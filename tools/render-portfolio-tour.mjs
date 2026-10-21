@@ -6,6 +6,7 @@ import { dirname, extname, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
+import { addTourSfx } from "./add-tour-sfx.mjs";
 
 const run = promisify(execFile);
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -38,13 +39,26 @@ const video = page.video();
 const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
 const cues = [];
+const soundEvents = [];
 let started;
 let sceneIndex = 0;
 const total = sample ? 5 : 30;
 const wait = (ms) => page.waitForTimeout(sample ? ms * 0.6 : ms);
-const stage = (method, ...args) => page.evaluate(({ method, args }) => window.tour[method](...args), { method, args });
+function sound(type, pan = 0) {
+  if (started) soundEvents.push({ time: (Date.now() - started) / 1000, type, pan });
+}
+const stage = (method, ...args) => {
+  if (method === "move") sound("move", (args[0] - 640) / 1600);
+  if (method === "home") sound("move", -0.3);
+  if (method === "click") sound("click", (args[0] - 640) / 1600);
+  if (method === "start") sound("boot");
+  if (method === "finish") sound("finish");
+  if (method === "cv" && args[0]) sound("paper");
+  return page.evaluate(({ method, args }) => window.tour[method](...args), { method, args });
+};
 function cue(chapter, label, text) {
   const time = (Date.now() - started) / 1000;
+  if (cues.length && cues.at(-1).chapter !== chapter) sound("section");
   cues.push({ start: time, chapter, title: label, text });
   console.log(`${String(++sceneIndex).padStart(2, "0")} / ${total} · ${chapter} · ${label}`);
   return stage("scene", chapter, label, text, sceneIndex, total);
@@ -88,7 +102,9 @@ try {
     const y = box.y + box.height / 2;
     if (move) await stage("move", Math.max(10, Math.min(1175, x - 75)), Math.max(76, Math.min(463, y - 60)), 550);
     await stage("click", x, y);
+    const opensPanel = await locator.evaluate((el) => el.matches("[data-modal], #open-code") || (el.tagName === "SUMMARY" && !el.parentElement.open));
     await locator.click();
+    if (opensPanel) sound("pop", (x - 640) / 1600);
     await wait(260);
   }
 
@@ -147,6 +163,7 @@ try {
     await scrollTo(summary, 112);
     await stage("home");
     await wait(1250);
+    sound("click");
     await summary.click();
   }
 
@@ -175,6 +192,7 @@ try {
       await scrollTo(summary, 112);
       await stage("home");
       await wait(700);
+      sound("click");
       await summary.click();
     }
 
@@ -219,9 +237,11 @@ try {
   await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", String(trimStart), "-i", raw, "-t", String(duration), "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "slow", "-crf", "24", "-movflags", "+faststart", "-an", destination], { maxBuffer: 2 ** 20 });
   const timestamp = (seconds) => new Date(Math.max(0, seconds) * 1000).toISOString().slice(11, 23);
   const vtt = "WEBVTT\n\n" + cues.map((item, index) => `${index + 1}\n${timestamp(item.start)} --> ${timestamp(cues[index + 1]?.start ?? duration)}\n${item.title}\n${item.text}\n`).join("\n");
-  const manifest = { title: "Le portfolio en mouvement — Adam Giuglardo", width: 1280, height: 720, fps: 30, duration, scenes: cues, source: "Local portfolio HTML and assets; original vector mascot and motion composition", audio: "Silent; French text is built into the picture" };
-  await writeFile(sample ? resolve(renderDir, "sample-scenes.json") : resolve(root, "assets/portfolio-tour-scenes.json"), JSON.stringify(manifest, null, 2) + "\n");
+  const manifest = { title: "Le portfolio en mouvement — Adam Giuglardo", width: 1280, height: 720, fps: 30, duration, scenes: cues, source: "Local portfolio HTML and assets; original vector mascot and motion composition", soundEffects: { timingSource: "Recorded browser action timestamps", events: soundEvents } };
+  const manifestPath = sample ? resolve(renderDir, "sample-scenes.json") : resolve(root, "assets/portfolio-tour-scenes.json");
+  await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   await writeFile(sample ? resolve(renderDir, "sample.vtt") : resolve(root, "assets/portfolio-tour.vtt"), vtt);
+  await addTourSfx({ videoPath: destination, manifestPath });
   console.log(`Ready: ${destination} (${((await stat(destination)).size / 1024 / 1024).toFixed(1)} MB).`);
 } finally {
   await context.close().catch(() => {});

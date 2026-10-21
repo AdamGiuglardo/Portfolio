@@ -11,9 +11,9 @@ python3 -m http.server 5173
 Ouvrir http://localhost:5173. Aucune installation ni compilation nécessaire.
 
 - `index.html` : présentation, projets, compétences, parcours et contact.
-- `style.css` : thème responsive ivoire / vert, animations et réduction des mouvements.
+- `style.css` : thème responsive noir / argent / orange, animations et réduction des mouvements.
 - `script.js` : filtres, dialogues accessibles, menu mobile et animations au défilement.
-- `assets/` : photo, CV et documents des projets.
+- `assets/` : portrait tramé, photo originale, CV et documents des projets.
 - `secret.js` : ouverture du mode Code et déchiffrement local de l’arcade.
 - `assets/mission-reseau.enc.json` : arcade chiffrée AES-GCM ; ses sources lisibles ne sont jamais versionnées.
 

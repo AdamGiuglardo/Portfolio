@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Adam Giuglardo, étudiant en BUT Réseaux et Télécommunications à Clermont-Ferrand. Découvrez mes projets, mes compétences et mon parcours. À la recherche d’une alternance."
+    />
+    <meta name="theme-color" content="#183c30" />
+    <title>Adam Giuglardo — Réseaux & Télécommunications</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css?v=8" />
+    <script src="./script.js?v=8" defer></script>
+    <script src="./secret.js?v=4" defer></script>
+    <script type="module" src="./main.jsx"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#apropos" aria-label="Adam Giuglardo, accueil"
+          ><strong>AG.</strong><span>/ Adam Giuglardo</span></a
+        ><button class="menu-toggle" aria-expanded="false" aria-controls="nav">
+          Menu <span aria-hidden="true">+</span>
+        </button>
+        <nav id="nav" aria-label="Navigation principale">
+          <a href="#apropos">À propos de moi</a>
+          <a href="#projets">Projets</a>
+          <a href="#competences">Compétences</a>
+          <a href="#formation">Formation</a>
+          <a href="#divers">Divers</a>
+          <a href="#cv">C.V</a>
+          <a href="#contact">Contact</a>
+          <button class="code-tab" id="open-code" type="button" aria-haspopup="dialog" aria-controls="code-gate">Code <span aria-hidden="true">↗</span></button>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero container" id="apropos" aria-label="À propos de moi">
+        <div class="hero-copy">
+          <h1>
+            <span>Comprendre<i aria-hidden="true">.</i></span
+            ><span>Connecter<i aria-hidden="true">.</i></span
+            ><span>Sécuriser<i aria-hidden="true">.</i></span>
+          </h1>
+          <p class="hero-description">
+            Étudiant en BUT Réseaux &amp; Télécommunications à Clermont-Ferrand.
+            Je construis mes compétences, un projet à la fois.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projets"
+              >Découvrir mes projets
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14" /></svg></a
+            ><a
+              class="button button-outline"
+              href="assets/cv.pdf"
+              target="_blank"
+              rel="noopener"
+              >Mon CV
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14" /></svg
+            ></a>
+          </div>
+          <p class="availability">
+            <span aria-hidden="true"></span>À la recherche d’une alternance ·
+            Rythme 1 mois / 1 mois
+          </p>
+        </div>
+        <figure class="portrait">
+          <img
+            src="assets/profile-halftone.png"
+            width="1086"
+            height="1448"
+            alt="Portrait d’Adam Giuglardo"
+            fetchpriority="high"
+          />
+          <figcaption>
+            <strong>Adam Giuglardo</strong
+            ><span>Étudiant en réseaux &amp; télécoms</span>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="section container" id="projets">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Projets</p>
+            <h2>Apprendre en faisant.</h2>
+          </div>
+          <div class="filters" id="project-filter-root"></div>
+        </div>
+        <p class="sr-only" id="filter-status" aria-live="polite">
+          <span id="project-status-root"></span>
+        </p>
+        <div class="project-list" id="project-list-root"></div>
+      </section>
+      <section class="section container" id="competences">
+        <p class="section-label">Compétences</p>
+        <h2>De la théorie au terrain.</h2>
+        <div class="skills-grid">
+          <article class="skill-column">
+            <h3>Réseaux</h3>
+            <p>Connecter les équipements et administrer les services.</p>
+            <details>
+              <summary>Installation d’équipements</summary>
+              <ul>
+                <li>
+                  Manipulation de switchs et routeurs Cisco dans le cadre de la
+                  <strong>SAE 2.04</strong>.
+                </li>
+                <li>
+                  Configuration de points d’accès D-LINK pour le projet
+                  d'infrastructure Wi-Fi.
+                </li>
+                <li>
+                  Mises en pratique sur des équipements réels lors des TP et
+                  projets.
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>Virtualisation</summary>
+              <ul>
+                <li>
+                  Déploiement de serveurs virtualisés (Windows Server, Linux)
+                  avec VMware pour la <strong>SAE 2.04</strong>.
+                </li>
+                <li>
+                  Utilisation de VirtualBox pour simuler des architectures
+                  réseau en TP.
+                </li>
+                <li>
+                  Installation et configuration de services (AD, DNS, Web) sur
+                  des machines virtuelles.
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>Services réseau</summary>
+              <ul>
+                <li>
+                  Mise en place des services DNS et DHCP sur Windows Server dans
+                  le cadre de la <strong>SAE 2.04</strong>.
+                </li>
+                <li>
+                  Déploiement d'un annuaire Active Directory pour la gestion des
+                  utilisateurs de l'entreprise.
+                </li>
+                <li>
+                  Sécurisation des accès aux équipements (routeurs, serveurs
+                  Linux) via SSH.
+                </li>
+              </ul>
+            </details>
+          </article>
+          <article class="skill-column">
+            <h3>Développement</h3>
+            <p>Créer des outils et automatiser les tâches.</p>
+            <details>
+              <summary>Développement Web</summary>
+              <ul>
+                <li>
+                  Création de ce portfolio en
+                  <strong>HTML, CSS et JavaScript</strong> pour présenter mes
+                  compétences.
+                </li>
+                <li>
+                  Développement d'un site web pour le compte-rendu de la
+                  <strong>SAE 2.04</strong>, hébergé sur un serveur Linux.
+                </li>
+                <li>
+                  Bases en algorithmique et découverte de frameworks modernes en
+                  autonomie.
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>Bash &amp; Linux</summary>
+              <ul>
+                <li>
+                  Administration d'un serveur Linux (Debian) pour héberger le
+                  site web de la <strong>SAE 2.04</strong>.
+                </li>
+                <li>
+                  Utilisation des commandes Bash pour la gestion du système, des
+                  fichiers et des services (Apache, SSH).
+                </li>
+                <li>
+                  Écriture de scripts pour automatiser des tâches de
+                  configuration.
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>Python</summary>
+              <ul>
+                <li>
+                  Utilisation de Python pour la résolution de problèmes
+                  algorithmiques en TP et lors de mini-projets (SAE).
+                </li>
+                <li>
+                  Maîtrise des structures de données (listes, dictionnaires) et
+                  de la programmation fonctionnelle.
+                </li>
+                <li>
+                  Apprentissage consolidé par la spécialité NSI au lycée et par
+                  des projets personnels.
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>Bases de données</summary>
+              <ul>
+                <li>
+                  Conception et création de bases de données relationnelles avec
+                  <strong>MySQL</strong>.
+                </li>
+                <li>
+                  Manipulation des données via des requêtes SQL (CRUD : Create,
+                  Read, Update, Delete).
+                </li>
+                <li>
+                  Initiation aux bases de données NoSQL (MongoDB) pour des
+                  structures de données flexibles.
+                </li>
+              </ul>
+            </details>
+          </article>
+          <article class="skill-column">
+            <h3>Télécommunications</h3>
+            <p>Comprendre les signaux et faire communiquer les systèmes.</p>
+            <details>
+              <summary>GBF</summary>
+              <ul>
+                <li>
+                  Manipulation de générateurs de basses fréquences (GBF) lors du
+                  TP d'<strong>analyse de signaux</strong>.
+                </li>
+                <li>
+                  Génération de signaux de formes variées (sinusoïdal, carré)
+                  pour étudier leur comportement.
+                </li>
+                <li>
+                  Analyse des caractéristiques des signaux (amplitude,
+                  fréquence, période).
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>Oscilloscope</summary>
+              <ul>
+                <li>
+                  Utilisation d'oscilloscopes pour visualiser et mesurer les
+                  signaux lors du TP d'<strong>analyse de signaux</strong>.
+                </li>
+                <li>
+                  Analyse fréquentielle de signaux via la fonction FFT pour
+                  identifier leurs composantes.
+                </li>
+                <li>
+                  Mesure de tensions, périodes et déphasages sur des montages
+                  électroniques.
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>Téléphonie sur IP (VoIP)</summary>
+              <ul>
+                <li>
+                  Déploiement d'un serveur d'appel <strong>IPBX</strong> dans le
+                  cadre du projet de téléphonie.
+                </li>
+                <li>
+                  Configuration de postes SIP (deskphones) et DECT pour les
+                  connecter au réseau VoIP.
+                </li>
+                <li>
+                  Utilisation d'un adaptateur ATA pour intégrer un téléphone
+                  analogique au système.
+                </li>
+              </ul>
+            </details>
+          </article>
+        </div>
+      </section>
+      <section class="section container" id="formation">
+        <p class="section-label">Parcours</p>
+        <h2>Un parcours tourné<br />vers le numérique.</h2>
+        <div class="timeline">
+          <article>
+            <p class="date">2025 — Aujourd’hui</p>
+            <div>
+              <h3>BUT Réseaux &amp; Télécommunications</h3>
+              <p>IUT Clermont Auvergne · Aubière</p>
+              <p class="education-description">
+                En 2e année, je développe mes compétences en réseaux,
+                administration et cybersécurité à travers les TP et les projets.
+                Je recherche une alternance pour les mettre en pratique en
+                entreprise.
+              </p>
+            </div>
+          </article>
+          <article>
+            <p class="date">2022 — 2025</p>
+            <div>
+              <h3>Baccalauréat général</h3>
+              <p>Lycée Ambroise Brugière · Clermont-Ferrand</p>
+              <p class="education-description">
+                Diplôme obtenu. Spécialités : Numérique &amp; Sciences
+                Informatiques, Mathématiques et Physique-Chimie.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="personal-grid">
+          <div>
+            <h3>Les qualités que je cultive</h3>
+            <div class="qualities">
+              <details>
+                <summary>Assiduité</summary>
+                <p>
+                  Je l’ai développée en me fixant une routine (cours, devoirs,
+                  projets) et en respectant des échéances, même quand la
+                  motivation baisse. Le fait de livrer régulièrement du travail
+                  m’a appris la constance.
+                </p>
+              </details>
+              <details>
+                <summary>Organisation</summary>
+                <p>
+                  Je l’ai acquise en planifiant mes tâches (to-do, priorités,
+                  découpage en étapes) et en gardant mes fichiers/projets
+                  propres. Sur des projets plus longs, ça m’a permis d’éviter le
+                  stress de dernière minute.
+                </p>
+              </details>
+              <details>
+                <summary>Patience</summary>
+                <p>
+                  Je l’ai renforcée en résolvant des problèmes techniques :
+                  tester, comprendre l’erreur, recommencer, chercher une
+                  solution. Ça m’a appris à rester calme et à avancer étape par
+                  étape.
+                </p>
+              </details>
+              <details>
+                <summary>Efficacité</summary>
+                <p>
+                  Je l’ai travaillée en cherchant des méthodes simples :
+                  automatiser ce qui peut l’être, réutiliser des composants, et
+                  aller à l’essentiel. Avec le temps, j’ai appris à produire
+                  plus vite sans sacrifier la qualité.
+                </p>
+              </details>
+              <details>
+                <summary>Esprit d’équipe</summary>
+                <p>
+                  Je l’ai acquise en travaillant en groupe (répartition des
+                  tâches, communication, entraide). J’ai appris à écouter, à
+                  proposer des solutions, et à m’adapter pour atteindre un
+                  objectif commun.
+                </p>
+              </details>
+              <details>
+                <summary>Prévenance</summary>
+                <p>
+                  Je l’ai développée en portant attention aux détails (soin du
+                  rendu, vérifications, anticipation des erreurs) et en me
+                  mettant à la place des autres (utilisateur/équipe) pour
+                  améliorer l’expérience et la qualité finale.
+                </p>
+              </details>
+            </div>
+          </div>
+          <div>
+            <h3>Les langues que je parle</h3>
+            <ul class="languages">
+              <li><span>Français</span><span>C2</span></li>
+              <li><span>Anglais</span><span>C1</span></li>
+              <li><span>Italien · langue maternelle</span><span>C1</span></li>
+              <li><span>Arabe · deuxième langue</span><span>B2</span></li>
+              <li><span>Espagnol</span><span>B2</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section container" id="divers">
+        <p class="section-label">Au-delà des cours</p>
+        <h2>Et en dehors des réseaux ?</h2>
+        <div class="interests">
+          <article>
+            <h3>Veille technologique</h3>
+            <p>
+              Je suis les nouveautés en réseaux, cybersécurité et développement
+              web.
+            </p>
+          </article>
+          <article>
+            <h3>Travail en équipe</h3>
+            <p>Échanger des idées, apprendre des autres et avancer ensemble.</p>
+          </article>
+          <article>
+            <h3>Jeux vidéo</h3>
+            <p>Le goût des technologies, de la logique et de la stratégie.</p>
+          </article>
+          <article>
+            <h3>Musique &amp; podcasts</h3>
+            <p>
+              Des contenus liés à l’informatique, au développement personnel et
+              aux sciences.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section container cv-section" id="cv">
+        <div>
+          <p class="section-label">C.V</p>
+          <h2>Mon parcours en un document.</h2>
+          <p>
+            Formation, compétences et expériences : retrouvez mon CV au format
+            PDF.
+          </p>
+        </div>
+        <a
+          class="button button-dark"
+          href="assets/cv.pdf"
+          target="_blank"
+          rel="noopener"
+          >Consulter mon CV
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M5 19 19 5M5 5h14v14" />
+          </svg>
+        </a>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <p class="section-label">Parlons ensemble</p>
+          <div class="contact-grid">
+            <div>
+              <h2>Construisons la suite.</h2>
+              <p>
+                Une alternance, un projet ou simplement un échange ?<br />Je
+                serai ravi d’en discuter avec vous.
+              </p>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:adam.giuglardo@etu.uca.fr"
+                >adam.giuglardo@etu.uca.fr
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 19 19 5M5 5h14v14" /></svg></a
+              ><a
+                href="https://github.com/AdamGiuglardo"
+                target="_blank"
+                rel="noopener"
+                >GitHub
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 19 19 5M5 5h14v14" /></svg
+              ></a>
+            </div>
+            <div class="contact-cv">
+              <a
+                class="button button-lime"
+                href="assets/cv.pdf"
+                download="Giuglardo_Adam_CV.pdf"
+                >Télécharger mon CV
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 19 19 5M5 5h14v14" /></svg></a
+              ><span class="cv-caption">Format PDF</span>
+            </div>
+          </div>
+          <footer>
+            <a class="brand" href="#apropos"
+              ><strong>AG.</strong><span>/ Adam Giuglardo</span></a
+            ><span>Comprendre. Connecter. Sécuriser.</span
+            ><a href="#apropos"
+              >Retour en haut
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14" /></svg
+            ></a>
+          </footer>
+        </div>
+      </section>
+    </main>
+    <dialog
+      class="project-dialog"
+      id="modal-reseau"
+      aria-labelledby="modal-reseau-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer le projet" autofocus>
+          Fermer <span aria-hidden="true">×</span>
+        </button>
+
+        <h3 id="modal-reseau-title">Projet – Infrastructure réseau</h3>
+
+        <div class="project-modal-body">
+          <h4>Contexte</h4>
+          <p>Binôme – Projet réalisé en TP d'initiation réseau .</p>
+
+          <h4>Objectif</h4>
+          <p>
+            Mettre en place un réseau qui comporterait un AP Wifi qui ferait le
+            routage par l'intermédiaire du PC relié au réseau de la salle
+          </p>
+
+          <h4>Travail lors d'un TP</h4>
+          <ul>
+            <li>Création du plan d'adressage.</li>
+            <li>Routage entre les appareils.</li>
+            <li>Mise en place de DHCP / DNS.</li>
+            <li>Sécurisation du Wifi + tests.</li>
+            <li>schéma réseau si nécessaire.</li>
+          </ul>
+
+          <h4>Résultat</h4>
+          <p>
+            <strong>Note/20</strong> – pas encore fait.<br />
+            Compétences validées : <span class="skill-tag">AP Dlink</span>
+            <span class="skill-tag">Routage</span>
+            <span class="skill-tag">DHCP/DNS</span>
+            <span class="skill-tag">WPA2</span>
+          </p>
+        </div>
+
+        <img
+          loading="lazy"
+          src="assets/schema-reseau.png"
+          alt="Schéma réseau"
+        />
+        <img
+          loading="lazy"
+          src="assets/image-reseau.png"
+          alt="Équipements utilisés pour le réseau"
+        />
+      </div>
+    </dialog>
+
+    <dialog
+      class="project-dialog"
+      id="modal-sae24"
+      aria-labelledby="modal-sae24-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer le projet" autofocus>
+          Fermer <span aria-hidden="true">×</span>
+        </button>
+
+        <h3 id="modal-sae24-title">Projet intégratif SAE 2.04</h3>
+
+        <div class="project-modal-body">
+          <h4>Contexte</h4>
+          <p>
+            Projet de fin de 1ère année – Conception et déploiement du réseau
+            informatique d'une entreprise fictive.
+          </p>
+
+          <h4>Objectif</h4>
+          <p>
+            Mettre en pratique toutes les notions acquises durant l'année pour
+            créer une infrastructure réseau complète, communicante, segmentée et
+            sécurisée.
+          </p>
+
+          <h4>Travail réalisé</h4>
+          <ul>
+            <li>
+              Création du réseau et configuration du routage pour le rendre
+              communicant.
+            </li>
+            <li>
+              Segmentation de l'infrastructure logique à l'aide de différents
+              VLANs.
+            </li>
+            <li>Sécurisation des équipements et du réseau de l'entreprise.</li>
+            <li>
+              Mise en place de services réseaux essentiels : DNS, DHCP, Active
+              Directory et serveur Linux.
+            </li>
+            <li>
+              Hébergement du compte-rendu du projet (site web documentant chaque
+              commande) directement sur le serveur Linux interne.
+            </li>
+          </ul>
+
+          <h4>Résultat</h4>
+          <p>
+            <strong>Note/20</strong> – En cours.<br />
+            Compétences validées : <span class="skill-tag">VLAN</span>
+            <span class="skill-tag">Routage</span>
+            <span class="skill-tag">Active Directory</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Sécurité</span>
+          </p>
+        </div>
+
+        <img
+          loading="lazy"
+          src="assets/SAE24schema.png"
+          alt="Schéma réseau SAE 2.04"
+        />
+        <img
+          loading="lazy"
+          src="assets/Plan-vlan.png"
+          alt="Plan de l'adressage et des VLANs"
+        />
+      </div>
+    </dialog>
+
+    <dialog
+      class="project-dialog"
+      id="modal-web"
+      aria-labelledby="modal-web-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer le projet" autofocus>
+          Fermer <span aria-hidden="true">×</span>
+        </button>
+
+        <h3 id="modal-web-title">Projet – Portfolio</h3>
+
+        <div class="project-modal-body">
+          <h4>Contexte</h4>
+          <p>Seul – Projet réalisé en cours de communication en 2025-2026.</p>
+
+          <h4>Objectif</h4>
+          <p>
+            Créer un portfolio, clair et moderne, avec une navigation fluide.
+          </p>
+
+          <h4>Travail réalisé</h4>
+          <ul>
+            <li>Intégration HTML/CSS.</li>
+            <li>Animations et interactions en JavaScript.</li>
+            <li>Optimisation mobile + structure propre.</li>
+            <li>Mise en ligne / tests navigateur.</li>
+          </ul>
+
+          <h4>Résultat</h4>
+          <p>
+            <strong>Retour</strong> – Le portfolio a plu à mon enseignante.<br />
+            Compétences : <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Communication</span>
+          </p>
+        </div>
+
+        <img loading="lazy" src="assets/projet-web.png" alt="Aperçu du site" />
+      </div>
+    </dialog>
+
+    <dialog
+      class="project-dialog"
+      id="modal-telecom"
+      aria-labelledby="modal-telecom-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer le projet" autofocus>
+          Fermer <span aria-hidden="true">×</span>
+        </button>
+
+        <h3 id="modal-telecom-title">Projet – Analyse de signaux</h3>
+
+        <div class="project-modal-body">
+          <h4>Contexte</h4>
+          <p>Binôme – TP d’électronique en 2025.</p>
+
+          <h4>Objectif</h4>
+          <p>
+            Analyser des signaux en temporel et fréquentiel, et interpréter les
+            résultats.
+          </p>
+
+          <h4>Travail réalisé</h4>
+          <ul>
+            <li>Génération de signaux (GBF) : sinus, carré, etc.</li>
+            <li>Mesures à l’oscilloscope (amplitude, période, bruit).</li>
+            <li>Analyse + comparaison.</li>
+            <li>Compte-rendu + interprétation.</li>
+          </ul>
+
+          <h4>Résultat</h4>
+          <p>
+            <strong>Note</strong> – pas encore de notes.<br />
+            Compétences : <span class="skill-tag">GBF</span>
+            <span class="skill-tag">Oscilloscope</span>
+            <span class="skill-tag">Analyse</span>
+          </p>
+        </div>
+
+        <img loading="lazy" src="assets/analyse-fft.png" alt="Analyse FFT" />
+      </div>
+    </dialog>
+
+    <dialog
+      class="project-dialog"
+      id="modal-telephonie"
+      aria-labelledby="modal-telephonie-title"
+    >
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fermer le projet" autofocus>
+          Fermer <span aria-hidden="true">×</span>
+        </button>
+
+        <h3 id="modal-telephonie-title">Projet – Téléphonie sur IP</h3>
+
+        <div class="project-modal-body">
+          <h4>Contexte</h4>
+          <p>Binôme – Projet réalisé en TP de téléphonie.</p>
+
+          <h4>Objectif</h4>
+          <p>
+            Mettre en place une solution de téléphonie pour faire communiquer 2
+            téléphones DECT, 2 deskphones (téléphones de bureau) et 1 poste
+            analogique via un serveur d'appel (IPBX).
+          </p>
+
+          <h4>Travail réalisé</h4>
+          <ul>
+            <li>Installation et configuration du serveur d'appel IPBX.</li>
+            <li>
+              Enregistrement des téléphones SIP (deskphones et DECT) sur le
+              serveur.
+            </li>
+            <li>
+              Configuration d'un adaptateur (ATA) pour connecter le téléphone
+              analogique au réseau VoIP.
+            </li>
+            <li>
+              Création d'un plan de numérotation pour permettre les appels entre
+              tous les postes.
+            </li>
+            <li>
+              Tests de communication pour valider le bon fonctionnement des
+              appels.
+            </li>
+          </ul>
+
+          <h4>Résultat</h4>
+          <p>
+            <strong>Note</strong> – 16.5/20.<br />
+            Compétences acquises : <span class="skill-tag">IPBX</span>
+            <span class="skill-tag">VoIP</span>
+            <span class="skill-tag">DECT</span>
+            <span class="skill-tag">SIP</span>
+            <span class="skill-tag">ATA</span>
+          </p>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="code-gate" class="code-gate" aria-labelledby="code-title">
+      <button class="gate-close" type="button" aria-label="Fermer la saisie du code">×</button>
+      <p class="section-label">Le portfolio a un autre niveau</p>
+      <h2 id="code-title">À toi de jouer.</h2>
+      <p>Un code. Cinq univers. Entre le code d’accès pour découvrir l’arcade et ses jeux.</p>
+      <form id="code-form">
+        <label for="access-code">Code d’accès</label>
+        <div class="code-input-wrap"><input id="access-code" name="access-code" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" required maxlength="128" aria-describedby="code-feedback"></div>
+        <p id="code-feedback" role="status" aria-live="polite"></p>
+        <button class="button button-dark" id="unlock-game" type="submit">Débloquer le jeu <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="gate-note">Le code n’est ni enregistré ni envoyé à un serveur.</p>
+    </dialog>
+    <div id="game-shell" hidden></div>
+    <div id="motion-react-root" aria-hidden="true"></div>
+  </body>
+</html>

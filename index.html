@@ -10,9 +10,11 @@
     <meta name="theme-color" content="#183c30" />
     <title>Adam Giuglardo — Réseaux & Télécommunications</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css?v=7" />
-    <script src="script.js?v=7" defer></script>
-    <script src="secret.js?v=4" defer></script>
+    <link rel="stylesheet" href="./style.css?v=8" />
+    <script src="./script.js?v=8" defer></script>
+    <script src="./secret.js?v=4" defer></script>
+    <link rel="stylesheet" href="./assets/react/portfolio-react.css?v=aafd1fb27c" />
+    <script type="module" src="./assets/react/portfolio-react.js?v=aafd1fb27c"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
@@ -99,150 +101,12 @@
             <p class="section-label">Projets</p>
             <h2>Apprendre en faisant.</h2>
           </div>
-          <div class="filters" role="group" aria-label="Filtrer les projets">
-            <button data-filter="all" aria-pressed="true">Tous</button
-            ><button data-filter="reseau" aria-pressed="false">Réseaux</button
-            ><button data-filter="web" aria-pressed="false">Web</button
-            ><button data-filter="telecom" aria-pressed="false">
-              Télécoms
-            </button>
-          </div>
+          <div class="filters" id="project-filter-root"></div>
         </div>
         <p class="sr-only" id="filter-status" aria-live="polite">
-          5 projets affichés
+          <span id="project-status-root"></span>
         </p>
-        <div class="project-list">
-          <article class="project-row" data-category="reseau">
-            <button
-              class="project-open"
-              data-modal="modal-sae24"
-              aria-haspopup="dialog"
-            >
-              <span class="project-number">01</span
-              ><span class="project-text"
-                ><span class="project-title">Projet intégratif SAE 2.04</span
-                ><span class="project-description"
-                  >Une infrastructure d’entreprise, du routage aux
-                  services.</span
-                ></span
-              ><span class="project-category">Réseaux</span
-              ><span class="project-arrow"
-                ><svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 19 19 5M5 5h14v14" /></svg
-              ></span>
-            </button>
-          </article>
-          <article class="project-row" data-category="reseau">
-            <button
-              class="project-open"
-              data-modal="modal-reseau"
-              aria-haspopup="dialog"
-            >
-              <span class="project-number">02</span
-              ><span class="project-text"
-                ><span class="project-title">Infrastructure réseau</span
-                ><span class="project-description"
-                  >Wi-Fi, adressage et services réseau sur équipements
-                  réels.</span
-                ></span
-              ><span class="project-category">Réseaux</span
-              ><span class="project-arrow"
-                ><svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 19 19 5M5 5h14v14" /></svg
-              ></span>
-            </button>
-          </article>
-          <article class="project-row" data-category="web">
-            <button
-              class="project-open"
-              data-modal="modal-web"
-              aria-haspopup="dialog"
-            >
-              <span class="project-number">03</span
-              ><span class="project-text"
-                ><span class="project-title">Portfolio</span
-                ><span class="project-description"
-                  >Un site pour présenter mon parcours et mes
-                  réalisations.</span
-                ></span
-              ><span class="project-category">Web</span
-              ><span class="project-arrow"
-                ><svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 19 19 5M5 5h14v14" /></svg
-              ></span>
-            </button>
-          </article>
-          <article class="project-row" data-category="telecom">
-            <button
-              class="project-open"
-              data-modal="modal-telecom"
-              aria-haspopup="dialog"
-            >
-              <span class="project-number">04</span
-              ><span class="project-text"
-                ><span class="project-title">Analyse de signaux</span
-                ><span class="project-description"
-                  >Observer, mesurer et comprendre les signaux à
-                  l’oscilloscope.</span
-                ></span
-              ><span class="project-category">Télécoms</span
-              ><span class="project-arrow"
-                ><svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 19 19 5M5 5h14v14" /></svg
-              ></span>
-            </button>
-          </article>
-          <article class="project-row" data-category="telecom">
-            <button
-              class="project-open"
-              data-modal="modal-telephonie"
-              aria-haspopup="dialog"
-            >
-              <span class="project-number">05</span
-              ><span class="project-text"
-                ><span class="project-title">Téléphonie sur IP</span
-                ><span class="project-description"
-                  >Connecter des postes SIP, DECT et analogiques via un
-                  IPBX.</span
-                ></span
-              ><span class="project-category">Télécoms</span
-              ><span class="project-arrow"
-                ><svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  aria-hidden="true"
-                >
-                  <path d="M5 19 19 5M5 5h14v14" /></svg
-              ></span>
-            </button>
-          </article>
-        </div>
+        <div class="project-list" id="project-list-root"></div>
       </section>
       <section class="section container" id="competences">
         <p class="section-label">Compétences</p>
@@ -942,5 +806,6 @@
       <p class="gate-note">Le code n’est ni enregistré ni envoyé à un serveur.</p>
     </dialog>
     <div id="game-shell" hidden></div>
+    <div id="motion-react-root" aria-hidden="true"></div>
   </body>
 </html>

@@ -1,29 +1,32 @@
 # Portfolio — Adam Giuglardo
 
-Portfolio personnel en HTML, CSS et JavaScript, publié sur [GitHub Pages](https://adamgiuglardo.github.io/Portfolio/).
+Portfolio personnel en React, Motion, HTML, CSS et JavaScript, publié sur [GitHub Pages](https://adamgiuglardo.github.io/Portfolio/).
 
 ## Développement local
 
 ```sh
-python3 -m http.server 5173
+npm install
+npm run dev
 ```
 
-Ouvrir http://localhost:5173. Aucune installation ni compilation nécessaire.
+Ouvrir l’adresse locale affichée par Vite. Le HTML source est dans `src/index.html`; `index.html` à la racine est généré pour GitHub Pages.
 
-- `index.html` : présentation, projets, compétences, parcours et contact.
-- `style.css` : thème responsive noir / argent / orange, animations et réduction des mouvements.
-- `script.js` : filtres, dialogues accessibles, menu mobile et animations au défilement.
+- `src/main.jsx` : filtres et liste de projets React, transitions Motion, progression de lecture et révélations au défilement.
+- `src/motion.css` : animations React avec prise en charge de la préférence de réduction des mouvements.
+- `src/index.html` : contenu du site et onglets de navigation.
+- `style.css` : mise en page responsive et styles généraux.
+- `script.js` : dialogues accessibles, menu mobile et suivi de la section active.
 - `assets/` : portrait tramé, photo originale, CV et documents des projets.
 - `secret.js` : ouverture du mode Code et déchiffrement local de l’arcade.
 - `assets/mission-reseau.enc.json` : arcade chiffrée AES-GCM ; ses sources lisibles ne sont jamais versionnées.
 
 ## Publication
 
-La branche `main` est publiée par GitHub Pages. Après modification, envoyer les changements sur `origin/main` et attendre la fin du déploiement Pages.
+La branche `main` est publiée par GitHub Pages. Après modification, exécuter `npm run build`, vérifier la version locale, puis envoyer les sources et le bundle généré sur `origin/main`.
 
 ## Vérifications avant publication
 
-Vérifier les quatre filtres, les cinq dialogues (bouton Fermer et Échap), les accordéons, le menu mobile, les liens vers le CV et les images. Contrôler les petits écrans et la préférence système de réduction des animations. Vérifier la syntaxe avec `node --check script.js`.
+Exécuter `npm run build`, puis vérifier les quatre filtres, les cinq dialogues (bouton Fermer et Échap), les accordéons, le menu mobile, les liens vers le CV et les images. Contrôler les petits écrans et la préférence système de réduction des animations. Vérifier la syntaxe avec `node --check script.js`.
 
 ## Mode Code
 

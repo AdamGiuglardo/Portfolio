@@ -1,2 +1,8 @@
 .DS_Store
 .private/
+node_modules/
+react-build/
+src/assets
+src/style.css
+src/script.js
+src/secret.js

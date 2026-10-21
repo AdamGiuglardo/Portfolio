@@ -986,18 +986,6 @@ footer svg {
 }
 
 /* Motion stays purposeful: reveal the reading order and acknowledge interaction. */
-.site-header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #829c54;
-  transform: scaleX(var(--reading-progress, 0));
-  transform-origin: left;
-  pointer-events: none;
-}
 .hero h1 span {
   animation-name: title-reveal;
   animation-duration: 1.1s;

@@ -232,7 +232,7 @@ try {
   await context.close();
   await browser.close();
   const raw = await video.path();
-  const destination = sample ? resolve(renderDir, "sample.mp4") : resolve(root, "assets/portfolio-tour.mp4");
+  const destination = sample ? resolve(renderDir, "sample.mp4") : resolve(root, "assets/portfolio-tour-v4.mp4");
   console.log(`Encoding ${Math.round(duration)} seconds to MP4…`);
   await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-ss", String(trimStart), "-i", raw, "-t", String(duration), "-vf", "fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "slow", "-crf", "24", "-movflags", "+faststart", "-an", destination], { maxBuffer: 2 ** 20 });
   const timestamp = (seconds) => new Date(Math.max(0, seconds) * 1000).toISOString().slice(11, 23);

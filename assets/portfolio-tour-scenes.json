@@ -3,7 +3,7 @@
   "width": 1280,
   "height": 720,
   "fps": 30,
-  "duration": 122.454,
+  "duration": 122.471,
   "scenes": [
     {
       "start": 0,
@@ -12,175 +12,175 @@
       "text": "Découvrons le portfolio d’Adam Giuglardo, étape par étape."
     },
     {
-      "start": 3.342,
+      "start": 3.341,
       "chapter": "À PROPOS DE MOI",
       "title": "Comprendre. Connecter. Sécuriser.",
       "text": "Un parcours en Réseaux & Télécommunications, construit projet après projet."
     },
     {
-      "start": 5.745,
+      "start": 5.744,
       "chapter": "PROJETS",
       "title": "Projet intégratif SAE 2.04",
       "text": "Une infrastructure d’entreprise : routage, services et administration réseau."
     },
     {
-      "start": 11.579,
+      "start": 11.61,
       "chapter": "PROJETS",
       "title": "Infrastructure réseau",
       "text": "Du Wi-Fi, de l’adressage et des services sur de vrais équipements."
     },
     {
-      "start": 17.393,
+      "start": 17.427,
       "chapter": "PROJETS",
       "title": "Portfolio",
       "text": "Le site que tu explores : mon parcours, mes compétences et mes réalisations."
     },
     {
-      "start": 23.111,
+      "start": 23.143,
       "chapter": "PROJETS",
       "title": "Analyse de signaux",
       "text": "Observer les signaux, mesurer leurs propriétés et interpréter les résultats."
     },
     {
-      "start": 28.827,
+      "start": 28.843,
       "chapter": "PROJETS",
       "title": "Téléphonie sur IP",
       "text": "Faire communiquer des postes SIP, DECT et analogiques grâce à un IPBX."
     },
     {
-      "start": 34.431,
+      "start": 34.481,
       "chapter": "COMPÉTENCES",
       "title": "Installation d’équipements",
       "text": "Switchs Cisco, routeurs et points d’accès : apprendre à connecter les équipements."
     },
     {
-      "start": 38.595,
+      "start": 38.614,
       "chapter": "COMPÉTENCES",
       "title": "Virtualisation",
       "text": "VMware et VirtualBox pour déployer des serveurs et simuler des architectures."
     },
     {
-      "start": 42.76,
+      "start": 42.777,
       "chapter": "COMPÉTENCES",
       "title": "Services réseau",
       "text": "DNS, DHCP, Active Directory et SSH : les services au cœur du réseau."
     },
     {
-      "start": 46.927,
+      "start": 46.943,
       "chapter": "COMPÉTENCES",
       "title": "Développement Web",
       "text": "Créer des interfaces web pour présenter des informations et des projets."
     },
     {
-      "start": 51.094,
+      "start": 51.11,
       "chapter": "COMPÉTENCES",
       "title": "Bash & Linux",
       "text": "Administrer Linux et automatiser les tâches avec des scripts Bash."
     },
     {
-      "start": 55.26,
+      "start": 55.276,
       "chapter": "COMPÉTENCES",
       "title": "Python",
       "text": "Développer des scripts et traiter des données avec Python."
     },
     {
-      "start": 59.427,
+      "start": 59.443,
       "chapter": "COMPÉTENCES",
       "title": "Bases de données",
       "text": "Organiser les données et travailler avec les bases de données."
     },
     {
-      "start": 63.593,
+      "start": 63.609,
       "chapter": "COMPÉTENCES",
       "title": "GBF",
       "text": "Générer des signaux pour les observer et les comparer."
     },
     {
-      "start": 67.761,
+      "start": 67.775,
       "chapter": "COMPÉTENCES",
       "title": "Oscilloscope",
       "text": "Mesurer l’amplitude, la période et le bruit à l’oscilloscope."
     },
     {
-      "start": 71.925,
+      "start": 71.942,
       "chapter": "COMPÉTENCES",
       "title": "Téléphonie sur IP (VoIP)",
       "text": "Configurer et tester des communications téléphoniques sur IP."
     },
     {
-      "start": 76.091,
+      "start": 76.108,
       "chapter": "FORMATION",
       "title": "Un parcours tourné vers le numérique",
       "text": "Le BUT Réseaux & Télécommunications, à l’IUT Clermont Auvergne."
     },
     {
-      "start": 80.224,
+      "start": 80.24,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Assiduité",
       "text": "Des routines et des échéances pour avancer avec constance."
     },
     {
-      "start": 83.825,
+      "start": 83.842,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Organisation",
       "text": "Planifier, découper les étapes et garder ses projets organisés."
     },
     {
-      "start": 87.442,
+      "start": 87.458,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Patience",
       "text": "Tester, comprendre l’erreur et chercher une solution, étape par étape."
     },
     {
-      "start": 91.041,
+      "start": 91.058,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Efficacité",
       "text": "Choisir des méthodes simples et automatiser ce qui peut l’être."
     },
     {
-      "start": 94.658,
+      "start": 94.641,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Esprit d’équipe",
       "text": "Écouter, communiquer et avancer ensemble vers un objectif commun."
     },
     {
-      "start": 98.258,
+      "start": 98.257,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Prévenance",
       "text": "Soigner les détails et anticiper les besoins des autres."
     },
     {
-      "start": 101.858,
+      "start": 101.873,
       "chapter": "LANGUES",
       "title": "Échanger dans plusieurs langues",
       "text": "Français, anglais, italien, arabe et espagnol : cinq langues présentées sur le site."
     },
     {
-      "start": 104.421,
+      "start": 104.438,
       "chapter": "DIVERS",
       "title": "Et en dehors des réseaux ?",
       "text": "Veille technologique, travail en équipe, jeux vidéo, musique et podcasts."
     },
     {
-      "start": 108.454,
+      "start": 108.471,
       "chapter": "C.V",
       "title": "Tout mon parcours, dans un document",
       "text": "Le CV est consultable et téléchargeable directement depuis le portfolio."
     },
     {
-      "start": 112.125,
+      "start": 112.142,
       "chapter": "CODE",
       "title": "Le portfolio a un autre niveau",
       "text": "Un code d’accès ouvre l’arcade du portfolio et ses cinq jeux."
     },
     {
-      "start": 115.554,
+      "start": 115.568,
       "chapter": "CONTACT",
       "title": "Construisons la suite",
       "text": "Une alternance, un projet ou un échange : les coordonnées sont à portée de clic."
     },
     {
-      "start": 118.822,
+      "start": 118.837,
       "chapter": "À TOI DE JOUER",
       "title": "La visite continue avec toi",
       "text": "Explore les projets, ouvre les compétences et prenons contact."
@@ -189,932 +189,1771 @@
   "source": "Local portfolio HTML and assets; original vector mascot and motion composition",
   "soundEffects": {
     "timingSource": "Recorded browser action timestamps",
-    "events": [
+    "rawEvents": [
       {
-        "time": 0.003,
+        "time": 0.001,
         "type": "boot",
-        "pan": 0,
-        "variant": 0
+        "pan": 0
       },
       {
-        "time": 2.705,
+        "time": 2.704,
         "type": "move",
-        "pan": -0.3,
-        "variant": 0
+        "pan": -0.3
       },
       {
-        "time": 3.342,
+        "time": 3.341,
         "type": "section",
-        "pan": 0,
-        "variant": 0
+        "pan": 0
       },
       {
-        "time": 5.745,
+        "time": 5.744,
         "type": "section",
-        "pan": 0,
-        "variant": 1
-      },
-      {
-        "time": 6.045,
-        "type": "data",
-        "pan": 0,
-        "variant": 0
+        "pan": 0
       },
       {
         "time": 6.411,
         "type": "move",
-        "pan": 0.10354999999999998,
-        "variant": 1
+        "pan": 0.10354999999999998
       },
       {
         "time": 7.008,
         "type": "click",
-        "pan": 0.15042499999999998,
-        "variant": 0
+        "pan": 0.15042499999999998
       },
       {
-        "time": 7.071,
+        "time": 7.083,
         "type": "pop",
-        "pan": 0.15042499999999998,
-        "variant": 0
+        "pan": 0.15042499999999998
       },
       {
-        "time": 7.334,
+        "time": 7.347,
         "type": "move",
-        "pan": -0.3,
-        "variant": 2
+        "pan": -0.3
       },
       {
-        "time": 11.281,
+        "time": 11.312,
         "type": "click",
-        "pan": 0.273309375,
-        "variant": 1
+        "pan": 0.273309375
       },
       {
-        "time": 11.879000000000001,
-        "type": "data",
-        "pan": 0,
-        "variant": 1
-      },
-      {
-        "time": 12.244,
+        "time": 12.276,
         "type": "move",
-        "pan": 0.10354999999999998,
-        "variant": 3
+        "pan": 0.10354999999999998
       },
       {
-        "time": 12.841,
+        "time": 12.874,
         "type": "click",
-        "pan": 0.15042499999999998,
-        "variant": 2
+        "pan": 0.15042499999999998
       },
       {
-        "time": 12.88,
+        "time": 12.914,
         "type": "pop",
-        "pan": 0.15042499999999998,
-        "variant": 1
+        "pan": 0.15042499999999998
       },
       {
-        "time": 13.142,
+        "time": 13.175,
         "type": "move",
-        "pan": -0.3,
-        "variant": 4
+        "pan": -0.3
       },
       {
-        "time": 17.096,
+        "time": 17.127,
         "type": "click",
-        "pan": 0.273309375,
-        "variant": 3
+        "pan": 0.273309375
       },
       {
-        "time": 17.693,
-        "type": "data",
-        "pan": 0,
-        "variant": 2
-      },
-      {
-        "time": 18.065,
+        "time": 18.094,
         "type": "move",
-        "pan": 0.10354999999999998,
-        "variant": 5
+        "pan": 0.10354999999999998
       },
       {
-        "time": 18.657,
+        "time": 18.691,
         "type": "click",
-        "pan": 0.15042499999999998,
-        "variant": 4
+        "pan": 0.15042499999999998
       },
       {
-        "time": 18.7,
+        "time": 18.731,
         "type": "pop",
-        "pan": 0.15042499999999998,
-        "variant": 2
+        "pan": 0.15042499999999998
       },
       {
-        "time": 18.962,
+        "time": 18.993,
         "type": "move",
-        "pan": -0.3,
-        "variant": 0
+        "pan": -0.3
       },
       {
-        "time": 22.814,
+        "time": 22.844,
         "type": "click",
-        "pan": 0.273309375,
-        "variant": 5
+        "pan": 0.273309375
       },
       {
-        "time": 23.411,
-        "type": "data",
-        "pan": 0,
-        "variant": 3
-      },
-      {
-        "time": 23.776,
+        "time": 23.809,
         "type": "move",
-        "pan": 0.10354999999999998,
-        "variant": 1
+        "pan": 0.10354999999999998
       },
       {
-        "time": 24.374,
+        "time": 24.407,
         "type": "click",
-        "pan": 0.15042499999999998,
-        "variant": 0
+        "pan": 0.15042499999999998
       },
       {
-        "time": 24.413,
+        "time": 24.446,
         "type": "pop",
-        "pan": 0.15042499999999998,
-        "variant": 3
+        "pan": 0.15042499999999998
       },
       {
-        "time": 24.675,
+        "time": 24.708,
         "type": "move",
-        "pan": -0.3,
-        "variant": 2
+        "pan": -0.3
       },
       {
-        "time": 28.528,
+        "time": 28.544,
         "type": "click",
-        "pan": 0.273309375,
-        "variant": 1
+        "pan": 0.273309375
       },
       {
-        "time": 29.127000000000002,
-        "type": "data",
-        "pan": 0,
-        "variant": 4
-      },
-      {
-        "time": 29.497,
+        "time": 29.509,
         "type": "move",
-        "pan": 0.10354999999999998,
-        "variant": 3
+        "pan": 0.10354999999999998
       },
       {
-        "time": 30.074,
+        "time": 30.107,
         "type": "click",
-        "pan": 0.15042499999999998,
-        "variant": 2
+        "pan": 0.15042499999999998
       },
       {
-        "time": 30.113,
+        "time": 30.146,
         "type": "pop",
-        "pan": 0.15042499999999998,
-        "variant": 4
+        "pan": 0.15042499999999998
       },
       {
-        "time": 30.376,
+        "time": 30.408,
         "type": "move",
-        "pan": -0.3,
-        "variant": 4
+        "pan": -0.3
       },
       {
-        "time": 34.129,
+        "time": 34.174,
         "type": "click",
-        "pan": 0.273309375,
-        "variant": 3
+        "pan": 0.273309375
       },
       {
-        "time": 34.431,
+        "time": 34.481,
         "type": "section",
-        "pan": 0,
-        "variant": 2
+        "pan": 0
       },
       {
-        "time": 34.730999999999995,
-        "type": "keys",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 35.092,
+        "time": 35.142,
         "type": "move",
-        "pan": -0.23815468750000002,
-        "variant": 5
+        "pan": -0.23815468750000002
       },
       {
-        "time": 35.69,
+        "time": 35.723,
         "type": "click",
-        "pan": -0.19127968750000002,
-        "variant": 4
+        "pan": -0.19127968750000002
       },
       {
-        "time": 35.731,
+        "time": 35.76,
         "type": "pop",
-        "pan": -0.19127968750000002,
-        "variant": 5
+        "pan": -0.19127968750000002
       },
       {
-        "time": 36.657,
+        "time": 36.689,
         "type": "move",
-        "pan": -0.3,
-        "variant": 0
+        "pan": -0.3
       },
       {
-        "time": 38.558,
+        "time": 38.574,
         "type": "click",
-        "pan": 0,
-        "variant": 5
+        "pan": 0
       },
       {
-        "time": 38.894999999999996,
-        "type": "keys",
-        "pan": 0,
-        "variant": 1
-      },
-      {
-        "time": 39.259,
+        "time": 39.276,
         "type": "move",
-        "pan": -0.23815468750000002,
-        "variant": 1
+        "pan": -0.23815468750000002
       },
       {
-        "time": 39.857,
+        "time": 39.873,
         "type": "click",
-        "pan": -0.19127968750000002,
-        "variant": 0
+        "pan": -0.19127968750000002
       },
       {
-        "time": 39.893,
+        "time": 39.909,
         "type": "pop",
-        "pan": -0.19127968750000002,
-        "variant": 0
+        "pan": -0.19127968750000002
       },
       {
-        "time": 40.823,
+        "time": 40.839,
         "type": "move",
-        "pan": -0.3,
-        "variant": 2
+        "pan": -0.3
       },
       {
-        "time": 42.725,
+        "time": 42.741,
         "type": "click",
-        "pan": 0,
-        "variant": 1
+        "pan": 0
       },
       {
-        "time": 43.059999999999995,
-        "type": "keys",
-        "pan": 0,
-        "variant": 2
-      },
-      {
-        "time": 43.425,
+        "time": 43.441,
         "type": "move",
-        "pan": -0.23815468750000002,
-        "variant": 3
+        "pan": -0.23815468750000002
       },
       {
-        "time": 44.023,
+        "time": 44.039,
         "type": "click",
-        "pan": -0.19127968750000002,
-        "variant": 2
+        "pan": -0.19127968750000002
       },
       {
-        "time": 44.06,
+        "time": 44.078,
         "type": "pop",
-        "pan": -0.19127968750000002,
-        "variant": 1
+        "pan": -0.19127968750000002
       },
       {
-        "time": 44.99,
+        "time": 45.006,
         "type": "move",
-        "pan": -0.3,
-        "variant": 4
+        "pan": -0.3
       },
       {
-        "time": 46.89,
+        "time": 46.907,
         "type": "click",
-        "pan": 0,
-        "variant": 3
+        "pan": 0
       },
       {
-        "time": 47.227,
-        "type": "keys",
-        "pan": 0,
-        "variant": 3
-      },
-      {
-        "time": 47.591,
+        "time": 47.608,
         "type": "move",
-        "pan": -0.0048125000000000286,
-        "variant": 5
+        "pan": -0.0048125000000000286
       },
       {
-        "time": 48.189,
+        "time": 48.206,
         "type": "click",
-        "pan": 0.042062499999999975,
-        "variant": 4
+        "pan": 0.042062499999999975
       },
       {
-        "time": 48.226,
+        "time": 48.243,
         "type": "pop",
-        "pan": 0.042062499999999975,
-        "variant": 2
+        "pan": 0.042062499999999975
       },
       {
-        "time": 49.156,
+        "time": 49.172,
         "type": "move",
-        "pan": -0.3,
-        "variant": 0
+        "pan": -0.3
       },
       {
-        "time": 51.058,
+        "time": 51.073,
         "type": "click",
-        "pan": 0,
-        "variant": 5
+        "pan": 0
       },
       {
-        "time": 51.394,
-        "type": "keys",
-        "pan": 0,
-        "variant": 4
-      },
-      {
-        "time": 51.758,
+        "time": 51.774,
         "type": "move",
-        "pan": -0.0048125000000000286,
-        "variant": 1
+        "pan": -0.0048125000000000286
       },
       {
-        "time": 52.356,
+        "time": 52.372,
         "type": "click",
-        "pan": 0.042062499999999975,
-        "variant": 0
+        "pan": 0.042062499999999975
       },
       {
-        "time": 52.393,
+        "time": 52.41,
         "type": "pop",
-        "pan": 0.042062499999999975,
-        "variant": 3
+        "pan": 0.042062499999999975
       },
       {
-        "time": 53.323,
+        "time": 53.339,
         "type": "move",
-        "pan": -0.3,
-        "variant": 2
+        "pan": -0.3
       },
       {
-        "time": 55.223,
+        "time": 55.24,
         "type": "click",
-        "pan": 0,
-        "variant": 1
+        "pan": 0
       },
       {
-        "time": 55.559999999999995,
-        "type": "keys",
-        "pan": 0,
-        "variant": 5
-      },
-      {
-        "time": 55.925,
+        "time": 55.942,
         "type": "move",
-        "pan": -0.0048125000000000286,
-        "variant": 3
+        "pan": -0.0048125000000000286
       },
       {
-        "time": 56.523,
+        "time": 56.539,
         "type": "click",
-        "pan": 0.042062499999999975,
-        "variant": 2
+        "pan": 0.042062499999999975
       },
       {
-        "time": 56.559,
+        "time": 56.575,
         "type": "pop",
-        "pan": 0.042062499999999975,
-        "variant": 4
+        "pan": 0.042062499999999975
       },
       {
-        "time": 57.489,
+        "time": 57.505,
         "type": "move",
-        "pan": -0.3,
-        "variant": 4
+        "pan": -0.3
       },
       {
-        "time": 59.391,
+        "time": 59.406,
         "type": "click",
-        "pan": 0,
-        "variant": 3
+        "pan": 0
       },
       {
-        "time": 59.727,
-        "type": "keys",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 60.091,
+        "time": 60.107,
         "type": "move",
-        "pan": -0.0048125000000000286,
-        "variant": 5
+        "pan": -0.0048125000000000286
       },
       {
-        "time": 60.689,
+        "time": 60.705,
         "type": "click",
-        "pan": 0.042062499999999975,
-        "variant": 4
+        "pan": 0.042062499999999975
       },
       {
-        "time": 60.726,
+        "time": 60.742,
         "type": "pop",
-        "pan": 0.042062499999999975,
-        "variant": 5
+        "pan": 0.042062499999999975
       },
       {
-        "time": 61.655,
+        "time": 61.672,
         "type": "move",
-        "pan": -0.3,
-        "variant": 0
+        "pan": -0.3
       },
       {
-        "time": 63.556,
+        "time": 63.573,
         "type": "click",
-        "pan": 0,
-        "variant": 5
+        "pan": 0
       },
       {
-        "time": 63.893,
-        "type": "keys",
-        "pan": 0,
-        "variant": 1
-      },
-      {
-        "time": 64.258,
+        "time": 64.274,
         "type": "move",
-        "pan": 0.23660039062500005,
-        "variant": 1
+        "pan": 0.23660039062500005
       },
       {
-        "time": 64.856,
+        "time": 64.872,
         "type": "click",
-        "pan": 0.28347539062500005,
-        "variant": 0
+        "pan": 0.28347539062500005
       },
       {
-        "time": 64.892,
+        "time": 64.908,
         "type": "pop",
-        "pan": 0.28347539062500005,
-        "variant": 0
+        "pan": 0.28347539062500005
       },
       {
-        "time": 65.822,
+        "time": 65.838,
         "type": "move",
-        "pan": -0.3,
-        "variant": 2
+        "pan": -0.3
       },
       {
-        "time": 67.724,
+        "time": 67.739,
         "type": "click",
-        "pan": 0,
-        "variant": 1
+        "pan": 0
       },
       {
-        "time": 68.06099999999999,
-        "type": "keys",
-        "pan": 0,
-        "variant": 2
-      },
-      {
-        "time": 68.424,
+        "time": 68.441,
         "type": "move",
-        "pan": 0.23660039062500005,
-        "variant": 3
+        "pan": 0.23660039062500005
       },
       {
-        "time": 69.022,
+        "time": 69.038,
         "type": "click",
-        "pan": 0.28347539062500005,
-        "variant": 2
+        "pan": 0.28347539062500005
       },
       {
-        "time": 69.059,
+        "time": 69.075,
         "type": "pop",
-        "pan": 0.28347539062500005,
-        "variant": 1
+        "pan": 0.28347539062500005
       },
       {
-        "time": 69.988,
+        "time": 70.005,
         "type": "move",
-        "pan": -0.3,
-        "variant": 4
+        "pan": -0.3
       },
       {
-        "time": 71.889,
+        "time": 71.906,
         "type": "click",
-        "pan": 0,
-        "variant": 3
+        "pan": 0
       },
       {
-        "time": 72.225,
-        "type": "keys",
-        "pan": 0,
-        "variant": 3
-      },
-      {
-        "time": 72.59,
+        "time": 72.606,
         "type": "move",
-        "pan": 0.23660039062500005,
-        "variant": 5
+        "pan": 0.23660039062500005
       },
       {
-        "time": 73.188,
+        "time": 73.205,
         "type": "click",
-        "pan": 0.28347539062500005,
-        "variant": 4
+        "pan": 0.28347539062500005
       },
       {
-        "time": 73.225,
+        "time": 73.242,
         "type": "pop",
-        "pan": 0.28347539062500005,
-        "variant": 2
+        "pan": 0.28347539062500005
       },
       {
-        "time": 74.155,
+        "time": 74.171,
         "type": "move",
-        "pan": -0.3,
-        "variant": 0
+        "pan": -0.3
       },
       {
-        "time": 76.056,
+        "time": 76.072,
         "type": "click",
-        "pan": 0,
-        "variant": 5
+        "pan": 0
       },
       {
-        "time": 76.091,
+        "time": 76.108,
         "type": "section",
-        "pan": 0,
-        "variant": 3
+        "pan": 0
       },
       {
-        "time": 76.39099999999999,
-        "type": "bell",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 80.224,
+        "time": 80.24,
         "type": "section",
-        "pan": 0,
-        "variant": 4
+        "pan": 0
       },
       {
-        "time": 80.524,
-        "type": "sparkle",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 80.89,
+        "time": 80.906,
         "type": "move",
-        "pan": -0.278725,
-        "variant": 1
+        "pan": -0.278725
       },
       {
-        "time": 81.471,
+        "time": 81.487,
         "type": "click",
-        "pan": -0.23185000000000003,
-        "variant": 0
+        "pan": -0.23185000000000003
       },
       {
-        "time": 81.508,
+        "time": 81.524,
         "type": "pop",
-        "pan": -0.23185000000000003,
-        "variant": 3
+        "pan": -0.23185000000000003
       },
       {
-        "time": 82.438,
+        "time": 82.454,
         "type": "move",
-        "pan": -0.3,
-        "variant": 2
+        "pan": -0.3
       },
       {
-        "time": 83.79,
+        "time": 83.805,
         "type": "click",
-        "pan": 0,
-        "variant": 1
+        "pan": 0
       },
       {
-        "time": 84.125,
-        "type": "sparkle",
-        "pan": 0,
-        "variant": 1
-      },
-      {
-        "time": 84.49,
+        "time": 84.506,
         "type": "move",
-        "pan": -0.10966250000000002,
-        "variant": 3
+        "pan": -0.10966250000000002
       },
       {
-        "time": 85.088,
+        "time": 85.104,
         "type": "click",
-        "pan": -0.06278750000000002,
-        "variant": 2
+        "pan": -0.06278750000000002
       },
       {
-        "time": 85.125,
+        "time": 85.141,
         "type": "pop",
-        "pan": -0.06278750000000002,
-        "variant": 4
+        "pan": -0.06278750000000002
       },
       {
-        "time": 86.054,
+        "time": 86.071,
         "type": "move",
-        "pan": -0.3,
-        "variant": 4
+        "pan": -0.3
       },
       {
-        "time": 87.405,
+        "time": 87.421,
         "type": "click",
-        "pan": 0,
-        "variant": 3
+        "pan": 0
       },
       {
-        "time": 87.74199999999999,
-        "type": "sparkle",
-        "pan": 0,
-        "variant": 2
-      },
-      {
-        "time": 88.106,
+        "time": 88.122,
         "type": "move",
-        "pan": -0.278725,
-        "variant": 5
+        "pan": -0.278725
       },
       {
-        "time": 88.688,
+        "time": 88.704,
         "type": "click",
-        "pan": -0.23185000000000003,
-        "variant": 4
+        "pan": -0.23185000000000003
       },
       {
-        "time": 88.724,
+        "time": 88.741,
         "type": "pop",
-        "pan": -0.23185000000000003,
-        "variant": 5
+        "pan": -0.23185000000000003
       },
       {
-        "time": 89.653,
+        "time": 89.67,
         "type": "move",
-        "pan": -0.3,
-        "variant": 0
+        "pan": -0.3
       },
       {
-        "time": 91.005,
+        "time": 91.022,
         "type": "click",
-        "pan": 0,
-        "variant": 5
+        "pan": 0
       },
       {
-        "time": 91.341,
-        "type": "sparkle",
-        "pan": 0,
-        "variant": 3
-      },
-      {
-        "time": 91.705,
+        "time": 91.721,
         "type": "move",
-        "pan": -0.10966250000000002,
-        "variant": 1
+        "pan": -0.10966250000000002
       },
       {
-        "time": 92.303,
+        "time": 92.304,
         "type": "click",
-        "pan": -0.06278750000000002,
-        "variant": 0
+        "pan": -0.06278750000000002
       },
       {
-        "time": 92.342,
+        "time": 92.34,
         "type": "pop",
-        "pan": -0.06278750000000002,
-        "variant": 0
+        "pan": -0.06278750000000002
       },
       {
         "time": 93.27,
         "type": "move",
-        "pan": -0.3,
-        "variant": 2
+        "pan": -0.3
       },
       {
-        "time": 94.621,
+        "time": 94.604,
         "type": "click",
-        "pan": 0,
-        "variant": 1
+        "pan": 0
       },
       {
-        "time": 94.958,
-        "type": "sparkle",
-        "pan": 0,
-        "variant": 4
-      },
-      {
-        "time": 95.322,
+        "time": 95.305,
         "type": "move",
-        "pan": -0.278725,
-        "variant": 3
+        "pan": -0.278725
       },
       {
-        "time": 95.92,
+        "time": 95.903,
         "type": "click",
-        "pan": -0.23185000000000003,
-        "variant": 2
+        "pan": -0.23185000000000003
       },
       {
-        "time": 95.957,
+        "time": 95.94,
         "type": "pop",
-        "pan": -0.23185000000000003,
-        "variant": 1
+        "pan": -0.23185000000000003
       },
       {
-        "time": 96.887,
+        "time": 96.87,
         "type": "move",
-        "pan": -0.3,
-        "variant": 4
+        "pan": -0.3
       },
       {
-        "time": 98.222,
+        "time": 98.221,
         "type": "click",
-        "pan": 0,
-        "variant": 3
-      },
-      {
-        "time": 98.55799999999999,
-        "type": "sparkle",
-        "pan": 0,
-        "variant": 5
+        "pan": 0
       },
       {
         "time": 98.922,
         "type": "move",
-        "pan": -0.10966250000000002,
-        "variant": 5
+        "pan": -0.10966250000000002
       },
       {
-        "time": 99.503,
+        "time": 99.52,
         "type": "click",
-        "pan": -0.06278750000000002,
-        "variant": 4
+        "pan": -0.06278750000000002
       },
       {
-        "time": 99.54,
+        "time": 99.557,
         "type": "pop",
-        "pan": -0.06278750000000002,
-        "variant": 2
+        "pan": -0.06278750000000002
       },
       {
-        "time": 100.47,
+        "time": 100.487,
         "type": "move",
-        "pan": -0.3,
-        "variant": 0
+        "pan": -0.3
       },
       {
-        "time": 101.821,
+        "time": 101.838,
         "type": "click",
-        "pan": 0,
-        "variant": 5
+        "pan": 0
       },
       {
-        "time": 101.858,
+        "time": 101.873,
         "type": "section",
-        "pan": 0,
-        "variant": 5
+        "pan": 0
       },
       {
-        "time": 102.158,
-        "type": "bubble",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 104.421,
+        "time": 104.438,
         "type": "section",
-        "pan": 0,
-        "variant": 0
+        "pan": 0
       },
       {
-        "time": 104.721,
-        "type": "pluck",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 108.454,
+        "time": 108.471,
         "type": "section",
-        "pan": 0,
-        "variant": 1
+        "pan": 0
       },
       {
-        "time": 108.75399999999999,
-        "type": "stamp",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 109.122,
+        "time": 109.138,
         "type": "click",
-        "pan": 0.275439453125,
-        "variant": 0
+        "pan": 0.275439453125
       },
       {
-        "time": 109.123,
+        "time": 109.139,
         "type": "paper",
-        "pan": 0,
-        "variant": 0
+        "pan": 0
       },
       {
-        "time": 112.125,
+        "time": 112.142,
         "type": "section",
-        "pan": 0,
-        "variant": 2
+        "pan": 0
       },
       {
-        "time": 112.129,
+        "time": 112.145,
         "type": "move",
-        "pan": 0.280204296875,
-        "variant": 1
+        "pan": 0.280204296875
       },
       {
-        "time": 112.425,
-        "type": "arcade",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 112.703,
+        "time": 112.719,
         "type": "click",
-        "pan": 0.327079296875,
-        "variant": 1
+        "pan": 0.327079296875
       },
       {
-        "time": 112.747,
+        "time": 112.759,
         "type": "pop",
-        "pan": 0.327079296875,
-        "variant": 3
+        "pan": 0.327079296875
       },
       {
-        "time": 113.009,
+        "time": 113.022,
         "type": "move",
-        "pan": -0.3,
-        "variant": 2
+        "pan": -0.3
       },
       {
-        "time": 115.258,
+        "time": 115.273,
         "type": "click",
-        "pan": 0.13375,
-        "variant": 2
+        "pan": 0.13375
       },
       {
-        "time": 115.554,
+        "time": 115.568,
         "type": "section",
-        "pan": 0,
-        "variant": 3
+        "pan": 0
       },
       {
-        "time": 115.854,
-        "type": "send",
-        "pan": 0,
-        "variant": 0
-      },
-      {
-        "time": 118.822,
+        "time": 118.837,
         "type": "section",
-        "pan": 0,
-        "variant": 4
+        "pan": 0
       },
       {
-        "time": 118.822,
+        "time": 118.838,
         "type": "move",
-        "pan": 0.1625,
-        "variant": 3
+        "pan": 0.1625
       },
       {
-        "time": 119.653,
+        "time": 119.669,
         "type": "finish",
-        "pan": 0,
-        "variant": 0
+        "pan": 0
       }
+    ],
+    "events": [
+      {
+        "time": 0.001,
+        "family": "boot",
+        "source": "sci-fi-sounds/computerNoise_001",
+        "gain": 0.24,
+        "pan": 0
+      },
+      {
+        "time": 2.704,
+        "family": "move",
+        "source": "interface-sounds/scroll_001",
+        "gain": 0.09,
+        "pan": -0.3
+      },
+      {
+        "time": 5.9639999999999995,
+        "family": "project",
+        "source": "sci-fi-sounds/computerNoise_000",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 6.510999999999999,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": 0.03354999999999997
+      },
+      {
+        "time": 6.710999999999999,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": 0.17354999999999998
+      },
+      {
+        "time": 7.008,
+        "family": "click",
+        "source": "interface-sounds/click_001",
+        "gain": 0.1,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 7.083,
+        "family": "open",
+        "source": "interface-sounds/open_001",
+        "gain": 0.2,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 11.312,
+        "family": "close",
+        "source": "interface-sounds/close_001",
+        "gain": 0.15,
+        "pan": 0.273309375
+      },
+      {
+        "time": 11.83,
+        "family": "project",
+        "source": "sci-fi-sounds/forceField_000",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 12.276,
+        "family": "move",
+        "source": "interface-sounds/scroll_003",
+        "gain": 0.09,
+        "pan": 0.10354999999999998
+      },
+      {
+        "time": 12.376,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": 0.03354999999999997
+      },
+      {
+        "time": 12.576,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": 0.17354999999999998
+      },
+      {
+        "time": 12.874,
+        "family": "click",
+        "source": "interface-sounds/tick_001",
+        "gain": 0.1,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 12.914,
+        "family": "open",
+        "source": "interface-sounds/maximize_001",
+        "gain": 0.2,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 17.127,
+        "family": "close",
+        "source": "interface-sounds/minimize_002",
+        "gain": 0.15,
+        "pan": 0.273309375
+      },
+      {
+        "time": 17.647,
+        "family": "project",
+        "source": "interface-sounds/glitch_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 18.194000000000003,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": 0.03354999999999997
+      },
+      {
+        "time": 18.394000000000002,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": 0.17354999999999998
+      },
+      {
+        "time": 18.691,
+        "family": "click",
+        "source": "interface-sounds/switch_001",
+        "gain": 0.1,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 18.731,
+        "family": "open",
+        "source": "interface-sounds/open_002",
+        "gain": 0.2,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 18.993,
+        "family": "move",
+        "source": "interface-sounds/scroll_005",
+        "gain": 0.09,
+        "pan": -0.3
+      },
+      {
+        "time": 22.844,
+        "family": "close",
+        "source": "interface-sounds/back_001",
+        "gain": 0.15,
+        "pan": 0.273309375
+      },
+      {
+        "time": 23.363,
+        "family": "project",
+        "source": "sci-fi-sounds/computerNoise_003",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 23.909000000000002,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": 0.03354999999999997
+      },
+      {
+        "time": 24.109,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": 0.17354999999999998
+      },
+      {
+        "time": 24.407,
+        "family": "click",
+        "source": "interface-sounds/select_001",
+        "gain": 0.1,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 24.446,
+        "family": "open",
+        "source": "interface-sounds/maximize_004",
+        "gain": 0.2,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 28.544,
+        "family": "close",
+        "source": "interface-sounds/close_003",
+        "gain": 0.15,
+        "pan": 0.273309375
+      },
+      {
+        "time": 29.063,
+        "family": "project",
+        "source": "interface-sounds/confirmation_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 29.509,
+        "family": "move",
+        "source": "sci-fi-sounds/engineCircular_000",
+        "gain": 0.09,
+        "pan": 0.10354999999999998
+      },
+      {
+        "time": 29.609,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": 0.03354999999999997
+      },
+      {
+        "time": 29.809,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": 0.17354999999999998
+      },
+      {
+        "time": 30.107,
+        "family": "click",
+        "source": "interface-sounds/click_004",
+        "gain": 0.1,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 30.146,
+        "family": "open",
+        "source": "interface-sounds/open_003",
+        "gain": 0.2,
+        "pan": 0.15042499999999998
+      },
+      {
+        "time": 34.174,
+        "family": "close",
+        "source": "interface-sounds/minimize_007",
+        "gain": 0.15,
+        "pan": 0.273309375
+      },
+      {
+        "time": 34.701,
+        "family": "skill",
+        "source": "interface-sounds/glass_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 35.242000000000004,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": -0.3081546875
+      },
+      {
+        "time": 35.442,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": -0.1681546875
+      },
+      {
+        "time": 35.723,
+        "family": "click",
+        "source": "interface-sounds/toggle_001",
+        "gain": 0.1,
+        "pan": -0.19127968750000002
+      },
+      {
+        "time": 35.76,
+        "family": "open",
+        "source": "interface-sounds/maximize_007",
+        "gain": 0.2,
+        "pan": -0.19127968750000002
+      },
+      {
+        "time": 36.689,
+        "family": "move",
+        "source": "sci-fi-sounds/engineCircular_003",
+        "gain": 0.09,
+        "pan": -0.3
+      },
+      {
+        "time": 38.574,
+        "family": "close",
+        "source": "interface-sounds/back_004",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 38.833999999999996,
+        "family": "skill",
+        "source": "interface-sounds/pluck_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 39.376000000000005,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": -0.3081546875
+      },
+      {
+        "time": 39.576,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": -0.1681546875
+      },
+      {
+        "time": 39.873,
+        "family": "click",
+        "source": "interface-sounds/tick_004",
+        "gain": 0.1,
+        "pan": -0.19127968750000002
+      },
+      {
+        "time": 39.909,
+        "family": "open",
+        "source": "interface-sounds/open_004",
+        "gain": 0.2,
+        "pan": -0.19127968750000002
+      },
+      {
+        "time": 42.741,
+        "family": "close",
+        "source": "interface-sounds/close_001",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 42.997,
+        "family": "skill",
+        "source": "interface-sounds/scratch_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 43.441,
+        "family": "move",
+        "source": "interface-sounds/scroll_001",
+        "gain": 0.09,
+        "pan": -0.23815468750000002
+      },
+      {
+        "time": 43.541000000000004,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": -0.3081546875
+      },
+      {
+        "time": 43.741,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": -0.1681546875
+      },
+      {
+        "time": 44.039,
+        "family": "click",
+        "source": "interface-sounds/switch_006",
+        "gain": 0.1,
+        "pan": -0.19127968750000002
+      },
+      {
+        "time": 44.078,
+        "family": "open",
+        "source": "interface-sounds/maximize_009",
+        "gain": 0.2,
+        "pan": -0.19127968750000002
+      },
+      {
+        "time": 46.907,
+        "family": "close",
+        "source": "interface-sounds/minimize_002",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 47.163,
+        "family": "skill",
+        "source": "interface-sounds/question_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 47.708,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": -0.07481250000000003
+      },
+      {
+        "time": 47.907999999999994,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": 0.06518749999999998
+      },
+      {
+        "time": 48.206,
+        "family": "click",
+        "source": "interface-sounds/select_008",
+        "gain": 0.1,
+        "pan": 0.042062499999999975
+      },
+      {
+        "time": 48.243,
+        "family": "open",
+        "source": "interface-sounds/open_001",
+        "gain": 0.2,
+        "pan": 0.042062499999999975
+      },
+      {
+        "time": 49.172,
+        "family": "move",
+        "source": "interface-sounds/scroll_003",
+        "gain": 0.09,
+        "pan": -0.3
+      },
+      {
+        "time": 51.073,
+        "family": "close",
+        "source": "interface-sounds/back_001",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 51.33,
+        "family": "skill",
+        "source": "interface-sounds/bong_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 51.874,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": -0.07481250000000003
+      },
+      {
+        "time": 52.074,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": 0.06518749999999998
+      },
+      {
+        "time": 52.372,
+        "family": "click",
+        "source": "interface-sounds/toggle_004",
+        "gain": 0.1,
+        "pan": 0.042062499999999975
+      },
+      {
+        "time": 52.41,
+        "family": "open",
+        "source": "interface-sounds/maximize_001",
+        "gain": 0.2,
+        "pan": 0.042062499999999975
+      },
+      {
+        "time": 55.24,
+        "family": "close",
+        "source": "interface-sounds/close_003",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 55.496,
+        "family": "skill",
+        "source": "interface-sounds/glass_004",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 55.942,
+        "family": "move",
+        "source": "interface-sounds/scroll_005",
+        "gain": 0.09,
+        "pan": -0.0048125000000000286
+      },
+      {
+        "time": 56.042,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": -0.07481250000000003
+      },
+      {
+        "time": 56.242,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": 0.06518749999999998
+      },
+      {
+        "time": 56.539,
+        "family": "click",
+        "source": "impact-sounds/impactWood_light_000",
+        "gain": 0.1,
+        "pan": 0.042062499999999975
+      },
+      {
+        "time": 56.575,
+        "family": "open",
+        "source": "interface-sounds/open_002",
+        "gain": 0.2,
+        "pan": 0.042062499999999975
+      },
+      {
+        "time": 59.406,
+        "family": "close",
+        "source": "interface-sounds/minimize_007",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 59.663,
+        "family": "skill",
+        "source": "interface-sounds/pluck_002",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 60.207,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": -0.07481250000000003
+      },
+      {
+        "time": 60.407,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": 0.06518749999999998
+      },
+      {
+        "time": 60.705,
+        "family": "click",
+        "source": "impact-sounds/impactGlass_light_001",
+        "gain": 0.1,
+        "pan": 0.042062499999999975
+      },
+      {
+        "time": 60.742,
+        "family": "open",
+        "source": "interface-sounds/maximize_004",
+        "gain": 0.2,
+        "pan": 0.042062499999999975
+      },
+      {
+        "time": 61.672,
+        "family": "move",
+        "source": "sci-fi-sounds/engineCircular_000",
+        "gain": 0.09,
+        "pan": -0.3
+      },
+      {
+        "time": 63.573,
+        "family": "close",
+        "source": "interface-sounds/back_004",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 63.829,
+        "family": "skill",
+        "source": "interface-sounds/drop_002",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 64.374,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": 0.16660039062500004
+      },
+      {
+        "time": 64.574,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": 0.30660039062500005
+      },
+      {
+        "time": 64.872,
+        "family": "click",
+        "source": "impact-sounds/impactMetal_light_002",
+        "gain": 0.1,
+        "pan": 0.28347539062500005
+      },
+      {
+        "time": 64.908,
+        "family": "open",
+        "source": "interface-sounds/open_003",
+        "gain": 0.2,
+        "pan": 0.28347539062500005
+      },
+      {
+        "time": 67.739,
+        "family": "close",
+        "source": "interface-sounds/close_001",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 67.995,
+        "family": "skill",
+        "source": "interface-sounds/question_004",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 68.441,
+        "family": "move",
+        "source": "sci-fi-sounds/engineCircular_003",
+        "gain": 0.09,
+        "pan": 0.23660039062500005
+      },
+      {
+        "time": 68.541,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": 0.16660039062500004
+      },
+      {
+        "time": 68.741,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": 0.30660039062500005
+      },
+      {
+        "time": 69.038,
+        "family": "click",
+        "source": "interface-sounds/click_001",
+        "gain": 0.1,
+        "pan": 0.28347539062500005
+      },
+      {
+        "time": 69.075,
+        "family": "open",
+        "source": "interface-sounds/maximize_007",
+        "gain": 0.2,
+        "pan": 0.28347539062500005
+      },
+      {
+        "time": 71.906,
+        "family": "close",
+        "source": "interface-sounds/minimize_002",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 72.16199999999999,
+        "family": "skill",
+        "source": "interface-sounds/confirmation_003",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 72.70599999999999,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": 0.16660039062500004
+      },
+      {
+        "time": 72.90599999999999,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": 0.30660039062500005
+      },
+      {
+        "time": 73.205,
+        "family": "click",
+        "source": "interface-sounds/tick_001",
+        "gain": 0.1,
+        "pan": 0.28347539062500005
+      },
+      {
+        "time": 73.242,
+        "family": "open",
+        "source": "interface-sounds/open_004",
+        "gain": 0.2,
+        "pan": 0.28347539062500005
+      },
+      {
+        "time": 74.171,
+        "family": "move",
+        "source": "interface-sounds/scroll_001",
+        "gain": 0.09,
+        "pan": -0.3
+      },
+      {
+        "time": 76.072,
+        "family": "close",
+        "source": "interface-sounds/back_001",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 76.328,
+        "family": "formation",
+        "source": "impact-sounds/impactBell_heavy_000",
+        "gain": 0.13,
+        "pan": 0
+      },
+      {
+        "time": 80.46,
+        "family": "quality",
+        "source": "interface-sounds/glass_002",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 81.006,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": -0.348725
+      },
+      {
+        "time": 81.206,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": -0.208725
+      },
+      {
+        "time": 81.487,
+        "family": "click",
+        "source": "interface-sounds/switch_001",
+        "gain": 0.1,
+        "pan": -0.23185000000000003
+      },
+      {
+        "time": 81.524,
+        "family": "open",
+        "source": "interface-sounds/maximize_009",
+        "gain": 0.2,
+        "pan": -0.23185000000000003
+      },
+      {
+        "time": 83.805,
+        "family": "close",
+        "source": "interface-sounds/close_003",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 84.062,
+        "family": "quality",
+        "source": "interface-sounds/drop_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 84.506,
+        "family": "move",
+        "source": "interface-sounds/scroll_003",
+        "gain": 0.09,
+        "pan": -0.10966250000000002
+      },
+      {
+        "time": 84.606,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": -0.17966250000000003
+      },
+      {
+        "time": 84.806,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": -0.03966250000000002
+      },
+      {
+        "time": 85.104,
+        "family": "click",
+        "source": "interface-sounds/select_001",
+        "gain": 0.1,
+        "pan": -0.06278750000000002
+      },
+      {
+        "time": 85.141,
+        "family": "open",
+        "source": "interface-sounds/open_001",
+        "gain": 0.2,
+        "pan": -0.06278750000000002
+      },
+      {
+        "time": 87.421,
+        "family": "close",
+        "source": "interface-sounds/minimize_007",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 87.678,
+        "family": "quality",
+        "source": "interface-sounds/pluck_002",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 88.222,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": -0.348725
+      },
+      {
+        "time": 88.422,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": -0.208725
+      },
+      {
+        "time": 88.704,
+        "family": "click",
+        "source": "interface-sounds/click_004",
+        "gain": 0.1,
+        "pan": -0.23185000000000003
+      },
+      {
+        "time": 88.741,
+        "family": "open",
+        "source": "interface-sounds/maximize_001",
+        "gain": 0.2,
+        "pan": -0.23185000000000003
+      },
+      {
+        "time": 89.67,
+        "family": "move",
+        "source": "interface-sounds/scroll_005",
+        "gain": 0.09,
+        "pan": -0.3
+      },
+      {
+        "time": 91.022,
+        "family": "close",
+        "source": "interface-sounds/back_004",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 91.278,
+        "family": "quality",
+        "source": "interface-sounds/glass_006",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 91.821,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": -0.17966250000000003
+      },
+      {
+        "time": 92.021,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": -0.03966250000000002
+      },
+      {
+        "time": 92.304,
+        "family": "click",
+        "source": "interface-sounds/toggle_001",
+        "gain": 0.1,
+        "pan": -0.06278750000000002
+      },
+      {
+        "time": 92.34,
+        "family": "open",
+        "source": "interface-sounds/open_002",
+        "gain": 0.2,
+        "pan": -0.06278750000000002
+      },
+      {
+        "time": 94.604,
+        "family": "close",
+        "source": "interface-sounds/close_001",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 94.861,
+        "family": "quality",
+        "source": "interface-sounds/confirmation_002",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 95.305,
+        "family": "move",
+        "source": "sci-fi-sounds/engineCircular_000",
+        "gain": 0.09,
+        "pan": -0.278725
+      },
+      {
+        "time": 95.405,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": -0.348725
+      },
+      {
+        "time": 95.605,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": -0.208725
+      },
+      {
+        "time": 95.903,
+        "family": "click",
+        "source": "interface-sounds/tick_004",
+        "gain": 0.1,
+        "pan": -0.23185000000000003
+      },
+      {
+        "time": 95.94,
+        "family": "open",
+        "source": "interface-sounds/maximize_004",
+        "gain": 0.2,
+        "pan": -0.23185000000000003
+      },
+      {
+        "time": 98.221,
+        "family": "close",
+        "source": "interface-sounds/minimize_002",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 98.477,
+        "family": "quality",
+        "source": "interface-sounds/bong_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 99.02199999999999,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": -0.17966250000000003
+      },
+      {
+        "time": 99.222,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": -0.03966250000000002
+      },
+      {
+        "time": 99.52,
+        "family": "click",
+        "source": "interface-sounds/switch_006",
+        "gain": 0.1,
+        "pan": -0.06278750000000002
+      },
+      {
+        "time": 99.557,
+        "family": "open",
+        "source": "interface-sounds/open_003",
+        "gain": 0.2,
+        "pan": -0.06278750000000002
+      },
+      {
+        "time": 100.487,
+        "family": "move",
+        "source": "sci-fi-sounds/engineCircular_003",
+        "gain": 0.09,
+        "pan": -0.3
+      },
+      {
+        "time": 101.838,
+        "family": "close",
+        "source": "interface-sounds/back_001",
+        "gain": 0.15,
+        "pan": 0
+      },
+      {
+        "time": 102.093,
+        "family": "langues",
+        "source": "interface-sounds/question_003",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 104.658,
+        "family": "divers",
+        "source": "interface-sounds/pluck_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 109.138,
+        "family": "close",
+        "source": "interface-sounds/close_003",
+        "gain": 0.15,
+        "pan": 0.275439453125
+      },
+      {
+        "time": 109.139,
+        "family": "paper",
+        "source": "interface-sounds/scratch_004",
+        "gain": 0.24,
+        "pan": -0.2
+      },
+      {
+        "time": 109.289,
+        "family": "paper",
+        "source": "interface-sounds/scroll_004",
+        "gain": 0.14,
+        "pan": 0.2
+      },
+      {
+        "time": 112.24499999999999,
+        "family": "foot",
+        "source": "impact-sounds/footstep_concrete_001",
+        "gain": 0.07,
+        "pan": 0.21020429687499997
+      },
+      {
+        "time": 112.362,
+        "family": "code",
+        "source": "sci-fi-sounds/laserRetro_001",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 112.445,
+        "family": "foot",
+        "source": "impact-sounds/footstep_carpet_001",
+        "gain": 0.06,
+        "pan": 0.350204296875
+      },
+      {
+        "time": 112.719,
+        "family": "click",
+        "source": "interface-sounds/select_008",
+        "gain": 0.1,
+        "pan": 0.327079296875
+      },
+      {
+        "time": 112.759,
+        "family": "open",
+        "source": "interface-sounds/maximize_007",
+        "gain": 0.2,
+        "pan": 0.327079296875
+      },
+      {
+        "time": 115.273,
+        "family": "close",
+        "source": "interface-sounds/minimize_007",
+        "gain": 0.15,
+        "pan": 0.13375
+      },
+      {
+        "time": 115.788,
+        "family": "contact",
+        "source": "interface-sounds/confirmation_004",
+        "gain": 0.23,
+        "pan": 0
+      },
+      {
+        "time": 118.838,
+        "family": "move",
+        "source": "interface-sounds/scroll_001",
+        "gain": 0.09,
+        "pan": 0.1625
+      },
+      {
+        "time": 118.93799999999999,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_000",
+        "gain": 0.07,
+        "pan": 0.0925
+      },
+      {
+        "time": 119.13799999999999,
+        "family": "foot",
+        "source": "impact-sounds/footstep_wood_002",
+        "gain": 0.06,
+        "pan": 0.2325
+      },
+      {
+        "time": 119.669,
+        "family": "finish",
+        "source": "interface-sounds/confirmation_002",
+        "gain": 0.24,
+        "pan": -0.15
+      },
+      {
+        "time": 120.01899999999999,
+        "family": "finish",
+        "source": "impact-sounds/impactBell_heavy_001",
+        "gain": 0.14,
+        "pan": 0.15
+      }
+    ],
+    "distinctRecordings": 63,
+    "sources": [
+      "https://kenney.nl/assets/interface-sounds",
+      "https://kenney.nl/assets/sci-fi-sounds",
+      "https://kenney.nl/assets/impact-sounds"
     ]
   },
-  "audio": "Original stereo sound design: six pitch/timbre variations per action; robot footsteps, airy transitions, UI clicks, spring pops, paper, data arpeggios, keyboard taps, metallic bell, sparkles, bubbles, string plucks, stamp, arcade and send cues. AAC, 48 kHz. No third-party recordings."
+  "audio": "Sample-based stereo sound design from Kenney Interface Sounds, Sci-fi Sounds and Impact Sounds (CC0). Distinct chapter cues, tactile controls, mechanical motion and quiet footsteps; no repeated synthesized beep layer. AAC, 48 kHz."
 }

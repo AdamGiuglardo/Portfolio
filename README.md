@@ -49,6 +49,6 @@ npx playwright install ffmpeg
 npm run tour:render
 ```
 
-Le rendu écrit `assets/portfolio-tour.mp4`, sa couverture JPEG, les descriptions `.vtt` et le découpage `portfolio-tour-scenes.json`. Les prises brutes et le CV rasterisé restent dans `.tour-render/`, ignoré par Git. Un extrait de contrôle peut être produit avec `node tools/render-portfolio-tour.mjs --sample`.
+Le rendu écrit `assets/portfolio-tour-v4.mp4`, sa couverture JPEG, les descriptions `.vtt` et le découpage `portfolio-tour-scenes.json`. Les prises brutes et le CV rasterisé restent dans `.tour-render/`, ignoré par Git. Un extrait de contrôle peut être produit avec `node tools/render-portfolio-tour.mjs --sample`.
 
-Les bruitages originaux sont synthétisés par `tools/add-tour-sfx.mjs` : pas du robot, déplacements, clics, ouvertures, papier et petits carillons. Le rendu enregistre les instants des actions et ajoute automatiquement une piste AAC stéréo. `npm run tour:sfx` permet de recréer uniquement le son du film existant, en conservant sa piste vidéo sans réencodage.
+Les bruitages sont mixés par `tools/add-tour-sfx.mjs` à partir des enregistrements Kenney (CC0) conservés dans `tools/tour-sounds/`, avec leurs licences et leurs sources. Les clics tactiles, mécanismes, pas, ouvertures et accents de chapitre utilisent des fichiers distincts. Les mouvements gardent des pauses sonores pour éviter une boucle de bips. Le rendu enregistre les instants des actions et ajoute automatiquement une piste AAC stéréo. `npm run tour:sfx` permet de recréer uniquement le son du film existant, en conservant sa piste vidéo sans réencodage.

@@ -43,7 +43,7 @@ export async function addTourSfx({ videoPath, manifestPath }) {
         break;
       }
       // A soft fixed-pitch felt tap marks openings only; no rising/falling sweep.
-      case "pop": add(time, "soft-open", 0.085, pan); break;
+      case "pop": add(time, "soft-open", 0.22, pan); break;
       case "paper":
         add(time, "paper", 0.24, -0.2);
         add(time + 0.15, "paper", 0.14, 0.2);
@@ -77,7 +77,7 @@ export async function addTourSfx({ videoPath, manifestPath }) {
         const attack = Math.pow(1 - Math.exp(-t / 0.014), 2);
         const release = Math.exp(-t / 0.060) * Math.pow(1 - i / samples.length, 2);
         // Low, rounded mallet body with a faint harmonic; no sharp transient.
-        samples[i] = attack * release * (Math.sin(2 * Math.PI * 220 * t) + 0.10 * Math.sin(2 * Math.PI * 440 * t));
+        samples[i] = attack * release * (Math.sin(2 * Math.PI * 220 * t) + 0.24 * Math.sin(2 * Math.PI * 440 * t));
       }
       let peak = 0;
       for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
@@ -128,17 +128,17 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   const wavPath = resolve(work, "portfolio-tour-sfx.wav");
   await writeFile(wavPath, wav);
   const musicPath = resolve(root, "tools/tour-sounds/music/reverie-excerpt.mp3");
-  const music = `[2:a]atrim=duration=${duration},asetpts=PTS-STARTPTS,loudnorm=I=-22:TP=-3:LRA=7,afade=t=in:d=1.6,afade=t=out:st=${duration - 3}:d=3[bed];[bed][1:a]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89:level=false[a]`;
+  const music = `[2:a]atrim=duration=${duration},asetpts=PTS-STARTPTS,loudnorm=I=-22:TP=-3:LRA=7,afade=t=in:d=1.6,afade=t=out:st=${duration - 3}:d=3[bed];[1:a]asplit=2[fx][control];[bed][control]sidechaincompress=threshold=0.018:ratio=5:attack=8:release=220[ducked];[ducked][fx]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89:level=false[a]`;
   const creditPath = resolve(root, "tools/tour-sounds/music/credit.png");
   const filters = `[0:v][3:v]overlay=x=36:y=H-h-28:enable='gte(t,${duration - 7})'[v];${music}`;
   await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-i", videoPath, "-i", wavPath, "-i", musicPath, "-loop", "1", "-i", creditPath, "-filter_complex", filters, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "slow", "-crf", "21", "-c:a", "aac", "-b:a", "192k", "-ar", String(rate), "-t", String(duration), "-metadata", "comment=Music: Reverie by Scott Buckley, CC BY 4.0, https://www.scottbuckley.com.au/library/reverie/ . Excerpt trimmed, faded and mixed with Kenney CC0 effects.", "-movflags", "+faststart", output]);
   await rename(output, videoPath);
-  manifest.audio = "Continuous instrumental music bed: Reverie by Scott Buckley (CC BY 4.0), trimmed and faded. Short low-level dry taps, paper cues and gentle chapter transitions; gentle fixed-pitch felt tap on panel openings; no closing sounds during skills or education and no laser sweeps. Robot movement remains silent. AAC stereo, 48 kHz.";
+  manifest.audio = "Continuous instrumental music bed: Reverie by Scott Buckley (CC BY 4.0), trimmed and faded. Short low-level dry taps, paper cues and gentle chapter transitions; audible fixed-pitch felt tap on panel openings with brief music ducking; no closing sounds during skills or education and no laser sweeps. Robot movement remains silent. AAC stereo, 48 kHz.";
   manifest.soundEffects = { timingSource: "Recorded browser action timestamps", rawEvents: actions, events, transitions: transitions.map(scene => scene.start), distinctRecordings: decoded.size, music: { title: "Reverie", artist: "Scott Buckley", license: "CC BY 4.0", source: "https://www.scottbuckley.com.au/library/reverie/", edits: "Excerpt from 8 seconds, normalized, faded and mixed under action effects" }, sources: ["https://kenney.nl/assets/interface-sounds", "https://kenney.nl/assets/impact-sounds"] };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   console.log(`Mixed ${events.length} cues using ${decoded.size} distinct recordings.`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v8.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
+  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v9.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
 }

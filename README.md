@@ -49,10 +49,12 @@ npx playwright install ffmpeg
 npm run tour:render
 ```
 
-Le rendu écrit `assets/portfolio-tour-v7.mp4`, sa couverture JPEG, les descriptions `.vtt` et le découpage `portfolio-tour-scenes.json`. Les prises brutes et le CV rasterisé restent dans `.tour-render/`, ignoré par Git. Un extrait de contrôle peut être produit avec `node tools/render-portfolio-tour.mjs --sample`.
+Le rendu écrit `assets/portfolio-tour-v8.mp4`, sa couverture JPEG, les descriptions `.vtt` et le découpage `portfolio-tour-scenes.json`. Les prises brutes et le CV rasterisé restent dans `.tour-render/`, ignoré par Git. Un extrait de contrôle peut être produit avec `node tools/render-portfolio-tour.mjs --sample`.
 
 Les bruitages sont mixés par `tools/add-tour-sfx.mjs` à partir des enregistrements Kenney (CC0) conservés dans `tools/tour-sounds/`, avec leurs licences et leurs sources. Les clics tactiles, mécanismes, pas, ouvertures et accents de chapitre utilisent des fichiers distincts. L’arrivée et les déplacements du robot sont silencieux. Les moteurs, pas, sons informatiques et lasers sont exclus du mix. Le rendu enregistre les instants des actions et ajoute automatiquement une piste AAC stéréo. `npm run tour:sfx` permet de recréer uniquement le son du film existant, en conservant le montage et en ajoutant le crédit musical en fin de vidéo.
 
 La bande-son de présentation utilise aussi « Reverie » de Scott Buckley (CC BY 4.0), en fond continu. Les crédits et les adaptations sont détaillés dans `tools/tour-sounds/music/ATTRIBUTION.md`, affichés dans le lecteur et intégrés en fin de vidéo. Les effets suivent les actions (clic, panneau, papier, changement de rubrique), sans accents de jeu à chaque compétence.
 
 Les effets d’ouverture et de fermeture à hauteur variable ont été supprimés. Les compétences et la formation conservent la musique sans bruit de clic ; ailleurs, seul un très court tapotement de bois à faible niveau accompagne les actions.
+
+Un son original de percussion feutrée (220 Hz, attaque progressive, 300 ms, faible niveau) accompagne désormais uniquement les ouvertures de panneaux, y compris les compétences. Il ne comporte aucun balayage de fréquence et les fermetures restent silencieuses dans ces rubriques.

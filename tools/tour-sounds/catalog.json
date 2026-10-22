@@ -76,5 +76,8 @@
   "finish": [
     "interface-sounds/confirmation_002",
     "impact-sounds/impactBell_heavy_001"
+  ],
+  "soft-open": [
+    "original/felt-open"
   ]
 }

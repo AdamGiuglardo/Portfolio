@@ -42,8 +42,8 @@ export async function addTourSfx({ videoPath, manifestPath }) {
         if (!["COMPÉTENCES", "FORMATION"].includes(chapter)) add(time, "click", 0.065, pan);
         break;
       }
-      // No pitched opening/closing effects: only a short tactile tap elsewhere.
-      case "pop": break;
+      // A soft fixed-pitch felt tap marks openings only; no rising/falling sweep.
+      case "pop": add(time, "soft-open", 0.085, pan); break;
       case "paper":
         add(time, "paper", 0.24, -0.2);
         add(time + 0.15, "paper", 0.14, 0.2);
@@ -70,6 +70,21 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   events.sort((a, b) => a.time - b.time);
   const decoded = new Map();
   for (const source of new Set(events.map(event => event.source))) {
+    if (source === "original/felt-open") {
+      const samples = new Float32Array(Math.round(rate * 0.30));
+      for (let i = 0; i < samples.length; i++) {
+        const t = i / rate;
+        const attack = Math.pow(1 - Math.exp(-t / 0.014), 2);
+        const release = Math.exp(-t / 0.060) * Math.pow(1 - i / samples.length, 2);
+        // Low, rounded mallet body with a faint harmonic; no sharp transient.
+        samples[i] = attack * release * (Math.sin(2 * Math.PI * 220 * t) + 0.10 * Math.sin(2 * Math.PI * 440 * t));
+      }
+      let peak = 0;
+      for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
+      for (let i = 0; i < samples.length; i++) samples[i] /= peak;
+      decoded.set(source, samples);
+      continue;
+    }
     const file = resolve(root, "tools/tour-sounds", source + ".ogg");
     const result = await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-i", file, "-t", source.includes("impactWood") ? "0.065" : "0.5", "-af", "highpass=f=120,lowpass=f=2800", "-ac", "1", "-ar", String(rate), "-f", "f32le", "pipe:1"], { encoding: "buffer", maxBuffer: 2 ** 20 });
     const buffer = result.stdout;
@@ -118,12 +133,12 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   const filters = `[0:v][3:v]overlay=x=36:y=H-h-28:enable='gte(t,${duration - 7})'[v];${music}`;
   await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-i", videoPath, "-i", wavPath, "-i", musicPath, "-loop", "1", "-i", creditPath, "-filter_complex", filters, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "slow", "-crf", "21", "-c:a", "aac", "-b:a", "192k", "-ar", String(rate), "-t", String(duration), "-metadata", "comment=Music: Reverie by Scott Buckley, CC BY 4.0, https://www.scottbuckley.com.au/library/reverie/ . Excerpt trimmed, faded and mixed with Kenney CC0 effects.", "-movflags", "+faststart", output]);
   await rename(output, videoPath);
-  manifest.audio = "Continuous instrumental music bed: Reverie by Scott Buckley (CC BY 4.0), trimmed and faded. Short low-level dry taps, paper cues and gentle chapter transitions; no pitched open/close sounds and no tap cues during skills or education. Robot movement remains silent. AAC stereo, 48 kHz.";
+  manifest.audio = "Continuous instrumental music bed: Reverie by Scott Buckley (CC BY 4.0), trimmed and faded. Short low-level dry taps, paper cues and gentle chapter transitions; gentle fixed-pitch felt tap on panel openings; no closing sounds during skills or education and no laser sweeps. Robot movement remains silent. AAC stereo, 48 kHz.";
   manifest.soundEffects = { timingSource: "Recorded browser action timestamps", rawEvents: actions, events, transitions: transitions.map(scene => scene.start), distinctRecordings: decoded.size, music: { title: "Reverie", artist: "Scott Buckley", license: "CC BY 4.0", source: "https://www.scottbuckley.com.au/library/reverie/", edits: "Excerpt from 8 seconds, normalized, faded and mixed under action effects" }, sources: ["https://kenney.nl/assets/interface-sounds", "https://kenney.nl/assets/impact-sounds"] };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   console.log(`Mixed ${events.length} cues using ${decoded.size} distinct recordings.`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v7.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
+  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v8.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
 }

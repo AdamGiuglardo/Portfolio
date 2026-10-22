@@ -46,10 +46,10 @@
     "impact-sounds/footstep_carpet_001"
   ],
   "project": [
-    "sci-fi-sounds/computerNoise_000",
-    "sci-fi-sounds/forceField_000",
-    "interface-sounds/glitch_001",
-    "sci-fi-sounds/computerNoise_003",
+    "interface-sounds/pluck_001",
+    "interface-sounds/glass_002",
+    "interface-sounds/drop_001",
+    "interface-sounds/pluck_002",
     "interface-sounds/confirmation_001"
   ],
   "skill": [
@@ -89,8 +89,7 @@
     "interface-sounds/pluck_001"
   ],
   "code": [
-    "sci-fi-sounds/laserRetro_001",
-    "sci-fi-sounds/forceField_003"
+    "interface-sounds/confirmation_003"
   ],
   "contact": [
     "interface-sounds/confirmation_004"

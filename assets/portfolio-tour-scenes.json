@@ -828,39 +828,11 @@
     ],
     "events": [
       {
-        "time": 0.001,
-        "family": "boot",
-        "source": "sci-fi-sounds/computerNoise_001",
-        "gain": 0.24,
-        "pan": 0
-      },
-      {
-        "time": 2.704,
-        "family": "move",
-        "source": "interface-sounds/scroll_001",
-        "gain": 0.09,
-        "pan": -0.3
-      },
-      {
         "time": 5.9639999999999995,
         "family": "project",
-        "source": "sci-fi-sounds/computerNoise_000",
+        "source": "interface-sounds/pluck_001",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 6.510999999999999,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": 0.03354999999999997
-      },
-      {
-        "time": 6.710999999999999,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": 0.17354999999999998
       },
       {
         "time": 7.008,
@@ -886,30 +858,9 @@
       {
         "time": 11.83,
         "family": "project",
-        "source": "sci-fi-sounds/forceField_000",
+        "source": "interface-sounds/glass_002",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 12.276,
-        "family": "move",
-        "source": "interface-sounds/scroll_003",
-        "gain": 0.09,
-        "pan": 0.10354999999999998
-      },
-      {
-        "time": 12.376,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": 0.03354999999999997
-      },
-      {
-        "time": 12.576,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": 0.17354999999999998
       },
       {
         "time": 12.874,
@@ -935,23 +886,9 @@
       {
         "time": 17.647,
         "family": "project",
-        "source": "interface-sounds/glitch_001",
+        "source": "interface-sounds/drop_001",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 18.194000000000003,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": 0.03354999999999997
-      },
-      {
-        "time": 18.394000000000002,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": 0.17354999999999998
       },
       {
         "time": 18.691,
@@ -968,13 +905,6 @@
         "pan": 0.15042499999999998
       },
       {
-        "time": 18.993,
-        "family": "move",
-        "source": "interface-sounds/scroll_005",
-        "gain": 0.09,
-        "pan": -0.3
-      },
-      {
         "time": 22.844,
         "family": "close",
         "source": "interface-sounds/back_001",
@@ -984,23 +914,9 @@
       {
         "time": 23.363,
         "family": "project",
-        "source": "sci-fi-sounds/computerNoise_003",
+        "source": "interface-sounds/pluck_002",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 23.909000000000002,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": 0.03354999999999997
-      },
-      {
-        "time": 24.109,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": 0.17354999999999998
       },
       {
         "time": 24.407,
@@ -1031,27 +947,6 @@
         "pan": 0
       },
       {
-        "time": 29.509,
-        "family": "move",
-        "source": "sci-fi-sounds/engineCircular_000",
-        "gain": 0.09,
-        "pan": 0.10354999999999998
-      },
-      {
-        "time": 29.609,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": 0.03354999999999997
-      },
-      {
-        "time": 29.809,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": 0.17354999999999998
-      },
-      {
         "time": 30.107,
         "family": "click",
         "source": "interface-sounds/click_004",
@@ -1080,20 +975,6 @@
         "pan": 0
       },
       {
-        "time": 35.242000000000004,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": -0.3081546875
-      },
-      {
-        "time": 35.442,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": -0.1681546875
-      },
-      {
         "time": 35.723,
         "family": "click",
         "source": "interface-sounds/toggle_001",
@@ -1108,13 +989,6 @@
         "pan": -0.19127968750000002
       },
       {
-        "time": 36.689,
-        "family": "move",
-        "source": "sci-fi-sounds/engineCircular_003",
-        "gain": 0.09,
-        "pan": -0.3
-      },
-      {
         "time": 38.574,
         "family": "close",
         "source": "interface-sounds/back_004",
@@ -1127,20 +1001,6 @@
         "source": "interface-sounds/pluck_001",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 39.376000000000005,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": -0.3081546875
-      },
-      {
-        "time": 39.576,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": -0.1681546875
       },
       {
         "time": 39.873,
@@ -1171,27 +1031,6 @@
         "pan": 0
       },
       {
-        "time": 43.441,
-        "family": "move",
-        "source": "interface-sounds/scroll_001",
-        "gain": 0.09,
-        "pan": -0.23815468750000002
-      },
-      {
-        "time": 43.541000000000004,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": -0.3081546875
-      },
-      {
-        "time": 43.741,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": -0.1681546875
-      },
-      {
         "time": 44.039,
         "family": "click",
         "source": "interface-sounds/switch_006",
@@ -1220,20 +1059,6 @@
         "pan": 0
       },
       {
-        "time": 47.708,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": -0.07481250000000003
-      },
-      {
-        "time": 47.907999999999994,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": 0.06518749999999998
-      },
-      {
         "time": 48.206,
         "family": "click",
         "source": "interface-sounds/select_008",
@@ -1248,13 +1073,6 @@
         "pan": 0.042062499999999975
       },
       {
-        "time": 49.172,
-        "family": "move",
-        "source": "interface-sounds/scroll_003",
-        "gain": 0.09,
-        "pan": -0.3
-      },
-      {
         "time": 51.073,
         "family": "close",
         "source": "interface-sounds/back_001",
@@ -1267,20 +1085,6 @@
         "source": "interface-sounds/bong_001",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 51.874,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": -0.07481250000000003
-      },
-      {
-        "time": 52.074,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": 0.06518749999999998
       },
       {
         "time": 52.372,
@@ -1311,27 +1115,6 @@
         "pan": 0
       },
       {
-        "time": 55.942,
-        "family": "move",
-        "source": "interface-sounds/scroll_005",
-        "gain": 0.09,
-        "pan": -0.0048125000000000286
-      },
-      {
-        "time": 56.042,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": -0.07481250000000003
-      },
-      {
-        "time": 56.242,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": 0.06518749999999998
-      },
-      {
         "time": 56.539,
         "family": "click",
         "source": "impact-sounds/impactWood_light_000",
@@ -1360,20 +1143,6 @@
         "pan": 0
       },
       {
-        "time": 60.207,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": -0.07481250000000003
-      },
-      {
-        "time": 60.407,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": 0.06518749999999998
-      },
-      {
         "time": 60.705,
         "family": "click",
         "source": "impact-sounds/impactGlass_light_001",
@@ -1388,13 +1157,6 @@
         "pan": 0.042062499999999975
       },
       {
-        "time": 61.672,
-        "family": "move",
-        "source": "sci-fi-sounds/engineCircular_000",
-        "gain": 0.09,
-        "pan": -0.3
-      },
-      {
         "time": 63.573,
         "family": "close",
         "source": "interface-sounds/back_004",
@@ -1407,20 +1169,6 @@
         "source": "interface-sounds/drop_002",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 64.374,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": 0.16660039062500004
-      },
-      {
-        "time": 64.574,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": 0.30660039062500005
       },
       {
         "time": 64.872,
@@ -1451,27 +1199,6 @@
         "pan": 0
       },
       {
-        "time": 68.441,
-        "family": "move",
-        "source": "sci-fi-sounds/engineCircular_003",
-        "gain": 0.09,
-        "pan": 0.23660039062500005
-      },
-      {
-        "time": 68.541,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": 0.16660039062500004
-      },
-      {
-        "time": 68.741,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": 0.30660039062500005
-      },
-      {
         "time": 69.038,
         "family": "click",
         "source": "interface-sounds/click_001",
@@ -1500,20 +1227,6 @@
         "pan": 0
       },
       {
-        "time": 72.70599999999999,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": 0.16660039062500004
-      },
-      {
-        "time": 72.90599999999999,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": 0.30660039062500005
-      },
-      {
         "time": 73.205,
         "family": "click",
         "source": "interface-sounds/tick_001",
@@ -1526,13 +1239,6 @@
         "source": "interface-sounds/open_004",
         "gain": 0.2,
         "pan": 0.28347539062500005
-      },
-      {
-        "time": 74.171,
-        "family": "move",
-        "source": "interface-sounds/scroll_001",
-        "gain": 0.09,
-        "pan": -0.3
       },
       {
         "time": 76.072,
@@ -1554,20 +1260,6 @@
         "source": "interface-sounds/glass_002",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 81.006,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": -0.348725
-      },
-      {
-        "time": 81.206,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": -0.208725
       },
       {
         "time": 81.487,
@@ -1598,27 +1290,6 @@
         "pan": 0
       },
       {
-        "time": 84.506,
-        "family": "move",
-        "source": "interface-sounds/scroll_003",
-        "gain": 0.09,
-        "pan": -0.10966250000000002
-      },
-      {
-        "time": 84.606,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": -0.17966250000000003
-      },
-      {
-        "time": 84.806,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": -0.03966250000000002
-      },
-      {
         "time": 85.104,
         "family": "click",
         "source": "interface-sounds/select_001",
@@ -1647,20 +1318,6 @@
         "pan": 0
       },
       {
-        "time": 88.222,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": -0.348725
-      },
-      {
-        "time": 88.422,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": -0.208725
-      },
-      {
         "time": 88.704,
         "family": "click",
         "source": "interface-sounds/click_004",
@@ -1675,13 +1332,6 @@
         "pan": -0.23185000000000003
       },
       {
-        "time": 89.67,
-        "family": "move",
-        "source": "interface-sounds/scroll_005",
-        "gain": 0.09,
-        "pan": -0.3
-      },
-      {
         "time": 91.022,
         "family": "close",
         "source": "interface-sounds/back_004",
@@ -1694,20 +1344,6 @@
         "source": "interface-sounds/glass_006",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 91.821,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": -0.17966250000000003
-      },
-      {
-        "time": 92.021,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": -0.03966250000000002
       },
       {
         "time": 92.304,
@@ -1738,27 +1374,6 @@
         "pan": 0
       },
       {
-        "time": 95.305,
-        "family": "move",
-        "source": "sci-fi-sounds/engineCircular_000",
-        "gain": 0.09,
-        "pan": -0.278725
-      },
-      {
-        "time": 95.405,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": -0.348725
-      },
-      {
-        "time": 95.605,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": -0.208725
-      },
-      {
         "time": 95.903,
         "family": "click",
         "source": "interface-sounds/tick_004",
@@ -1787,20 +1402,6 @@
         "pan": 0
       },
       {
-        "time": 99.02199999999999,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": -0.17966250000000003
-      },
-      {
-        "time": 99.222,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": -0.03966250000000002
-      },
-      {
         "time": 99.52,
         "family": "click",
         "source": "interface-sounds/switch_006",
@@ -1813,13 +1414,6 @@
         "source": "interface-sounds/open_003",
         "gain": 0.2,
         "pan": -0.06278750000000002
-      },
-      {
-        "time": 100.487,
-        "family": "move",
-        "source": "sci-fi-sounds/engineCircular_003",
-        "gain": 0.09,
-        "pan": -0.3
       },
       {
         "time": 101.838,
@@ -1864,25 +1458,11 @@
         "pan": 0.2
       },
       {
-        "time": 112.24499999999999,
-        "family": "foot",
-        "source": "impact-sounds/footstep_concrete_001",
-        "gain": 0.07,
-        "pan": 0.21020429687499997
-      },
-      {
         "time": 112.362,
         "family": "code",
-        "source": "sci-fi-sounds/laserRetro_001",
+        "source": "interface-sounds/confirmation_003",
         "gain": 0.23,
         "pan": 0
-      },
-      {
-        "time": 112.445,
-        "family": "foot",
-        "source": "impact-sounds/footstep_carpet_001",
-        "gain": 0.06,
-        "pan": 0.350204296875
       },
       {
         "time": 112.719,
@@ -1913,27 +1493,6 @@
         "pan": 0
       },
       {
-        "time": 118.838,
-        "family": "move",
-        "source": "interface-sounds/scroll_001",
-        "gain": 0.09,
-        "pan": 0.1625
-      },
-      {
-        "time": 118.93799999999999,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_000",
-        "gain": 0.07,
-        "pan": 0.0925
-      },
-      {
-        "time": 119.13799999999999,
-        "family": "foot",
-        "source": "impact-sounds/footstep_wood_002",
-        "gain": 0.06,
-        "pan": 0.2325
-      },
-      {
         "time": 119.669,
         "family": "finish",
         "source": "interface-sounds/confirmation_002",
@@ -1948,12 +1507,12 @@
         "pan": 0.15
       }
     ],
-    "distinctRecordings": 63,
+    "distinctRecordings": 48,
     "sources": [
       "https://kenney.nl/assets/interface-sounds",
       "https://kenney.nl/assets/sci-fi-sounds",
       "https://kenney.nl/assets/impact-sounds"
     ]
   },
-  "audio": "Sample-based stereo sound design from Kenney Interface Sounds, Sci-fi Sounds and Impact Sounds (CC0). Distinct chapter cues, tactile controls, mechanical motion and quiet footsteps; no repeated synthesized beep layer. AAC, 48 kHz."
+  "audio": "Sample-based stereo sound design from Kenney Interface Sounds, Sci-fi Sounds and Impact Sounds (CC0). Gentle chapter cues and tactile controls; silent robot entrance and movement, no engines, footsteps, computer chatter or laser cues. Sources filtered to soften sharp high frequencies. AAC, 48 kHz."
 }

@@ -27,20 +27,14 @@ export async function addTourSfx({ videoPath, manifestPath }) {
     const pool = catalog[family];
     events.push({ time, family, source: pool[index % pool.length], gain, pan: Math.max(-0.6, Math.min(0.6, pan)) });
   }
-  let moves = 0;
   for (let index = 0; index < actions.length; index++) {
     const event = actions[index];
     const { time, type } = event;
     const pan = event.pan ?? 0;
     switch (type) {
-      case "boot": add(time, "boot", 0.24); break;
+      // Robot entrance and movement are intentionally silent.
+      case "boot":
       case "move":
-        // Leave breathing room: no electronic bleep on each robot journey.
-        if (moves++ % 3 === 0) add(time, "move", 0.09, pan);
-        if (moves % 2 === 0) {
-          add(time + 0.10, "foot", 0.07, pan - 0.07);
-          add(time + 0.30, "foot", 0.06, pan + 0.07);
-        }
         break;
       case "click": {
         const opening = actions.slice(index + 1, index + 3).some(next => next.type === "pop" && next.time - time < 0.4);
@@ -70,7 +64,7 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   const decoded = new Map();
   for (const source of new Set(events.map(event => event.source))) {
     const file = resolve(root, "tools/tour-sounds", source + ".ogg");
-    const result = await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-i", file, "-t", "1.8", "-ac", "1", "-ar", String(rate), "-f", "f32le", "pipe:1"], { encoding: "buffer", maxBuffer: 2 ** 20 });
+    const result = await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-i", file, "-t", "1.8", "-af", "highpass=f=100,lowpass=f=4500", "-ac", "1", "-ar", String(rate), "-f", "f32le", "pipe:1"], { encoding: "buffer", maxBuffer: 2 ** 20 });
     const buffer = result.stdout;
     const samples = new Float32Array(buffer.length / 4);
     let peak = 0;
@@ -113,12 +107,12 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   await writeFile(wavPath, wav);
   await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-i", videoPath, "-i", wavPath, "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", String(rate), "-t", String(duration), "-movflags", "+faststart", output]);
   await rename(output, videoPath);
-  manifest.audio = "Sample-based stereo sound design from Kenney Interface Sounds, Sci-fi Sounds and Impact Sounds (CC0). Distinct chapter cues, tactile controls, mechanical motion and quiet footsteps; no repeated synthesized beep layer. AAC, 48 kHz.";
+  manifest.audio = "Sample-based stereo sound design from Kenney Interface Sounds, Sci-fi Sounds and Impact Sounds (CC0). Gentle chapter cues and tactile controls; silent robot entrance and movement, no engines, footsteps, computer chatter or laser cues. Sources filtered to soften sharp high frequencies. AAC, 48 kHz.";
   manifest.soundEffects = { timingSource: "Recorded browser action timestamps", rawEvents: actions, events, distinctRecordings: decoded.size, sources: ["https://kenney.nl/assets/interface-sounds", "https://kenney.nl/assets/sci-fi-sounds", "https://kenney.nl/assets/impact-sounds"] };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   console.log(`Mixed ${events.length} cues using ${decoded.size} distinct recordings.`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v4.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
+  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v5.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
 }

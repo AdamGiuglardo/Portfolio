@@ -1,36 +1,17 @@
 {
   "click": [
     "interface-sounds/click_001",
-    "interface-sounds/tick_001",
-    "interface-sounds/switch_001",
-    "interface-sounds/select_001",
     "interface-sounds/click_004",
-    "interface-sounds/toggle_001",
-    "interface-sounds/tick_004",
-    "interface-sounds/switch_006",
-    "interface-sounds/select_008",
-    "interface-sounds/toggle_004",
-    "impact-sounds/impactWood_light_000",
-    "impact-sounds/impactGlass_light_001",
-    "impact-sounds/impactMetal_light_002"
+    "interface-sounds/tick_001"
   ],
   "open": [
     "interface-sounds/open_001",
-    "interface-sounds/maximize_001",
     "interface-sounds/open_002",
-    "interface-sounds/maximize_004",
-    "interface-sounds/open_003",
-    "interface-sounds/maximize_007",
-    "interface-sounds/open_004",
-    "interface-sounds/maximize_009"
+    "interface-sounds/open_004"
   ],
   "close": [
     "interface-sounds/close_001",
-    "interface-sounds/minimize_002",
-    "interface-sounds/back_001",
-    "interface-sounds/close_003",
-    "interface-sounds/minimize_007",
-    "interface-sounds/back_004"
+    "interface-sounds/close_003"
   ],
   "move": [
     "interface-sounds/scroll_001",
@@ -76,8 +57,8 @@
     "sci-fi-sounds/computerNoise_001"
   ],
   "paper": [
-    "interface-sounds/scratch_004",
-    "interface-sounds/scroll_004"
+    "interface-sounds/scroll_004",
+    "interface-sounds/scratch_004"
   ],
   "formation": [
     "impact-sounds/impactBell_heavy_000"

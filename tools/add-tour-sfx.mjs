@@ -39,32 +39,39 @@ export async function addTourSfx({ videoPath, manifestPath }) {
       case "click": {
         const opening = actions.slice(index + 1, index + 3).some(next => next.type === "pop" && next.time - time < 0.4);
         // An opening already has its own sound; avoid stacking the same three cues.
-        if (!opening) add(time, "close", 0.15, pan);
-        else add(time, "click", 0.10, pan);
+        if (!opening) add(time, "close", 0.22, pan);
+        else add(time, "click", 0.24, pan);
         break;
       }
-      case "pop": add(time, "open", 0.20, pan); break;
+      case "pop": add(time, "open", 0.25, pan); break;
       case "paper":
         add(time, "paper", 0.24, -0.2);
         add(time + 0.15, "paper", 0.14, 0.2);
         break;
       case "finish":
-        add(time, "finish", 0.24, -0.15);
-        add(time + 0.35, "finish", 0.14, 0.15);
         break;
-      // No repeated chapter beep. Chapter-specific recordings are cued below.
     }
   }
-  const families = { PROJETS: "project", COMPÉTENCES: "skill", FORMATION: "formation", "QUALITÉS PERSONNELLES": "quality", LANGUES: "langues", DIVERS: "divers", CODE: "code", CONTACT: "contact" };
-  for (const scene of manifest.scenes) {
-    const family = families[scene.chapter];
-    if (family) add(scene.start + 0.22, family, family === "formation" ? 0.13 : 0.23);
+  // Sound follows the edit: an airy transition only on chapter changes.
+  const transitions = manifest.scenes.filter((scene, index) => index > 0 && scene.chapter !== manifest.scenes[index - 1].chapter);
+  let seed = 937;
+  for (const scene of transitions) {
+    const start = Math.round(Math.max(0, scene.start - 0.08) * rate);
+    const length = Math.round(0.42 * rate);
+    let filtered = 0;
+    for (let i = 0; i < length && start + i < frames; i++) {
+      seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+      filtered += 0.08 * (seed / 2147483648 - 1 - filtered);
+      const value = filtered * Math.pow(Math.sin(Math.PI * i / length), 2) * 0.26;
+      mix[(start + i) * 2] += value * (0.8 - 0.3 * i / length);
+      mix[(start + i) * 2 + 1] += value * (0.5 + 0.3 * i / length);
+    }
   }
   events.sort((a, b) => a.time - b.time);
   const decoded = new Map();
   for (const source of new Set(events.map(event => event.source))) {
     const file = resolve(root, "tools/tour-sounds", source + ".ogg");
-    const result = await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-i", file, "-t", "1.8", "-af", "highpass=f=100,lowpass=f=4500", "-ac", "1", "-ar", String(rate), "-f", "f32le", "pipe:1"], { encoding: "buffer", maxBuffer: 2 ** 20 });
+    const result = await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-i", file, "-t", "1.8", "-af", "highpass=f=100,lowpass=f=8000", "-ac", "1", "-ar", String(rate), "-f", "f32le", "pipe:1"], { encoding: "buffer", maxBuffer: 2 ** 20 });
     const buffer = result.stdout;
     const samples = new Float32Array(buffer.length / 4);
     let peak = 0;
@@ -105,14 +112,18 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   const output = resolve(dirname(videoPath), "portfolio-tour-with-sfx.mp4");
   const wavPath = resolve(work, "portfolio-tour-sfx.wav");
   await writeFile(wavPath, wav);
-  await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-i", videoPath, "-i", wavPath, "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", String(rate), "-t", String(duration), "-movflags", "+faststart", output]);
+  const musicPath = resolve(root, "tools/tour-sounds/music/reverie-excerpt.mp3");
+  const music = `[2:a]atrim=duration=${duration},asetpts=PTS-STARTPTS,loudnorm=I=-22:TP=-3:LRA=7,afade=t=in:d=1.6,afade=t=out:st=${duration - 3}:d=3[bed];[bed][1:a]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89:level=false[a]`;
+  const creditPath = resolve(root, "tools/tour-sounds/music/credit.png");
+  const filters = `[0:v][3:v]overlay=x=36:y=H-h-28:enable='gte(t,${duration - 7})'[v];${music}`;
+  await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-i", videoPath, "-i", wavPath, "-i", musicPath, "-loop", "1", "-i", creditPath, "-filter_complex", filters, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "slow", "-crf", "21", "-c:a", "aac", "-b:a", "192k", "-ar", String(rate), "-t", String(duration), "-metadata", "comment=Music: Reverie by Scott Buckley, CC BY 4.0, https://www.scottbuckley.com.au/library/reverie/ . Excerpt trimmed, faded and mixed with Kenney CC0 effects.", "-movflags", "+faststart", output]);
   await rename(output, videoPath);
-  manifest.audio = "Sample-based stereo sound design from Kenney Interface Sounds, Sci-fi Sounds and Impact Sounds (CC0). Gentle chapter cues and tactile controls; silent robot entrance and movement, no engines, footsteps, computer chatter or laser cues. Sources filtered to soften sharp high frequencies. AAC, 48 kHz.";
-  manifest.soundEffects = { timingSource: "Recorded browser action timestamps", rawEvents: actions, events, distinctRecordings: decoded.size, sources: ["https://kenney.nl/assets/interface-sounds", "https://kenney.nl/assets/sci-fi-sounds", "https://kenney.nl/assets/impact-sounds"] };
+  manifest.audio = "Continuous instrumental music bed: Reverie by Scott Buckley (CC BY 4.0), trimmed and faded. Tactile clicks, panel open/close, paper cues and gentle chapter transitions. Robot movement remains silent. AAC stereo, 48 kHz.";
+  manifest.soundEffects = { timingSource: "Recorded browser action timestamps", rawEvents: actions, events, transitions: transitions.map(scene => scene.start), distinctRecordings: decoded.size, music: { title: "Reverie", artist: "Scott Buckley", license: "CC BY 4.0", source: "https://www.scottbuckley.com.au/library/reverie/", edits: "Excerpt from 8 seconds, normalized, faded and mixed under action effects" }, sources: ["https://kenney.nl/assets/interface-sounds"] };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   console.log(`Mixed ${events.length} cues using ${decoded.size} distinct recordings.`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v5.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
+  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v6.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
 }

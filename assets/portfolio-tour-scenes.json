@@ -828,691 +828,513 @@
     ],
     "events": [
       {
-        "time": 5.9639999999999995,
-        "family": "project",
-        "source": "interface-sounds/pluck_001",
-        "gain": 0.23,
-        "pan": 0
-      },
-      {
         "time": 7.008,
         "family": "click",
         "source": "interface-sounds/click_001",
-        "gain": 0.1,
+        "gain": 0.24,
         "pan": 0.15042499999999998
       },
       {
         "time": 7.083,
         "family": "open",
         "source": "interface-sounds/open_001",
-        "gain": 0.2,
+        "gain": 0.25,
         "pan": 0.15042499999999998
       },
       {
         "time": 11.312,
         "family": "close",
         "source": "interface-sounds/close_001",
-        "gain": 0.15,
+        "gain": 0.22,
         "pan": 0.273309375
-      },
-      {
-        "time": 11.83,
-        "family": "project",
-        "source": "interface-sounds/glass_002",
-        "gain": 0.23,
-        "pan": 0
       },
       {
         "time": 12.874,
         "family": "click",
-        "source": "interface-sounds/tick_001",
-        "gain": 0.1,
+        "source": "interface-sounds/click_004",
+        "gain": 0.24,
         "pan": 0.15042499999999998
       },
       {
         "time": 12.914,
         "family": "open",
-        "source": "interface-sounds/maximize_001",
-        "gain": 0.2,
+        "source": "interface-sounds/open_002",
+        "gain": 0.25,
         "pan": 0.15042499999999998
       },
       {
         "time": 17.127,
         "family": "close",
-        "source": "interface-sounds/minimize_002",
-        "gain": 0.15,
+        "source": "interface-sounds/close_003",
+        "gain": 0.22,
         "pan": 0.273309375
-      },
-      {
-        "time": 17.647,
-        "family": "project",
-        "source": "interface-sounds/drop_001",
-        "gain": 0.23,
-        "pan": 0
       },
       {
         "time": 18.691,
         "family": "click",
-        "source": "interface-sounds/switch_001",
-        "gain": 0.1,
+        "source": "interface-sounds/tick_001",
+        "gain": 0.24,
         "pan": 0.15042499999999998
       },
       {
         "time": 18.731,
         "family": "open",
-        "source": "interface-sounds/open_002",
-        "gain": 0.2,
+        "source": "interface-sounds/open_004",
+        "gain": 0.25,
         "pan": 0.15042499999999998
       },
       {
         "time": 22.844,
         "family": "close",
-        "source": "interface-sounds/back_001",
-        "gain": 0.15,
+        "source": "interface-sounds/close_001",
+        "gain": 0.22,
         "pan": 0.273309375
-      },
-      {
-        "time": 23.363,
-        "family": "project",
-        "source": "interface-sounds/pluck_002",
-        "gain": 0.23,
-        "pan": 0
       },
       {
         "time": 24.407,
         "family": "click",
-        "source": "interface-sounds/select_001",
-        "gain": 0.1,
+        "source": "interface-sounds/click_001",
+        "gain": 0.24,
         "pan": 0.15042499999999998
       },
       {
         "time": 24.446,
         "family": "open",
-        "source": "interface-sounds/maximize_004",
-        "gain": 0.2,
+        "source": "interface-sounds/open_001",
+        "gain": 0.25,
         "pan": 0.15042499999999998
       },
       {
         "time": 28.544,
         "family": "close",
         "source": "interface-sounds/close_003",
-        "gain": 0.15,
+        "gain": 0.22,
         "pan": 0.273309375
-      },
-      {
-        "time": 29.063,
-        "family": "project",
-        "source": "interface-sounds/confirmation_001",
-        "gain": 0.23,
-        "pan": 0
       },
       {
         "time": 30.107,
         "family": "click",
         "source": "interface-sounds/click_004",
-        "gain": 0.1,
+        "gain": 0.24,
         "pan": 0.15042499999999998
       },
       {
         "time": 30.146,
         "family": "open",
-        "source": "interface-sounds/open_003",
-        "gain": 0.2,
+        "source": "interface-sounds/open_002",
+        "gain": 0.25,
         "pan": 0.15042499999999998
       },
       {
         "time": 34.174,
         "family": "close",
-        "source": "interface-sounds/minimize_007",
-        "gain": 0.15,
+        "source": "interface-sounds/close_001",
+        "gain": 0.22,
         "pan": 0.273309375
-      },
-      {
-        "time": 34.701,
-        "family": "skill",
-        "source": "interface-sounds/glass_001",
-        "gain": 0.23,
-        "pan": 0
       },
       {
         "time": 35.723,
         "family": "click",
-        "source": "interface-sounds/toggle_001",
-        "gain": 0.1,
+        "source": "interface-sounds/tick_001",
+        "gain": 0.24,
         "pan": -0.19127968750000002
       },
       {
         "time": 35.76,
         "family": "open",
-        "source": "interface-sounds/maximize_007",
-        "gain": 0.2,
+        "source": "interface-sounds/open_004",
+        "gain": 0.25,
         "pan": -0.19127968750000002
       },
       {
         "time": 38.574,
         "family": "close",
-        "source": "interface-sounds/back_004",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 38.833999999999996,
-        "family": "skill",
-        "source": "interface-sounds/pluck_001",
-        "gain": 0.23,
+        "source": "interface-sounds/close_003",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 39.873,
         "family": "click",
-        "source": "interface-sounds/tick_004",
-        "gain": 0.1,
+        "source": "interface-sounds/click_001",
+        "gain": 0.24,
         "pan": -0.19127968750000002
       },
       {
         "time": 39.909,
         "family": "open",
-        "source": "interface-sounds/open_004",
-        "gain": 0.2,
+        "source": "interface-sounds/open_001",
+        "gain": 0.25,
         "pan": -0.19127968750000002
       },
       {
         "time": 42.741,
         "family": "close",
         "source": "interface-sounds/close_001",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 42.997,
-        "family": "skill",
-        "source": "interface-sounds/scratch_001",
-        "gain": 0.23,
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 44.039,
         "family": "click",
-        "source": "interface-sounds/switch_006",
-        "gain": 0.1,
+        "source": "interface-sounds/click_004",
+        "gain": 0.24,
         "pan": -0.19127968750000002
       },
       {
         "time": 44.078,
         "family": "open",
-        "source": "interface-sounds/maximize_009",
-        "gain": 0.2,
+        "source": "interface-sounds/open_002",
+        "gain": 0.25,
         "pan": -0.19127968750000002
       },
       {
         "time": 46.907,
         "family": "close",
-        "source": "interface-sounds/minimize_002",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 47.163,
-        "family": "skill",
-        "source": "interface-sounds/question_001",
-        "gain": 0.23,
+        "source": "interface-sounds/close_003",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 48.206,
         "family": "click",
-        "source": "interface-sounds/select_008",
-        "gain": 0.1,
+        "source": "interface-sounds/tick_001",
+        "gain": 0.24,
         "pan": 0.042062499999999975
       },
       {
         "time": 48.243,
         "family": "open",
-        "source": "interface-sounds/open_001",
-        "gain": 0.2,
+        "source": "interface-sounds/open_004",
+        "gain": 0.25,
         "pan": 0.042062499999999975
       },
       {
         "time": 51.073,
         "family": "close",
-        "source": "interface-sounds/back_001",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 51.33,
-        "family": "skill",
-        "source": "interface-sounds/bong_001",
-        "gain": 0.23,
+        "source": "interface-sounds/close_001",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 52.372,
         "family": "click",
-        "source": "interface-sounds/toggle_004",
-        "gain": 0.1,
+        "source": "interface-sounds/click_001",
+        "gain": 0.24,
         "pan": 0.042062499999999975
       },
       {
         "time": 52.41,
         "family": "open",
-        "source": "interface-sounds/maximize_001",
-        "gain": 0.2,
+        "source": "interface-sounds/open_001",
+        "gain": 0.25,
         "pan": 0.042062499999999975
       },
       {
         "time": 55.24,
         "family": "close",
         "source": "interface-sounds/close_003",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 55.496,
-        "family": "skill",
-        "source": "interface-sounds/glass_004",
-        "gain": 0.23,
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 56.539,
         "family": "click",
-        "source": "impact-sounds/impactWood_light_000",
-        "gain": 0.1,
+        "source": "interface-sounds/click_004",
+        "gain": 0.24,
         "pan": 0.042062499999999975
       },
       {
         "time": 56.575,
         "family": "open",
         "source": "interface-sounds/open_002",
-        "gain": 0.2,
+        "gain": 0.25,
         "pan": 0.042062499999999975
       },
       {
         "time": 59.406,
         "family": "close",
-        "source": "interface-sounds/minimize_007",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 59.663,
-        "family": "skill",
-        "source": "interface-sounds/pluck_002",
-        "gain": 0.23,
+        "source": "interface-sounds/close_001",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 60.705,
         "family": "click",
-        "source": "impact-sounds/impactGlass_light_001",
-        "gain": 0.1,
+        "source": "interface-sounds/tick_001",
+        "gain": 0.24,
         "pan": 0.042062499999999975
       },
       {
         "time": 60.742,
         "family": "open",
-        "source": "interface-sounds/maximize_004",
-        "gain": 0.2,
+        "source": "interface-sounds/open_004",
+        "gain": 0.25,
         "pan": 0.042062499999999975
       },
       {
         "time": 63.573,
         "family": "close",
-        "source": "interface-sounds/back_004",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 63.829,
-        "family": "skill",
-        "source": "interface-sounds/drop_002",
-        "gain": 0.23,
+        "source": "interface-sounds/close_003",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 64.872,
         "family": "click",
-        "source": "impact-sounds/impactMetal_light_002",
-        "gain": 0.1,
+        "source": "interface-sounds/click_001",
+        "gain": 0.24,
         "pan": 0.28347539062500005
       },
       {
         "time": 64.908,
         "family": "open",
-        "source": "interface-sounds/open_003",
-        "gain": 0.2,
+        "source": "interface-sounds/open_001",
+        "gain": 0.25,
         "pan": 0.28347539062500005
       },
       {
         "time": 67.739,
         "family": "close",
         "source": "interface-sounds/close_001",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 67.995,
-        "family": "skill",
-        "source": "interface-sounds/question_004",
-        "gain": 0.23,
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 69.038,
         "family": "click",
-        "source": "interface-sounds/click_001",
-        "gain": 0.1,
+        "source": "interface-sounds/click_004",
+        "gain": 0.24,
         "pan": 0.28347539062500005
       },
       {
         "time": 69.075,
         "family": "open",
-        "source": "interface-sounds/maximize_007",
-        "gain": 0.2,
+        "source": "interface-sounds/open_002",
+        "gain": 0.25,
         "pan": 0.28347539062500005
       },
       {
         "time": 71.906,
         "family": "close",
-        "source": "interface-sounds/minimize_002",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 72.16199999999999,
-        "family": "skill",
-        "source": "interface-sounds/confirmation_003",
-        "gain": 0.23,
+        "source": "interface-sounds/close_003",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 73.205,
         "family": "click",
         "source": "interface-sounds/tick_001",
-        "gain": 0.1,
+        "gain": 0.24,
         "pan": 0.28347539062500005
       },
       {
         "time": 73.242,
         "family": "open",
         "source": "interface-sounds/open_004",
-        "gain": 0.2,
+        "gain": 0.25,
         "pan": 0.28347539062500005
       },
       {
         "time": 76.072,
         "family": "close",
-        "source": "interface-sounds/back_001",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 76.328,
-        "family": "formation",
-        "source": "impact-sounds/impactBell_heavy_000",
-        "gain": 0.13,
-        "pan": 0
-      },
-      {
-        "time": 80.46,
-        "family": "quality",
-        "source": "interface-sounds/glass_002",
-        "gain": 0.23,
+        "source": "interface-sounds/close_001",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 81.487,
         "family": "click",
-        "source": "interface-sounds/switch_001",
-        "gain": 0.1,
+        "source": "interface-sounds/click_001",
+        "gain": 0.24,
         "pan": -0.23185000000000003
       },
       {
         "time": 81.524,
         "family": "open",
-        "source": "interface-sounds/maximize_009",
-        "gain": 0.2,
+        "source": "interface-sounds/open_001",
+        "gain": 0.25,
         "pan": -0.23185000000000003
       },
       {
         "time": 83.805,
         "family": "close",
         "source": "interface-sounds/close_003",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 84.062,
-        "family": "quality",
-        "source": "interface-sounds/drop_001",
-        "gain": 0.23,
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 85.104,
         "family": "click",
-        "source": "interface-sounds/select_001",
-        "gain": 0.1,
+        "source": "interface-sounds/click_004",
+        "gain": 0.24,
         "pan": -0.06278750000000002
       },
       {
         "time": 85.141,
         "family": "open",
-        "source": "interface-sounds/open_001",
-        "gain": 0.2,
+        "source": "interface-sounds/open_002",
+        "gain": 0.25,
         "pan": -0.06278750000000002
       },
       {
         "time": 87.421,
         "family": "close",
-        "source": "interface-sounds/minimize_007",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 87.678,
-        "family": "quality",
-        "source": "interface-sounds/pluck_002",
-        "gain": 0.23,
+        "source": "interface-sounds/close_001",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 88.704,
         "family": "click",
-        "source": "interface-sounds/click_004",
-        "gain": 0.1,
+        "source": "interface-sounds/tick_001",
+        "gain": 0.24,
         "pan": -0.23185000000000003
       },
       {
         "time": 88.741,
         "family": "open",
-        "source": "interface-sounds/maximize_001",
-        "gain": 0.2,
+        "source": "interface-sounds/open_004",
+        "gain": 0.25,
         "pan": -0.23185000000000003
       },
       {
         "time": 91.022,
         "family": "close",
-        "source": "interface-sounds/back_004",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 91.278,
-        "family": "quality",
-        "source": "interface-sounds/glass_006",
-        "gain": 0.23,
+        "source": "interface-sounds/close_003",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 92.304,
         "family": "click",
-        "source": "interface-sounds/toggle_001",
-        "gain": 0.1,
+        "source": "interface-sounds/click_001",
+        "gain": 0.24,
         "pan": -0.06278750000000002
       },
       {
         "time": 92.34,
         "family": "open",
-        "source": "interface-sounds/open_002",
-        "gain": 0.2,
+        "source": "interface-sounds/open_001",
+        "gain": 0.25,
         "pan": -0.06278750000000002
       },
       {
         "time": 94.604,
         "family": "close",
         "source": "interface-sounds/close_001",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 94.861,
-        "family": "quality",
-        "source": "interface-sounds/confirmation_002",
-        "gain": 0.23,
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 95.903,
         "family": "click",
-        "source": "interface-sounds/tick_004",
-        "gain": 0.1,
+        "source": "interface-sounds/click_004",
+        "gain": 0.24,
         "pan": -0.23185000000000003
       },
       {
         "time": 95.94,
         "family": "open",
-        "source": "interface-sounds/maximize_004",
-        "gain": 0.2,
+        "source": "interface-sounds/open_002",
+        "gain": 0.25,
         "pan": -0.23185000000000003
       },
       {
         "time": 98.221,
         "family": "close",
-        "source": "interface-sounds/minimize_002",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 98.477,
-        "family": "quality",
-        "source": "interface-sounds/bong_001",
-        "gain": 0.23,
+        "source": "interface-sounds/close_003",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 99.52,
         "family": "click",
-        "source": "interface-sounds/switch_006",
-        "gain": 0.1,
+        "source": "interface-sounds/tick_001",
+        "gain": 0.24,
         "pan": -0.06278750000000002
       },
       {
         "time": 99.557,
         "family": "open",
-        "source": "interface-sounds/open_003",
-        "gain": 0.2,
+        "source": "interface-sounds/open_004",
+        "gain": 0.25,
         "pan": -0.06278750000000002
       },
       {
         "time": 101.838,
         "family": "close",
-        "source": "interface-sounds/back_001",
-        "gain": 0.15,
-        "pan": 0
-      },
-      {
-        "time": 102.093,
-        "family": "langues",
-        "source": "interface-sounds/question_003",
-        "gain": 0.23,
-        "pan": 0
-      },
-      {
-        "time": 104.658,
-        "family": "divers",
-        "source": "interface-sounds/pluck_001",
-        "gain": 0.23,
+        "source": "interface-sounds/close_001",
+        "gain": 0.22,
         "pan": 0
       },
       {
         "time": 109.138,
         "family": "close",
         "source": "interface-sounds/close_003",
-        "gain": 0.15,
+        "gain": 0.22,
         "pan": 0.275439453125
       },
       {
         "time": 109.139,
         "family": "paper",
-        "source": "interface-sounds/scratch_004",
+        "source": "interface-sounds/scroll_004",
         "gain": 0.24,
         "pan": -0.2
       },
       {
         "time": 109.289,
         "family": "paper",
-        "source": "interface-sounds/scroll_004",
+        "source": "interface-sounds/scratch_004",
         "gain": 0.14,
         "pan": 0.2
       },
       {
-        "time": 112.362,
-        "family": "code",
-        "source": "interface-sounds/confirmation_003",
-        "gain": 0.23,
-        "pan": 0
-      },
-      {
         "time": 112.719,
         "family": "click",
-        "source": "interface-sounds/select_008",
-        "gain": 0.1,
+        "source": "interface-sounds/click_001",
+        "gain": 0.24,
         "pan": 0.327079296875
       },
       {
         "time": 112.759,
         "family": "open",
-        "source": "interface-sounds/maximize_007",
-        "gain": 0.2,
+        "source": "interface-sounds/open_001",
+        "gain": 0.25,
         "pan": 0.327079296875
       },
       {
         "time": 115.273,
         "family": "close",
-        "source": "interface-sounds/minimize_007",
-        "gain": 0.15,
+        "source": "interface-sounds/close_001",
+        "gain": 0.22,
         "pan": 0.13375
-      },
-      {
-        "time": 115.788,
-        "family": "contact",
-        "source": "interface-sounds/confirmation_004",
-        "gain": 0.23,
-        "pan": 0
-      },
-      {
-        "time": 119.669,
-        "family": "finish",
-        "source": "interface-sounds/confirmation_002",
-        "gain": 0.24,
-        "pan": -0.15
-      },
-      {
-        "time": 120.01899999999999,
-        "family": "finish",
-        "source": "impact-sounds/impactBell_heavy_001",
-        "gain": 0.14,
-        "pan": 0.15
       }
     ],
-    "distinctRecordings": 48,
+    "transitions": [
+      3.341,
+      5.744,
+      34.481,
+      76.108,
+      80.24,
+      101.873,
+      104.438,
+      108.471,
+      112.142,
+      115.568,
+      118.837
+    ],
+    "distinctRecordings": 10,
+    "music": {
+      "title": "Reverie",
+      "artist": "Scott Buckley",
+      "license": "CC BY 4.0",
+      "source": "https://www.scottbuckley.com.au/library/reverie/",
+      "edits": "Excerpt from 8 seconds, normalized, faded and mixed under action effects"
+    },
     "sources": [
-      "https://kenney.nl/assets/interface-sounds",
-      "https://kenney.nl/assets/sci-fi-sounds",
-      "https://kenney.nl/assets/impact-sounds"
+      "https://kenney.nl/assets/interface-sounds"
     ]
   },
-  "audio": "Sample-based stereo sound design from Kenney Interface Sounds, Sci-fi Sounds and Impact Sounds (CC0). Gentle chapter cues and tactile controls; silent robot entrance and movement, no engines, footsteps, computer chatter or laser cues. Sources filtered to soften sharp high frequencies. AAC, 48 kHz."
+  "audio": "Continuous instrumental music bed: Reverie by Scott Buckley (CC BY 4.0), trimmed and faded. Tactile clicks, panel open/close, paper cues and gentle chapter transitions. Robot movement remains silent. AAC stereo, 48 kHz."
 }

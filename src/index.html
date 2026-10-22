@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#183c30" />
     <title>Adam Giuglardo — Réseaux & Télécommunications</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./style.css?v=10" />
+    <link rel="stylesheet" href="./style.css?v=11" />
     <script src="./script.js?v=9" defer></script>
     <script src="./secret.js?v=4" defer></script>
     <script type="module" src="./main.jsx"></script>
@@ -74,15 +74,20 @@
               >
                 <path d="M5 19 19 5M5 5h14v14" /></svg
             ></a>
-            <button class="button button-tour" type="button" data-open-tour aria-haspopup="dialog" aria-controls="portfolio-tour-dialog">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4Z" fill="currentColor" stroke="none"/></svg>
-              Visite animée
-            </button>
+
           </div>
           <p class="availability">
             <span aria-hidden="true"></span>À la recherche d’une alternance ·
             Rythme 1 mois / 1 mois
           </p>
+          <button class="tour-feature" type="button" data-open-tour aria-haspopup="dialog" aria-controls="portfolio-tour-dialog" aria-label="Lire la présentation vidéo du portfolio, 2 minutes">
+            <span class="tour-feature-preview">
+              <img src="assets/portfolio-tour-preview.jpg" alt="" width="320" height="180" decoding="async" />
+              <span class="tour-feature-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m9 5 11 7-11 7Z" /></svg></span>
+              <span class="tour-feature-duration" aria-hidden="true">02:02</span>
+            </span>
+            <span class="tour-feature-copy"><span class="tour-feature-label">Présentation vidéo</span><strong>Mon portfolio en 2 minutes.</strong><span class="tour-feature-action">Lancer la présentation <span aria-hidden="true">↗</span></span></span>
+          </button>
         </div>
         <figure class="portrait">
           <img

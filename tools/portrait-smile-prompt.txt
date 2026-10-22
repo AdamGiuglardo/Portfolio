@@ -1,4 +1,9 @@
 Mode: built-in ImageGen edit, transparent background.
+Latest correction: balanced eyelid opening using two private real-photo identity references (daylight and night). References are not published.
+Latest selected prompt:
+
+Localized identity-preserving portrait edit. Image 1 is the EDIT TARGET, a transparent monochrome halftone professional portrait in a suit. Images 2 (daylight) and 3 (night) are real identity references of the same person. Correct ONLY the eye and under-eye region of image 1: the eye on the viewer's right currently appears rounder and larger than the other. Gently reduce that excessive opening and balance both eyelid apertures, iris sizes and gaze so neither eye appears enlarged, closed, or startled. Use the real references for his natural almond-shaped eyelids and identity, without copying the tired expression, low camera angle, shadows or squint. Keep a relaxed rested gaze, believable subtle natural asymmetry, not perfectly mirrored eyes. Soften only harsh under-eye hollows. Preserve the exact recognizable face structure, nose, eyebrows, hair, beard, closed-lip subtle smile, age, suit, shirt, pose, crop and black-and-white halftone dot texture of image 1. No teeth, no face slimming, no facial redesign or exaggerated large eyes. Preserve the actual transparent background and clean cutout edges. Final portrait should feel natural and faithfully recognizable with balanced eyelid opening.
+
 Final pass uses the user-supplied eye-reference photo. This private reference is not added to the repository.
 Edit target: assets/profile-halftone.png
 Saved result: assets/profile-halftone-smile.png

@@ -3,7 +3,7 @@
   "width": 1280,
   "height": 720,
   "fps": 30,
-  "duration": 122.458,
+  "duration": 122.454,
   "scenes": [
     {
       "start": 0,
@@ -24,43 +24,43 @@
       "text": "Une infrastructure d’entreprise : routage, services et administration réseau."
     },
     {
-      "start": 11.611,
+      "start": 11.579,
       "chapter": "PROJETS",
       "title": "Infrastructure réseau",
       "text": "Du Wi-Fi, de l’adressage et des services sur de vrais équipements."
     },
     {
-      "start": 17.445,
+      "start": 17.393,
       "chapter": "PROJETS",
       "title": "Portfolio",
       "text": "Le site que tu explores : mon parcours, mes compétences et mes réalisations."
     },
     {
-      "start": 23.143,
+      "start": 23.111,
       "chapter": "PROJETS",
       "title": "Analyse de signaux",
       "text": "Observer les signaux, mesurer leurs propriétés et interpréter les résultats."
     },
     {
-      "start": 28.846,
+      "start": 28.827,
       "chapter": "PROJETS",
       "title": "Téléphonie sur IP",
       "text": "Faire communiquer des postes SIP, DECT et analogiques grâce à un IPBX."
     },
     {
-      "start": 34.467,
+      "start": 34.431,
       "chapter": "COMPÉTENCES",
       "title": "Installation d’équipements",
       "text": "Switchs Cisco, routeurs et points d’accès : apprendre à connecter les équipements."
     },
     {
-      "start": 38.629,
+      "start": 38.595,
       "chapter": "COMPÉTENCES",
       "title": "Virtualisation",
       "text": "VMware et VirtualBox pour déployer des serveurs et simuler des architectures."
     },
     {
-      "start": 42.761,
+      "start": 42.76,
       "chapter": "COMPÉTENCES",
       "title": "Services réseau",
       "text": "DNS, DHCP, Active Directory et SSH : les services au cœur du réseau."
@@ -72,79 +72,79 @@
       "text": "Créer des interfaces web pour présenter des informations et des projets."
     },
     {
-      "start": 51.093,
+      "start": 51.094,
       "chapter": "COMPÉTENCES",
       "title": "Bash & Linux",
       "text": "Administrer Linux et automatiser les tâches avec des scripts Bash."
     },
     {
-      "start": 55.263,
+      "start": 55.26,
       "chapter": "COMPÉTENCES",
       "title": "Python",
       "text": "Développer des scripts et traiter des données avec Python."
     },
     {
-      "start": 59.428,
+      "start": 59.427,
       "chapter": "COMPÉTENCES",
       "title": "Bases de données",
       "text": "Organiser les données et travailler avec les bases de données."
     },
     {
-      "start": 63.595,
+      "start": 63.593,
       "chapter": "COMPÉTENCES",
       "title": "GBF",
       "text": "Générer des signaux pour les observer et les comparer."
     },
     {
-      "start": 67.76,
+      "start": 67.761,
       "chapter": "COMPÉTENCES",
       "title": "Oscilloscope",
       "text": "Mesurer l’amplitude, la période et le bruit à l’oscilloscope."
     },
     {
-      "start": 71.927,
+      "start": 71.925,
       "chapter": "COMPÉTENCES",
       "title": "Téléphonie sur IP (VoIP)",
       "text": "Configurer et tester des communications téléphoniques sur IP."
     },
     {
-      "start": 76.093,
+      "start": 76.091,
       "chapter": "FORMATION",
       "title": "Un parcours tourné vers le numérique",
       "text": "Le BUT Réseaux & Télécommunications, à l’IUT Clermont Auvergne."
     },
     {
-      "start": 80.227,
+      "start": 80.224,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Assiduité",
       "text": "Des routines et des échéances pour avancer avec constance."
     },
     {
-      "start": 83.826,
+      "start": 83.825,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Organisation",
       "text": "Planifier, découper les étapes et garder ses projets organisés."
     },
     {
-      "start": 87.443,
+      "start": 87.442,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Patience",
       "text": "Tester, comprendre l’erreur et chercher une solution, étape par étape."
     },
     {
-      "start": 91.027,
+      "start": 91.041,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Efficacité",
       "text": "Choisir des méthodes simples et automatiser ce qui peut l’être."
     },
     {
-      "start": 94.643,
+      "start": 94.658,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Esprit d’équipe",
       "text": "Écouter, communiquer et avancer ensemble vers un objectif commun."
     },
     {
-      "start": 98.244,
+      "start": 98.258,
       "chapter": "QUALITÉS PERSONNELLES",
       "title": "Prévenance",
       "text": "Soigner les détails et anticiper les besoins des autres."
@@ -156,670 +156,965 @@
       "text": "Français, anglais, italien, arabe et espagnol : cinq langues présentées sur le site."
     },
     {
-      "start": 104.424,
+      "start": 104.421,
       "chapter": "DIVERS",
       "title": "Et en dehors des réseaux ?",
       "text": "Veille technologique, travail en équipe, jeux vidéo, musique et podcasts."
     },
     {
-      "start": 108.457,
+      "start": 108.454,
       "chapter": "C.V",
       "title": "Tout mon parcours, dans un document",
       "text": "Le CV est consultable et téléchargeable directement depuis le portfolio."
     },
     {
-      "start": 112.128,
+      "start": 112.125,
       "chapter": "CODE",
       "title": "Le portfolio a un autre niveau",
       "text": "Un code d’accès ouvre l’arcade du portfolio et ses cinq jeux."
     },
     {
-      "start": 115.555,
+      "start": 115.554,
       "chapter": "CONTACT",
       "title": "Construisons la suite",
       "text": "Une alternance, un projet ou un échange : les coordonnées sont à portée de clic."
     },
     {
-      "start": 118.823,
+      "start": 118.822,
       "chapter": "À TOI DE JOUER",
       "title": "La visite continue avec toi",
       "text": "Explore les projets, ouvre les compétences et prenons contact."
     }
   ],
   "source": "Local portfolio HTML and assets; original vector mascot and motion composition",
-  "audio": "Original synthesized stereo sound effects: robot steps, airy moves, UI clicks, opening pops, paper and short chimes. AAC, 48 kHz.",
   "soundEffects": {
-    "timingSource": "Chapter cues and recorded action offsets",
+    "timingSource": "Recorded browser action timestamps",
     "events": [
       {
-        "time": 0.15,
-        "type": "boot"
+        "time": 0.003,
+        "type": "boot",
+        "pan": 0,
+        "variant": 0
       },
       {
-        "time": 3.362,
+        "time": 2.705,
+        "type": "move",
+        "pan": -0.3,
+        "variant": 0
+      },
+      {
+        "time": 3.342,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 0
       },
       {
-        "time": 5.765,
+        "time": 5.745,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 1
       },
       {
-        "time": 6.3950000000000005,
+        "time": 6.045,
+        "type": "data",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 6.411,
         "type": "move",
-        "pan": -0.15
+        "pan": 0.10354999999999998,
+        "variant": 1
       },
       {
-        "time": 6.995,
+        "time": 7.008,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.15042499999999998,
+        "variant": 0
       },
       {
-        "time": 7.045,
+        "time": 7.071,
         "type": "pop",
-        "pan": 0
+        "pan": 0.15042499999999998,
+        "variant": 0
       },
       {
-        "time": 7.395,
+        "time": 7.334,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 2
       },
       {
-        "time": 11.251000000000001,
+        "time": 11.281,
         "type": "click",
-        "pan": 0.15
+        "pan": 0.273309375,
+        "variant": 1
       },
       {
-        "time": 12.261000000000001,
+        "time": 11.879000000000001,
+        "type": "data",
+        "pan": 0,
+        "variant": 1
+      },
+      {
+        "time": 12.244,
         "type": "move",
-        "pan": -0.15
+        "pan": 0.10354999999999998,
+        "variant": 3
       },
       {
-        "time": 12.861,
+        "time": 12.841,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.15042499999999998,
+        "variant": 2
       },
       {
-        "time": 12.911000000000001,
+        "time": 12.88,
         "type": "pop",
-        "pan": 0
+        "pan": 0.15042499999999998,
+        "variant": 1
       },
       {
-        "time": 13.261000000000001,
+        "time": 13.142,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 4
       },
       {
-        "time": 17.085,
+        "time": 17.096,
         "type": "click",
-        "pan": 0.15
+        "pan": 0.273309375,
+        "variant": 3
       },
       {
-        "time": 18.095,
+        "time": 17.693,
+        "type": "data",
+        "pan": 0,
+        "variant": 2
+      },
+      {
+        "time": 18.065,
         "type": "move",
-        "pan": -0.15
+        "pan": 0.10354999999999998,
+        "variant": 5
       },
       {
-        "time": 18.695,
+        "time": 18.657,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.15042499999999998,
+        "variant": 4
       },
       {
-        "time": 18.745,
+        "time": 18.7,
         "type": "pop",
-        "pan": 0
+        "pan": 0.15042499999999998,
+        "variant": 2
       },
       {
-        "time": 19.095,
+        "time": 18.962,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 0
       },
       {
-        "time": 22.783,
+        "time": 22.814,
         "type": "click",
-        "pan": 0.15
+        "pan": 0.273309375,
+        "variant": 5
       },
       {
-        "time": 23.793,
+        "time": 23.411,
+        "type": "data",
+        "pan": 0,
+        "variant": 3
+      },
+      {
+        "time": 23.776,
         "type": "move",
-        "pan": -0.15
+        "pan": 0.10354999999999998,
+        "variant": 1
       },
       {
-        "time": 24.393,
+        "time": 24.374,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.15042499999999998,
+        "variant": 0
       },
       {
-        "time": 24.443,
+        "time": 24.413,
         "type": "pop",
-        "pan": 0
+        "pan": 0.15042499999999998,
+        "variant": 3
       },
       {
-        "time": 24.793,
+        "time": 24.675,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 2
       },
       {
-        "time": 28.486,
+        "time": 28.528,
         "type": "click",
-        "pan": 0.15
+        "pan": 0.273309375,
+        "variant": 1
       },
       {
-        "time": 29.496,
+        "time": 29.127000000000002,
+        "type": "data",
+        "pan": 0,
+        "variant": 4
+      },
+      {
+        "time": 29.497,
         "type": "move",
-        "pan": -0.15
+        "pan": 0.10354999999999998,
+        "variant": 3
       },
       {
-        "time": 30.096,
+        "time": 30.074,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.15042499999999998,
+        "variant": 2
       },
       {
-        "time": 30.146,
+        "time": 30.113,
         "type": "pop",
-        "pan": 0
+        "pan": 0.15042499999999998,
+        "variant": 4
       },
       {
-        "time": 30.496,
+        "time": 30.376,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 4
       },
       {
-        "time": 34.107,
+        "time": 34.129,
         "type": "click",
-        "pan": 0.15
+        "pan": 0.273309375,
+        "variant": 3
       },
       {
-        "time": 34.487,
+        "time": 34.431,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 2
       },
       {
-        "time": 35.117,
+        "time": 34.730999999999995,
+        "type": "keys",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 35.092,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.23815468750000002,
+        "variant": 5
       },
       {
-        "time": 35.717,
+        "time": 35.69,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.19127968750000002,
+        "variant": 4
       },
       {
-        "time": 35.766999999999996,
+        "time": 35.731,
         "type": "pop",
-        "pan": 0
+        "pan": -0.19127968750000002,
+        "variant": 5
       },
       {
-        "time": 36.667,
+        "time": 36.657,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 0
       },
       {
-        "time": 38.489,
+        "time": 38.558,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 5
       },
       {
-        "time": 39.278999999999996,
+        "time": 38.894999999999996,
+        "type": "keys",
+        "pan": 0,
+        "variant": 1
+      },
+      {
+        "time": 39.259,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.23815468750000002,
+        "variant": 1
       },
       {
-        "time": 39.879,
+        "time": 39.857,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.19127968750000002,
+        "variant": 0
       },
       {
-        "time": 39.928999999999995,
+        "time": 39.893,
         "type": "pop",
-        "pan": 0
+        "pan": -0.19127968750000002,
+        "variant": 0
       },
       {
-        "time": 40.829,
+        "time": 40.823,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 2
       },
       {
-        "time": 42.621,
+        "time": 42.725,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 1
       },
       {
-        "time": 43.411,
+        "time": 43.059999999999995,
+        "type": "keys",
+        "pan": 0,
+        "variant": 2
+      },
+      {
+        "time": 43.425,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.23815468750000002,
+        "variant": 3
       },
       {
-        "time": 44.011,
+        "time": 44.023,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.19127968750000002,
+        "variant": 2
       },
       {
-        "time": 44.061,
+        "time": 44.06,
         "type": "pop",
-        "pan": 0
+        "pan": -0.19127968750000002,
+        "variant": 1
       },
       {
-        "time": 44.961000000000006,
+        "time": 44.99,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 4
       },
       {
-        "time": 46.787,
+        "time": 46.89,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 3
       },
       {
-        "time": 47.577,
+        "time": 47.227,
+        "type": "keys",
+        "pan": 0,
+        "variant": 3
+      },
+      {
+        "time": 47.591,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.0048125000000000286,
+        "variant": 5
       },
       {
-        "time": 48.177,
+        "time": 48.189,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.042062499999999975,
+        "variant": 4
       },
       {
-        "time": 48.227,
+        "time": 48.226,
         "type": "pop",
-        "pan": 0
+        "pan": 0.042062499999999975,
+        "variant": 2
       },
       {
-        "time": 49.127,
+        "time": 49.156,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 0
       },
       {
-        "time": 50.953,
+        "time": 51.058,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 5
       },
       {
-        "time": 51.743,
+        "time": 51.394,
+        "type": "keys",
+        "pan": 0,
+        "variant": 4
+      },
+      {
+        "time": 51.758,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.0048125000000000286,
+        "variant": 1
       },
       {
-        "time": 52.343,
+        "time": 52.356,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.042062499999999975,
+        "variant": 0
       },
       {
         "time": 52.393,
         "type": "pop",
-        "pan": 0
+        "pan": 0.042062499999999975,
+        "variant": 3
       },
       {
-        "time": 53.293000000000006,
+        "time": 53.323,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 2
       },
       {
-        "time": 55.123,
+        "time": 55.223,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 1
       },
       {
-        "time": 55.913,
+        "time": 55.559999999999995,
+        "type": "keys",
+        "pan": 0,
+        "variant": 5
+      },
+      {
+        "time": 55.925,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.0048125000000000286,
+        "variant": 3
       },
       {
-        "time": 56.513,
+        "time": 56.523,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.042062499999999975,
+        "variant": 2
       },
       {
-        "time": 56.562999999999995,
+        "time": 56.559,
         "type": "pop",
-        "pan": 0
+        "pan": 0.042062499999999975,
+        "variant": 4
       },
       {
-        "time": 57.463,
+        "time": 57.489,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 4
       },
       {
-        "time": 59.288,
+        "time": 59.391,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 3
       },
       {
-        "time": 60.077999999999996,
+        "time": 59.727,
+        "type": "keys",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 60.091,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.0048125000000000286,
+        "variant": 5
       },
       {
-        "time": 60.678,
+        "time": 60.689,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.042062499999999975,
+        "variant": 4
       },
       {
-        "time": 60.727999999999994,
+        "time": 60.726,
         "type": "pop",
-        "pan": 0
+        "pan": 0.042062499999999975,
+        "variant": 5
       },
       {
-        "time": 61.628,
+        "time": 61.655,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 0
       },
       {
-        "time": 63.455,
+        "time": 63.556,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 5
       },
       {
-        "time": 64.245,
+        "time": 63.893,
+        "type": "keys",
+        "pan": 0,
+        "variant": 1
+      },
+      {
+        "time": 64.258,
         "type": "move",
-        "pan": -0.15
+        "pan": 0.23660039062500005,
+        "variant": 1
       },
       {
-        "time": 64.845,
+        "time": 64.856,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.28347539062500005,
+        "variant": 0
       },
       {
-        "time": 64.895,
+        "time": 64.892,
         "type": "pop",
-        "pan": 0
+        "pan": 0.28347539062500005,
+        "variant": 0
       },
       {
-        "time": 65.795,
+        "time": 65.822,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 2
       },
       {
-        "time": 67.62,
+        "time": 67.724,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 1
       },
       {
-        "time": 68.41000000000001,
+        "time": 68.06099999999999,
+        "type": "keys",
+        "pan": 0,
+        "variant": 2
+      },
+      {
+        "time": 68.424,
         "type": "move",
-        "pan": -0.15
+        "pan": 0.23660039062500005,
+        "variant": 3
       },
       {
-        "time": 69.01,
+        "time": 69.022,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.28347539062500005,
+        "variant": 2
       },
       {
-        "time": 69.06,
+        "time": 69.059,
         "type": "pop",
-        "pan": 0
+        "pan": 0.28347539062500005,
+        "variant": 1
       },
       {
-        "time": 69.96000000000001,
+        "time": 69.988,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 4
       },
       {
-        "time": 71.787,
+        "time": 71.889,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 3
       },
       {
-        "time": 72.57700000000001,
+        "time": 72.225,
+        "type": "keys",
+        "pan": 0,
+        "variant": 3
+      },
+      {
+        "time": 72.59,
         "type": "move",
-        "pan": -0.15
+        "pan": 0.23660039062500005,
+        "variant": 5
       },
       {
-        "time": 73.177,
+        "time": 73.188,
         "type": "click",
-        "pan": -0.1
+        "pan": 0.28347539062500005,
+        "variant": 4
       },
       {
-        "time": 73.227,
+        "time": 73.225,
         "type": "pop",
-        "pan": 0
+        "pan": 0.28347539062500005,
+        "variant": 2
       },
       {
-        "time": 74.12700000000001,
+        "time": 74.155,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 0
       },
       {
-        "time": 75.953,
+        "time": 76.056,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 5
       },
       {
-        "time": 76.113,
+        "time": 76.091,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 3
       },
       {
-        "time": 80.247,
+        "time": 76.39099999999999,
+        "type": "bell",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 80.224,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 4
       },
       {
-        "time": 80.87700000000001,
+        "time": 80.524,
+        "type": "sparkle",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 80.89,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.278725,
+        "variant": 1
       },
       {
-        "time": 81.477,
+        "time": 81.471,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.23185000000000003,
+        "variant": 0
       },
       {
-        "time": 81.527,
+        "time": 81.508,
         "type": "pop",
-        "pan": 0
+        "pan": -0.23185000000000003,
+        "variant": 3
       },
       {
-        "time": 82.427,
+        "time": 82.438,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 2
       },
       {
-        "time": 83.68599999999999,
+        "time": 83.79,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 1
       },
       {
-        "time": 84.476,
+        "time": 84.125,
+        "type": "sparkle",
+        "pan": 0,
+        "variant": 1
+      },
+      {
+        "time": 84.49,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.10966250000000002,
+        "variant": 3
       },
       {
-        "time": 85.076,
+        "time": 85.088,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.06278750000000002,
+        "variant": 2
       },
       {
-        "time": 85.12599999999999,
+        "time": 85.125,
         "type": "pop",
-        "pan": 0
+        "pan": -0.06278750000000002,
+        "variant": 4
       },
       {
-        "time": 86.026,
+        "time": 86.054,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 4
       },
       {
-        "time": 87.303,
+        "time": 87.405,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 3
       },
       {
-        "time": 88.093,
+        "time": 87.74199999999999,
+        "type": "sparkle",
+        "pan": 0,
+        "variant": 2
+      },
+      {
+        "time": 88.106,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.278725,
+        "variant": 5
       },
       {
-        "time": 88.693,
+        "time": 88.688,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.23185000000000003,
+        "variant": 4
       },
       {
-        "time": 88.743,
+        "time": 88.724,
         "type": "pop",
-        "pan": 0
+        "pan": -0.23185000000000003,
+        "variant": 5
       },
       {
-        "time": 89.643,
+        "time": 89.653,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 0
       },
       {
-        "time": 90.887,
+        "time": 91.005,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 5
       },
       {
-        "time": 91.677,
+        "time": 91.341,
+        "type": "sparkle",
+        "pan": 0,
+        "variant": 3
+      },
+      {
+        "time": 91.705,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.10966250000000002,
+        "variant": 1
       },
       {
-        "time": 92.277,
+        "time": 92.303,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.06278750000000002,
+        "variant": 0
       },
       {
-        "time": 92.327,
+        "time": 92.342,
         "type": "pop",
-        "pan": 0
+        "pan": -0.06278750000000002,
+        "variant": 0
       },
       {
-        "time": 93.227,
+        "time": 93.27,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 2
       },
       {
-        "time": 94.503,
+        "time": 94.621,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 1
       },
       {
-        "time": 95.293,
+        "time": 94.958,
+        "type": "sparkle",
+        "pan": 0,
+        "variant": 4
+      },
+      {
+        "time": 95.322,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.278725,
+        "variant": 3
       },
       {
-        "time": 95.893,
+        "time": 95.92,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.23185000000000003,
+        "variant": 2
       },
       {
-        "time": 95.943,
+        "time": 95.957,
         "type": "pop",
-        "pan": 0
+        "pan": -0.23185000000000003,
+        "variant": 1
       },
       {
-        "time": 96.843,
+        "time": 96.887,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 4
       },
       {
-        "time": 98.104,
+        "time": 98.222,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 3
       },
       {
-        "time": 98.894,
+        "time": 98.55799999999999,
+        "type": "sparkle",
+        "pan": 0,
+        "variant": 5
+      },
+      {
+        "time": 98.922,
         "type": "move",
-        "pan": -0.15
+        "pan": -0.10966250000000002,
+        "variant": 5
       },
       {
-        "time": 99.494,
+        "time": 99.503,
         "type": "click",
-        "pan": -0.1
+        "pan": -0.06278750000000002,
+        "variant": 4
       },
       {
-        "time": 99.544,
+        "time": 99.54,
         "type": "pop",
-        "pan": 0
+        "pan": -0.06278750000000002,
+        "variant": 2
       },
       {
-        "time": 100.444,
+        "time": 100.47,
         "type": "move",
-        "pan": -0.25
+        "pan": -0.3,
+        "variant": 0
       },
       {
-        "time": 101.718,
+        "time": 101.821,
         "type": "click",
-        "pan": 0.15
+        "pan": 0,
+        "variant": 5
       },
       {
-        "time": 101.878,
+        "time": 101.858,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 5
       },
       {
-        "time": 104.444,
+        "time": 102.158,
+        "type": "bubble",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 104.421,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 0
       },
       {
-        "time": 108.47699999999999,
+        "time": 104.721,
+        "type": "pluck",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 108.454,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 1
       },
       {
-        "time": 109.17699999999999,
+        "time": 108.75399999999999,
+        "type": "stamp",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 109.122,
         "type": "click",
-        "pan": 0.25
+        "pan": 0.275439453125,
+        "variant": 0
       },
       {
-        "time": 109.217,
+        "time": 109.123,
         "type": "paper",
-        "pan": 0
+        "pan": 0,
+        "variant": 0
       },
       {
-        "time": 112.148,
+        "time": 112.125,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 2
       },
       {
-        "time": 112.148,
+        "time": 112.129,
         "type": "move",
-        "pan": 0.3
+        "pan": 0.280204296875,
+        "variant": 1
       },
       {
-        "time": 112.748,
+        "time": 112.425,
+        "type": "arcade",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 112.703,
         "type": "click",
-        "pan": 0.3
+        "pan": 0.327079296875,
+        "variant": 1
       },
       {
-        "time": 112.798,
+        "time": 112.747,
         "type": "pop",
-        "pan": 0
+        "pan": 0.327079296875,
+        "variant": 3
       },
       {
-        "time": 113.078,
+        "time": 113.009,
         "type": "move",
-        "pan": -0.2
+        "pan": -0.3,
+        "variant": 2
       },
       {
-        "time": 115.20500000000001,
+        "time": 115.258,
         "type": "click",
-        "pan": 0.2
+        "pan": 0.13375,
+        "variant": 2
       },
       {
-        "time": 115.575,
+        "time": 115.554,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 3
       },
       {
-        "time": 118.84299999999999,
+        "time": 115.854,
+        "type": "send",
+        "pan": 0,
+        "variant": 0
+      },
+      {
+        "time": 118.822,
         "type": "section",
-        "pan": 0
+        "pan": 0,
+        "variant": 4
       },
       {
-        "time": 118.84299999999999,
+        "time": 118.822,
         "type": "move",
-        "pan": 0.3
+        "pan": 0.1625,
+        "variant": 3
       },
       {
-        "time": 119.67299999999999,
+        "time": 119.653,
         "type": "finish",
-        "pan": 0
+        "pan": 0,
+        "variant": 0
       }
     ]
-  }
+  },
+  "audio": "Original stereo sound design: six pitch/timbre variations per action; robot footsteps, airy transitions, UI clicks, spring pops, paper, data arpeggios, keyboard taps, metallic bell, sparkles, bubbles, string plucks, stamp, arcade and send cues. AAC, 48 kHz. No third-party recordings."
 }

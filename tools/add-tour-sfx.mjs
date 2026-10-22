@@ -45,7 +45,15 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   const duration = Number(probe.format.duration);
   const frames = Math.ceil(duration * rate);
   const mix = new Float32Array(frames * 2);
-  const events = manifest.soundEffects?.events ?? eventsFromChapters(manifest);
+  const baseEvents = (manifest.soundEffects?.events ?? eventsFromChapters(manifest)).filter(event => ["boot", "section", "move", "click", "pop", "paper", "finish"].includes(event.type));
+  // Chapter motifs and detail cues complement the recorded robot/UI actions.
+  const events = [...baseEvents];
+  for (const scene of manifest.scenes) {
+    const type = ({ PROJETS: "data", COMPÉTENCES: "keys", FORMATION: "bell", "QUALITÉS PERSONNELLES": "sparkle", LANGUES: "bubble", DIVERS: "pluck", "C.V": "stamp", CODE: "arcade", CONTACT: "send" })[scene.chapter];
+    if (type) events.push({ time: scene.start + 0.30, type, pan: 0 });
+  }
+  events.sort((a, b) => a.time - b.time);
+  const counts = {};
   let randomState = 41279;
   const noise = () => {
     randomState = (Math.imul(randomState, 1664525) + 1013904223) >>> 0;
@@ -80,6 +88,10 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   }
   for (const event of events) {
     const t = event.time;
+    const variant = (counts[event.type] ?? 0);
+    counts[event.type] = variant + 1;
+    const pitch = [1, 1.122, 0.891, 1.26, 0.944, 1.059][variant % 6];
+    event.variant = variant % 6;
     const pan = Math.max(-0.4, Math.min(0.4, event.pan ?? 0));
     switch (event.type) {
       case "boot":
@@ -87,23 +99,54 @@ export async function addTourSfx({ videoPath, manifestPath }) {
         break;
       case "section":
         sweep(t, 0.10, 0.32, pan);
-        tone(t + 0.05, 523.25, 0.055, 0.18, pan);
+        tone(t + 0.05, 523.25 * pitch, 0.055, 0.18, pan);
         break;
       case "move":
-        sweep(t, 0.16, 0.48, pan);
-        [0.06, 0.20, 0.34, 0.48].forEach((offset, i) => tone(t + offset, i % 2 ? 145 : 112, 0.075, 0.07, pan + (i % 2 ? 0.04 : -0.04)));
+        sweep(t, 0.16, 0.30 + (variant % 4) * 0.07, pan);
+        [0.06, 0.20, 0.34, 0.48].forEach((offset, i) => tone(t + offset, (i % 2 ? 145 : 112) * pitch, 0.075, 0.07, pan + (i % 2 ? 0.04 : -0.04)));
         break;
       case "click":
-        tone(t, 950, 0.22, 0.09, pan);
+        tone(t, (variant % 2 ? 680 : 1180) * pitch, 0.18, 0.06 + (variant % 3) * 0.018, pan);
         sound(t, 0.014, 0.09, pan, (dt) => noise() * Math.exp(-dt * 330));
         break;
       case "pop":
-        sound(t, 0.23, 0.18, pan, (dt) => Math.sin(tau * (280 * dt + 500 * dt * dt)) * (1 - Math.exp(-dt * 500)) * Math.exp(-dt * 22));
-        tone(t + 0.035, 698.46, 0.075, 0.16, pan);
+        sound(t, 0.23, 0.18, pan, (dt) => Math.sin(tau * ((220 + (variant % 5) * 65) * dt + 500 * pitch * dt * dt)) * (1 - Math.exp(-dt * 500)) * Math.exp(-dt * 22));
+        tone(t + 0.035, 698.46 * pitch, 0.075, 0.16, pan);
         break;
       case "paper":
         sweep(t, 0.24, 0.32, -0.15);
         sweep(t + 0.12, 0.18, 0.23, 0.15);
+        break;
+      case "data":
+        [330, 495, 660, 990, 1320].forEach((f, i) => tone(t + i * 0.055, f * pitch, 0.075, 0.12, (i - 2) * 0.12));
+        break;
+      case "keys":
+        for (let i = 0; i < 7; i++) {
+          sound(t + i * 0.055, 0.025, 0.12, (i - 3) * 0.08, dt => noise() * Math.exp(-dt * 170));
+          tone(t + i * 0.055, (180 + i * 37) * pitch, 0.045, 0.035, pan);
+        }
+        break;
+      case "bell":
+        [1, 2.76, 5.4].forEach((harmonic, i) => sound(t, 1.1, 0.09 / (i + 1), pan, dt => Math.sin(tau * 660 * harmonic * dt) * (1 - Math.exp(-dt * 1500)) * Math.exp(-dt * (4 + i * 2))));
+        break;
+      case "sparkle":
+        [1046.5, 1568, 1318.5].forEach((f, i) => tone(t + i * 0.085, f * pitch, 0.075, 0.30, (i - 1) * 0.25));
+        break;
+      case "bubble":
+        for (let i = 0; i < 4; i++) sound(t + i * 0.11, 0.12, 0.11, (i - 1.5) * 0.15, dt => Math.sin(tau * (400 * dt + 2200 * dt * dt)) * Math.exp(-dt * 35));
+        break;
+      case "pluck":
+        [261.63, 329.63, 392].forEach((f, i) => sound(t + i * 0.12, 0.6, 0.10, (i - 1) * 0.15, dt => Math.sin(tau * f * dt) * Math.exp(-dt * 8) * Math.cos(tau * 1.8 * dt)));
+        break;
+      case "stamp":
+        sound(t + 0.12, 0.18, 0.24, pan, dt => (Math.sin(tau * 90 * dt) + noise() * 0.3) * Math.exp(-dt * 35));
+        break;
+      case "arcade":
+        [261.63, 523.25, 392, 783.99, 1046.5].forEach((f, i) => sound(t + i * 0.09, 0.075, 0.055, pan, dt => Math.tanh(Math.sin(tau * f * dt) * 4) * Math.sin(Math.PI * dt / 0.075)));
+        break;
+      case "send":
+        sweep(t, 0.24, 0.7, -0.2);
+        [783.99, 1046.5].forEach((f, i) => tone(t + 0.3 + i * 0.12, f, 0.12, 0.4, 0.2));
         break;
       case "finish":
         [523.25, 659.25, 783.99, 1046.5].forEach((frequency, i) => tone(t + i * 0.13, frequency, 0.18, 0.48, (i - 1.5) * 0.13));
@@ -128,7 +171,7 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   // Copy the picture stream so adding sound never re-encodes the existing film.
   await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-i", videoPath, "-i", wavPath, "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-ar", String(rate), "-t", String(duration), "-movflags", "+faststart", output]);
   await rename(output, videoPath);
-  manifest.audio = "Original synthesized stereo sound effects: robot steps, airy moves, UI clicks, opening pops, paper and short chimes. AAC, 48 kHz.";
+  manifest.audio = "Original stereo sound design: six pitch/timbre variations per action; robot footsteps, airy transitions, UI clicks, spring pops, paper, data arpeggios, keyboard taps, metallic bell, sparkles, bubbles, string plucks, stamp, arcade and send cues. AAC, 48 kHz. No third-party recordings.";
   manifest.soundEffects = { timingSource: manifest.soundEffects?.timingSource ?? "Chapter cues and recorded action offsets", events };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   console.log(`Added ${events.length} original sound effects to ${videoPath}.`);

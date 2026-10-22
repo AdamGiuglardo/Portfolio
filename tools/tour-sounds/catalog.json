@@ -1,8 +1,6 @@
 {
   "click": [
-    "interface-sounds/click_001",
-    "interface-sounds/click_004",
-    "interface-sounds/tick_001"
+    "impact-sounds/impactWood_light_000"
   ],
   "open": [
     "interface-sounds/open_001",

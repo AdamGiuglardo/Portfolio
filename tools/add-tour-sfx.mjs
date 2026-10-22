@@ -27,6 +27,7 @@ export async function addTourSfx({ videoPath, manifestPath }) {
     const pool = catalog[family];
     events.push({ time, family, source: pool[index % pool.length], gain, pan: Math.max(-0.6, Math.min(0.6, pan)) });
   }
+  const chapterAt = time => manifest.scenes.findLast(scene => scene.start <= time)?.chapter;
   for (let index = 0; index < actions.length; index++) {
     const event = actions[index];
     const { time, type } = event;
@@ -37,13 +38,12 @@ export async function addTourSfx({ videoPath, manifestPath }) {
       case "move":
         break;
       case "click": {
-        const opening = actions.slice(index + 1, index + 3).some(next => next.type === "pop" && next.time - time < 0.4);
-        // An opening already has its own sound; avoid stacking the same three cues.
-        if (!opening) add(time, "close", 0.22, pan);
-        else add(time, "click", 0.24, pan);
+        const chapter = chapterAt(time);
+        if (!["COMPÉTENCES", "FORMATION"].includes(chapter)) add(time, "click", 0.065, pan);
         break;
       }
-      case "pop": add(time, "open", 0.25, pan); break;
+      // No pitched opening/closing effects: only a short tactile tap elsewhere.
+      case "pop": break;
       case "paper":
         add(time, "paper", 0.24, -0.2);
         add(time + 0.15, "paper", 0.14, 0.2);
@@ -71,7 +71,7 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   const decoded = new Map();
   for (const source of new Set(events.map(event => event.source))) {
     const file = resolve(root, "tools/tour-sounds", source + ".ogg");
-    const result = await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-i", file, "-t", "1.8", "-af", "highpass=f=100,lowpass=f=8000", "-ac", "1", "-ar", String(rate), "-f", "f32le", "pipe:1"], { encoding: "buffer", maxBuffer: 2 ** 20 });
+    const result = await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-i", file, "-t", source.includes("impactWood") ? "0.065" : "0.5", "-af", "highpass=f=120,lowpass=f=2800", "-ac", "1", "-ar", String(rate), "-f", "f32le", "pipe:1"], { encoding: "buffer", maxBuffer: 2 ** 20 });
     const buffer = result.stdout;
     const samples = new Float32Array(buffer.length / 4);
     let peak = 0;
@@ -118,12 +118,12 @@ export async function addTourSfx({ videoPath, manifestPath }) {
   const filters = `[0:v][3:v]overlay=x=36:y=H-h-28:enable='gte(t,${duration - 7})'[v];${music}`;
   await run("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", "-i", videoPath, "-i", wavPath, "-i", musicPath, "-loop", "1", "-i", creditPath, "-filter_complex", filters, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "slow", "-crf", "21", "-c:a", "aac", "-b:a", "192k", "-ar", String(rate), "-t", String(duration), "-metadata", "comment=Music: Reverie by Scott Buckley, CC BY 4.0, https://www.scottbuckley.com.au/library/reverie/ . Excerpt trimmed, faded and mixed with Kenney CC0 effects.", "-movflags", "+faststart", output]);
   await rename(output, videoPath);
-  manifest.audio = "Continuous instrumental music bed: Reverie by Scott Buckley (CC BY 4.0), trimmed and faded. Tactile clicks, panel open/close, paper cues and gentle chapter transitions. Robot movement remains silent. AAC stereo, 48 kHz.";
-  manifest.soundEffects = { timingSource: "Recorded browser action timestamps", rawEvents: actions, events, transitions: transitions.map(scene => scene.start), distinctRecordings: decoded.size, music: { title: "Reverie", artist: "Scott Buckley", license: "CC BY 4.0", source: "https://www.scottbuckley.com.au/library/reverie/", edits: "Excerpt from 8 seconds, normalized, faded and mixed under action effects" }, sources: ["https://kenney.nl/assets/interface-sounds"] };
+  manifest.audio = "Continuous instrumental music bed: Reverie by Scott Buckley (CC BY 4.0), trimmed and faded. Short low-level dry taps, paper cues and gentle chapter transitions; no pitched open/close sounds and no tap cues during skills or education. Robot movement remains silent. AAC stereo, 48 kHz.";
+  manifest.soundEffects = { timingSource: "Recorded browser action timestamps", rawEvents: actions, events, transitions: transitions.map(scene => scene.start), distinctRecordings: decoded.size, music: { title: "Reverie", artist: "Scott Buckley", license: "CC BY 4.0", source: "https://www.scottbuckley.com.au/library/reverie/", edits: "Excerpt from 8 seconds, normalized, faded and mixed under action effects" }, sources: ["https://kenney.nl/assets/interface-sounds", "https://kenney.nl/assets/impact-sounds"] };
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
   console.log(`Mixed ${events.length} cues using ${decoded.size} distinct recordings.`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v6.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
+  await addTourSfx({ videoPath: resolve(root, "assets/portfolio-tour-v7.mp4"), manifestPath: resolve(root, "assets/portfolio-tour-scenes.json") });
 }
